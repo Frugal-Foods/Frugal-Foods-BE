@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :user_stores
-  has_many :user_items
+  has_many :user_store_items
   has_many :stores, through: :user_stores
-  has_many :items, through: :user_items
+  has_many :store_items, through: :user_store_items
 end
