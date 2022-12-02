@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_02_232253) do
+ActiveRecord::Schema.define(version: 2022_12_02_233406) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,18 +39,11 @@ ActiveRecord::Schema.define(version: 2022_12_02_232253) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "user_items", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "item_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_user_items_on_item_id"
-    t.index ["user_id"], name: "index_user_items_on_user_id"
-  end
-
   create_table "user_store_items", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "store_item_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["store_item_id"], name: "index_user_store_items_on_store_item_id"
     t.index ["user_id"], name: "index_user_store_items_on_user_id"
   end
@@ -72,8 +65,6 @@ ActiveRecord::Schema.define(version: 2022_12_02_232253) do
 
   add_foreign_key "store_items", "items"
   add_foreign_key "store_items", "stores"
-  add_foreign_key "user_items", "items"
-  add_foreign_key "user_items", "users"
   add_foreign_key "user_store_items", "store_items"
   add_foreign_key "user_store_items", "users"
   add_foreign_key "user_stores", "stores"
