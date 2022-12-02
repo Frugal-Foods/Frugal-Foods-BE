@@ -2,7 +2,7 @@ require 'rails_helper'
 RSpec.describe StoreItem, type: :model do
   describe 'relationships' do
     it { should belong_to :item }
-    it { should have_many :store }
+    it { should belong_to :store }
   end
 
   describe 'validations' do
