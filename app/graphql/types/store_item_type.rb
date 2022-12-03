@@ -6,6 +6,6 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :price, Float, null: false
-    field :item_name, String, null: false
   end
+
 end
