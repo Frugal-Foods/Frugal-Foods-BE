@@ -61,3 +61,102 @@ Things you may want to cover:
 }
 ```
 
+## Stores Items 
+```
+{
+  stores {
+    id
+    name
+    items {
+      id
+      name
+    }
+  }
+}
+```
+## Expected Return
+```
+{
+  "data": {
+    "stores": [
+      {
+        "id": "1",
+        "name": "Jast, Upton and Barrows",
+        "items": [
+          {
+            "id": "1",
+            "name": "Sleek Linen Hat"
+          },
+          {
+            "id": "2",
+            "name": "Durable Aluminum Coat"
+          },
+          {
+            "id": "3",
+            "name": "Lightweight Plastic Wallet"
+          },
+          {
+            "id": "4",
+            "name": "Intelligent Paper Lamp"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Sauer-Stoltenberg",
+        "items": [
+          {
+            "id": "1",
+            "name": "Sleek Linen Hat"
+          },
+          {
+            "id": "2",
+            "name": "Durable Aluminum Coat"
+          },
+          {
+            "id": "3",
+            "name": "Lightweight Plastic Wallet"
+          },
+          {
+            "id": "4",
+            "name": "Intelligent Paper Lamp"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Thompson, Harber and Braun",
+        "items": [
+          {
+            "id": "4",
+            "name": "Intelligent Paper Lamp"
+          },
+          {
+            "id": "5",
+            "name": "Durable Steel Chair"
+          },
+          {
+            "id": "6",
+            "name": "Durable Plastic Gloves"
+          },
+          {
+            "id": "7",
+            "name": "Practical Copper Lamp"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Carroll Group",
+        "items": []
+      },
+      {
+        "id": "5",
+        "name": "Ryan-Anderson",
+        "items": []
+      }
+    ]
+  }
+}
+```
+
