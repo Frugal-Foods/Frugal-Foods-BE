@@ -7,6 +7,11 @@ module Types
     field :items, [Types::ItemType], null: true
     field :stores, [Types::StoreType], null: true
     field :store_items, [Types::StoreItemType], null: true
+    field :item_name, String, null: false
+
+    def item_name
+      Item.first.name
+    end
 
     def users
       User.all
@@ -23,6 +28,7 @@ module Types
     def store_items
       UserStoreItem.all
     end
+
 
   end
 end
