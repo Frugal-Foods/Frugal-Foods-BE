@@ -5,6 +5,7 @@ module Types
     include GraphQL::Types::Relay::HasNodesField
     field :users, [Types::UserType], null: false
     field :items, [Types::ItemType], null: true
+    field :stores, [Types::StoreType], null: true
 
     def users
       User.all
@@ -12,6 +13,10 @@ module Types
 
     def items
       Item.all
+    end
+
+    def stores
+      Store.all
     end
   end
 end
