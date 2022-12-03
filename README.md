@@ -292,11 +292,11 @@
       id
       name
       address
-    }
-    storeItems {
+      storeItems {
         id
       	price
-      }
+    	}
+    }
   }
 }
 ```
@@ -313,72 +313,77 @@
           {
             "id": "1",
             "name": "Jast, Upton and Barrows",
-            "address": "Suite 456 823 Patricia Garden, East Corrina, CT 64693"
+            "address": "Suite 456 823 Patricia Garden, East Corrina, CT 64693",
+            "storeItems": [
+              {
+                "id": "1",
+                "price": 41.67
+              },
+              {
+                "id": "2",
+                "price": 80.41
+              },
+              {
+                "id": "3",
+                "price": 3.32
+              },
+              {
+                "id": "4",
+                "price": 11.95
+              }
+            ]
           },
           {
             "id": "2",
             "name": "Sauer-Stoltenberg",
-            "address": "935 Hamill Freeway, Lake Tyishachester, ID 94653"
+            "address": "935 Hamill Freeway, Lake Tyishachester, ID 94653",
+            "storeItems": [
+              {
+                "id": "5",
+                "price": 5.26
+              },
+              {
+                "id": "6",
+                "price": 13.81
+              },
+              {
+                "id": "7",
+                "price": 20.14
+              },
+              {
+                "id": "8",
+                "price": 79.5
+              }
+            ]
           },
           {
             "id": "3",
             "name": "Thompson, Harber and Braun",
-            "address": "Apt. 975 8157 Carmelo Stream, Port Willis, AR 20248"
+            "address": "Apt. 975 8157 Carmelo Stream, Port Willis, AR 20248",
+            "storeItems": [
+              {
+                "id": "9",
+                "price": 67.85
+              },
+              {
+                "id": "10",
+                "price": 22.39
+              },
+              {
+                "id": "11",
+                "price": 98.89
+              },
+              {
+                "id": "12",
+                "price": 7.16
+              }
+            ]
           },
           {
             "id": "4",
             "name": "Carroll Group",
-            "address": "Suite 553 379 Tyron Forest, East Charlott, AK 68271"
-          }
-        ],
-        "storeItems": [
-          {
-            "id": "1",
-            "price": 41.67
-          },
-          {
-            "id": "2",
-            "price": 80.41
-          },
-          {
-            "id": "3",
-            "price": 3.32
-          },
-          {
-            "id": "4",
-            "price": 11.95
-          },
-          {
-            "id": "5",
-            "price": 5.26
-          },
-          {
-            "id": "6",
-            "price": 13.81
-          },
-          {
-            "id": "7",
-            "price": 20.14
-          },
-          {
-            "id": "8",
-            "price": 79.5
-          },
-          {
-            "id": "9",
-            "price": 67.85
-          },
-          {
-            "id": "10",
-            "price": 22.39
-          },
-          {
-            "id": "11",
-            "price": 98.89
-          },
-          {
-            "id": "12",
-            "price": 7.16
+            "address": "Suite 553 379 Tyron Forest, East Charlott, AK 68271",
+            "storeItems": []
           }
         ]
       }
