@@ -6,6 +6,7 @@ module Types
     field :users, [Types::UserType], null: false
     field :items, [Types::ItemType], null: true
     field :stores, [Types::StoreType], null: true
+    field :storeItems, [Types::StoreItemType], null: true
 
     def users
       User.all
@@ -18,5 +19,6 @@ module Types
     def stores
       Store.all
     end
+
   end
 end
