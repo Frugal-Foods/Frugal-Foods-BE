@@ -1,8 +1,8 @@
 require 'rails_helper'
-RSpec.describe UserItem, type: :model do
+RSpec.describe UserStoreItem, type: :model do
   describe 'relationships' do
     it { should belong_to(:user) }
-    it { should belong_to(:item) }
+    it { should belong_to(:store_item) }
   end
 
   before(:each) do
