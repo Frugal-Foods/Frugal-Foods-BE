@@ -7,9 +7,9 @@ RSpec.describe TargetService do
     search = TargetService.get_grocery_items(search_term)
 
     expect(search).to be_a Hash
-    expect(search[:results]).to be_an Array
+    expect(search[:search_results]).to be_an Array
 
-    items = search[:results]
+    items = search[:search_results]
 
     items.each do |item|
       expect(item).to have_key :product
@@ -18,10 +18,10 @@ RSpec.describe TargetService do
       expect(item[:product][:title]).to be_a String
       expect(item[:product]).to have_key :main_image
       expect(item[:product][:main_image]).to be_a String
-      expect(item[:product]).to have_key :offers
-      expect(item[:product][:offers]).to have_key :primary
-      expect(item[:product][:offers][:primary]).to have_key :price
-      expect(item[:product][:offers][:primary][:price]).to be_a Float
+      expect(item).to have_key :offers
+      expect(item[:offers]).to have_key :primary
+      expect(item[:offers][:primary]).to have_key :price
+      expect(item[:offers][:primary][:price]).to be_a Float
     end
   end
 end
