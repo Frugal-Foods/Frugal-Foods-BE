@@ -1,0 +1,278 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=80108&radius=16093&term=target
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<yelp_api_key>"
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4998'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2022-12-05T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-69c46b79fb-r2hsv; site=public_api_v3
+      X-Zipkin-Id:
+      - 0e646793f4c1c806
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-114-190-uswest2aprod
+      X-Extlb:
+      - 10-69-114-190-uswest2aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 04 Dec 2022 22:25:20 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8246-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"businesses": [{"id": "IJH1FENZp7bNrPQh3nPccQ", "alias": "target-castle-rock",
+        "name": "Target", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/5ExtJrIUC1AA5_itPVHUiQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 37, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 2.5, "coordinates": {"latitude": 39.40837,
+        "longitude": -104.857}, "transactions": [], "price": "$$", "location": {"address1":
+        "5010 Founders Pkwy", "address2": "", "address3": "", "city": "Castle Rock",
+        "zip_code": "80108", "country": "US", "state": "CO", "display_address": ["5010
+        Founders Pkwy", "Castle Rock, CO 80108"]}, "phone": "+13036634322", "display_phone":
+        "(303) 663-4322", "distance": 3870.6431920465884}, {"id": "mLP03hgUEq9Nje3w92UEYw",
+        "alias": "target-parker-2", "name": "Target", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/DoGhhrETmSLaaZmoyEZ6gg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-parker-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 42, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 2.5, "coordinates": {"latitude": 39.513087,
+        "longitude": -104.771791}, "transactions": [], "price": "$$", "location":
+        {"address1": "11150 S Twenty Mile Rd", "address2": "", "address3": "", "city":
+        "Parker", "zip_code": "80134", "country": "US", "state": "CO", "display_address":
+        ["11150 S Twenty Mile Rd", "Parker, CO 80134"]}, "phone": "+13032090166",
+        "display_phone": "(303) 209-0166", "distance": 10114.06037028952}, {"id":
+        "FzLJGWUa4V9PeZOYCrB9Cw", "alias": "target-lone-tree-3", "name": "Target",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/lqgRdSEDCVpTYIJKEwtR8g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-lone-tree-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 67, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 3.0, "coordinates": {"latitude": 39.53487,
+        "longitude": -104.883653}, "transactions": [], "price": "$$", "location":
+        {"address1": "10001 Commons St", "address2": "", "address3": "", "city": "Lone
+        Tree", "zip_code": "80124", "country": "US", "state": "CO", "display_address":
+        ["10001 Commons St", "Lone Tree, CO 80124"]}, "phone": "+13032091851", "display_phone":
+        "(303) 209-1851", "distance": 10841.123326868063}, {"id": "2d1I961DnKQmF2K8NdKDyQ",
+        "alias": "target-aurora-5", "name": "Target", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-p4hU5D2U3mDkS5oJFuDCQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-aurora-5?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 52, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 2.5, "coordinates": {"latitude": 39.592003,
+        "longitude": -104.804946}, "transactions": [], "price": "$$", "location":
+        {"address1": "15700 E Briarwood Cir", "address2": "", "address3": "", "city":
+        "Aurora", "zip_code": "80016", "country": "US", "state": "CO", "display_address":
+        ["15700 E Briarwood Cir", "Aurora, CO 80016"]}, "phone": "+17202146000", "display_phone":
+        "(720) 214-6000", "distance": 17036.625331296444}, {"id": "ydID3nKh34A9MlwZmI7UJw",
+        "alias": "target-englewood", "name": "Target", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/_2Yizgopee5C-Wy80NEAzA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-englewood?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 52, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 3.0, "coordinates": {"latitude": 39.593371,
+        "longitude": -104.88155}, "transactions": [], "price": "$$", "location": {"address1":
+        "6767 S Clinton St", "address2": "", "address3": "", "city": "Englewood",
+        "zip_code": "80112", "country": "US", "state": "CO", "display_address": ["6767
+        S Clinton St", "Englewood, CO 80112"]}, "phone": "+13037902583", "display_phone":
+        "(303) 790-2583", "distance": 17118.952147956217}, {"id": "4lIcqgn-UdZ6ZV9Dhvpa4A",
+        "alias": "target-highlands-ranch", "name": "Target", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9gfbxyhuLsFzUJA4m-OeKA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-highlands-ranch?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 37, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 2.5, "coordinates": {"latitude": 39.565063,
+        "longitude": -104.965672}, "transactions": [], "price": "$$", "location":
+        {"address1": "1950 E County Line Rd", "address2": "", "address3": "", "city":
+        "Highlands Ranch", "zip_code": "80126", "country": "US", "state": "CO", "display_address":
+        ["1950 E County Line Rd", "Highlands Ranch, CO 80126"]}, "phone": "+13037971911",
+        "display_phone": "(303) 797-1911", "distance": 17146.676618229354}, {"id":
+        "3I3oT34cXoZQx-yv4LCnQw", "alias": "target-highlands-ranch-2", "name": "Target",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/uJSKywsfqgwGIFAp-WsZIw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/target-highlands-ranch-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 52, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "electronics", "title": "Electronics"}, {"alias": "furniture",
+        "title": "Furniture Stores"}], "rating": 2.5, "coordinates": {"latitude":
+        39.549552, "longitude": -105.005107}, "transactions": [], "price": "$$", "location":
+        {"address1": "1265 Sgt Jon Stiles Dr", "address2": "", "address3": "", "city":
+        "Highlands Ranch", "zip_code": "80129", "country": "US", "state": "CO", "display_address":
+        ["1265 Sgt Jon Stiles Dr", "Highlands Ranch, CO 80129"]}, "phone": "+13033234971",
+        "display_phone": "(303) 323-4971", "distance": 18197.79831469938}, {"id":
+        "a5U4BJVVJ0E9MMqRvoKceQ", "alias": "target-aurora-11", "name": "Target", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/BhjUSNz1JHevs2y2xuRAqw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/target-aurora-11?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 46, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics",
+        "title": "Electronics"}], "rating": 3.5, "coordinates": {"latitude": 39.581773,
+        "longitude": -104.721865}, "transactions": [], "price": "$$", "location":
+        {"address1": "7400 S Gartrell Rd", "address2": "", "address3": "", "city":
+        "Aurora", "zip_code": "80016", "country": "US", "state": "CO", "display_address":
+        ["7400 S Gartrell Rd", "Aurora, CO 80016"]}, "phone": "+13032092827", "display_phone":
+        "(303) 209-2827", "distance": 18807.01249926092}, {"id": "w4DQzHAU1gOu_njiQRR2dg",
+        "alias": "walmart-castle-rock", "name": "Walmart", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/iSxpZFNeLF7wrdV_XRbXlQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/walmart-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 39, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "grocery", "title": "Grocery"}, {"alias": "mobilephones",
+        "title": "Mobile Phones"}], "rating": 2.0, "coordinates": {"latitude": 39.4058685,
+        "longitude": -104.8614807}, "transactions": [], "price": "$", "location":
+        {"address1": "4400 Front St", "address2": "", "address3": "", "city": "Castle
+        Rock", "zip_code": "80104", "country": "US", "state": "CO", "display_address":
+        ["4400 Front St", "Castle Rock, CO 80104"]}, "phone": "+13036888200", "display_phone":
+        "(303) 688-8200", "distance": 4188.644999780175}, {"id": "a1urwVi7T6xtZewJjRjkEA",
+        "alias": "walmart-supercenter-parker-2", "name": "Walmart Supercenter", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/cbyaXpQZYXU_wk0YUHIyww/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/walmart-supercenter-parker-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 98, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "grocery", "title": "Grocery"}], "rating": 2.0, "coordinates":
+        {"latitude": 39.5136951569744, "longitude": -104.768228832859}, "transactions":
+        [], "price": "$", "location": {"address1": "11101 S Parker Rd", "address2":
+        "", "address3": "", "city": "Parker", "zip_code": "80134", "country": "US",
+        "state": "CO", "display_address": ["11101 S Parker Rd", "Parker, CO 80134"]},
+        "phone": "+13038050029", "display_phone": "(303) 805-0029", "distance": 10359.431893528841},
+        {"id": "w19iMKbfoHAnp4PMMTX5EQ", "alias": "walmart-supercenter-highlands-ranch",
+        "name": "Walmart Supercenter", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/iVYTaen-gJJv9P3rNthYiw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/walmart-supercenter-highlands-ranch?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 77, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "grocery", "title": "Grocery"}], "rating": 2.0, "coordinates":
+        {"latitude": 39.5623887, "longitude": -104.9107392}, "transactions": [], "price":
+        "$", "location": {"address1": "6675 Business Center Dr", "address2": "", "address3":
+        "", "city": "Highlands Ranch", "zip_code": "80130", "country": "US", "state":
+        "CO", "display_address": ["6675 Business Center Dr", "Highlands Ranch, CO
+        80130"]}, "phone": "+13036833641", "display_phone": "(303) 683-3641", "distance":
+        14519.10503036966}, {"id": "5ISQZfzgLzlyiMK-9DNApw", "alias": "kohls-castle-rock-castle-rock",
+        "name": "Kohl''s", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ab7p07nKOwWthUcwE6C2Ig/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kohls-castle-rock-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 19, "categories": [{"alias": "menscloth", "title": "Men''s
+        Clothing"}, {"alias": "womenscloth", "title": "Women''s Clothing"}, {"alias":
+        "deptstores", "title": "Department Stores"}], "rating": 3.0, "coordinates":
+        {"latitude": 39.4093971, "longitude": -104.8620624}, "transactions": [], "price":
+        "$$", "location": {"address1": "4800 Milestone Ln", "address2": "", "address3":
+        "", "city": "Castle Rock", "zip_code": "80104", "country": "US", "state":
+        "CO", "display_address": ["4800 Milestone Ln", "Castle Rock, CO 80104"]},
+        "phone": "+13038140525", "display_phone": "(303) 814-0525", "distance": 3899.492881688417},
+        {"id": "q4sa2m4B4Vhhvu0xCRM1Cw", "alias": "a-line-boutique-castle-rock", "name":
+        "A Line Boutique", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/u1nixFEIJZ0GhFx73NykkQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/a-line-boutique-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 5, "categories": [{"alias": "womenscloth", "title": "Women''s
+        Clothing"}], "rating": 4.0, "coordinates": {"latitude": 39.4218574, "longitude":
+        -104.8786264}, "transactions": [], "price": "$$$", "location": {"address1":
+        "6360 Promenade Pkwy", "address2": "Ste 140", "address3": null, "city": "Castle
+        Rock", "zip_code": "80108", "country": "US", "state": "CO", "display_address":
+        ["6360 Promenade Pkwy", "Ste 140", "Castle Rock, CO 80108"]}, "phone": "+13037738200",
+        "display_phone": "(303) 773-8200", "distance": 3587.2410095528344}, {"id":
+        "GsJJLWhJgzXOuo-F0rhQuA", "alias": "kohls-parker-2", "name": "Kohl''s", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/89QnJEqLyYD8CsTrY5fmtg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/kohls-parker-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 30, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "menscloth", "title": "Men''s Clothing"}, {"alias": "womenscloth",
+        "title": "Women''s Clothing"}], "rating": 2.0, "coordinates": {"latitude":
+        39.5084506, "longitude": -104.7653209}, "transactions": [], "price": "$$",
+        "location": {"address1": "11485 S Twenty Mile Rd", "address2": "", "address3":
+        "", "city": "Parker", "zip_code": "80134", "country": "US", "state": "CO",
+        "display_address": ["11485 S Twenty Mile Rd", "Parker, CO 80134"]}, "phone":
+        "+13038055538", "display_phone": "(303) 805-5538", "distance": 10085.830046822868},
+        {"id": "Jrsgk9GR2X9aXY7wIzikrQ", "alias": "pure-barre-castle-rock", "name":
+        "Pure Barre", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/T0-BnpTdhv8cDlk__plEGg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pure-barre-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 2, "categories": [{"alias": "barreclasses", "title": "Barre
+        Classes"}, {"alias": "womenscloth", "title": "Women''s Clothing"}, {"alias":
+        "cardioclasses", "title": "Cardio Classes"}], "rating": 3.5, "coordinates":
+        {"latitude": 39.4114097, "longitude": -104.8644913}, "transactions": [], "location":
+        {"address1": "62 Founders Pkwy", "address2": "Unit A", "address3": null, "city":
+        "Castle Rock", "zip_code": "80104", "country": "US", "state": "CO", "display_address":
+        ["62 Founders Pkwy", "Unit A", "Castle Rock, CO 80104"]}, "phone": "+17203107087",
+        "display_phone": "(720) 310-7087", "distance": 3778.8255618602198}, {"id":
+        "3Z_h24o8gi4-e9MffnmS4A", "alias": "bed-bath-and-beyond-parker", "name": "Bed
+        Bath & Beyond", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/mtJ5kksHOSOemgNe68KfiA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bed-bath-and-beyond-parker?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 18, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}], "rating": 3.0, "coordinates": {"latitude": 39.5089874267578, "longitude":
+        -104.767333984375}, "transactions": [], "price": "$$", "location": {"address1":
+        "11435 S Twenty Mile Rd", "address2": "", "address3": "", "city": "Parker",
+        "zip_code": "80134", "country": "US", "state": "CO", "display_address": ["11435
+        S Twenty Mile Rd", "Parker, CO 80134"]}, "phone": "+17208516484", "display_phone":
+        "(720) 851-6484", "distance": 10120.4206482393}, {"id": "D46mwEV8CDf8BKrM68xyKQ",
+        "alias": "marshalls-lone-tree-2", "name": "Marshalls", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/UkVOu3K8fPvw_1x6c4gntw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/marshalls-lone-tree-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 22, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}], "rating": 3.5, "coordinates": {"latitude": 39.558240214362, "longitude":
+        -104.873657306541}, "transactions": [], "price": "$", "location": {"address1":
+        "8672 Park Meadows Center Dr", "address2": null, "address3": "", "city": "Lone
+        Tree", "zip_code": "80124", "country": "US", "state": "CO", "display_address":
+        ["8672 Park Meadows Center Dr", "Lone Tree, CO 80124"]}, "phone": "+13037950760",
+        "display_phone": "(303) 795-0760", "distance": 13154.792400751492}, {"id":
+        "DoRcT18Io73J25YLasP0gw", "alias": "twisted-wardrobe-designs-castle-rock-castle-rock",
+        "name": "Twisted Wardrobe Designs - Castle Rock", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/a8H2pxWlzDWejaNaryJBvg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/twisted-wardrobe-designs-castle-rock-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 2, "categories": [{"alias": "shoes", "title": "Shoe Stores"},
+        {"alias": "womenscloth", "title": "Women''s Clothing"}, {"alias": "accessories",
+        "title": "Accessories"}], "rating": 4.5, "coordinates": {"latitude": 39.4101709,
+        "longitude": -104.8697611}, "transactions": [], "price": "$$", "location":
+        {"address1": "658 Genoa Way", "address2": "Unit A", "address3": "", "city":
+        "Castle Rock", "zip_code": "80109", "country": "US", "state": "CO", "display_address":
+        ["658 Genoa Way", "Unit A", "Castle Rock, CO 80109"]}, "phone": "+17203283417",
+        "display_phone": "(720) 328-3417", "distance": 4115.09706597448}, {"id": "hijWeR4uoGgid8PUdTk27Q",
+        "alias": "bass-castle-rock", "name": "Bass", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/w-cMtwgoqOQorDMS-illNA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bass-castle-rock?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 5, "categories": [{"alias": "deptstores", "title": "Department
+        Stores"}, {"alias": "outlet_stores", "title": "Outlet Stores"}], "rating":
+        5.0, "coordinates": {"latitude": 39.41565, "longitude": -104.8732477}, "transactions":
+        [], "price": "$$", "location": {"address1": "5050 Factory Shops Blvd", "address2":
+        "", "address3": "", "city": "Castle Rock", "zip_code": "80108", "country":
+        "US", "state": "CO", "display_address": ["5050 Factory Shops Blvd", "Castle
+        Rock, CO 80108"]}, "phone": "+13036887982", "display_phone": "(303) 688-7982",
+        "distance": 3787.3628670214966}, {"id": "n36u7xoI-G6KxpSSfSFV-Q", "alias":
+        "pure-barre-parker-3", "name": "Pure Barre", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wbX8NccbrUnj-Ye_TbG43w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pure-barre-parker-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+        "review_count": 3, "categories": [{"alias": "barreclasses", "title": "Barre
+        Classes"}, {"alias": "womenscloth", "title": "Women''s Clothing"}, {"alias":
+        "cardioclasses", "title": "Cardio Classes"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.519012, "longitude": -104.769505}, "transactions": [], "location":
+        {"address1": "18901 E Mainstreet", "address2": "Ste E", "address3": null,
+        "city": "Parker", "zip_code": "80134", "country": "US", "state": "CO", "display_address":
+        ["18901 E Mainstreet", "Ste E", "Parker, CO 80134"]}, "phone": "+17206939128",
+        "display_phone": "(720) 693-9128", "distance": 10754.364431832873}], "total":
+        226, "region": {"center": {"longitude": -104.84527587890625, "latitude": 39.44198084067493}}}'
+  recorded_at: Sun, 04 Dec 2022 22:25:20 GMT
+recorded_with: VCR 6.1.0
