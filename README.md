@@ -1,13 +1,13 @@
-## To query for users
- ``` 
+## To query for users this is the graphQL input - you can delete the word email if you don’t want that back in your query. 
+``` 
 {
   users {
     id
     email
   }
 }
-  ``` 
-##Expected Response
+``` 
+## Expected Response
  ``` 
 {
   "data": {
@@ -21,7 +21,7 @@
 }
   ``` 
 
-## To query for items
+## To query for all items - again, you can delete any attribute you don’t want. OR if you want a custom attribute like the total number of items in the  database you can ask us to create that and we can do it.
  ``` 
 {
   items {
@@ -31,7 +31,7 @@
   }
 }
   ``` 
-##Expected Response
+## Expected Response
  ``` 
 {
   "data": {
@@ -294,8 +294,9 @@
       address
       storeItems {
         id
-      	price
-    	}
+        price
+        itemName
+      }
     }
   }
 }
@@ -317,19 +318,23 @@
             "storeItems": [
               {
                 "id": "1",
-                "price": 41.67
+                "price": 41.67,
+                "itemName": "Sleek Linen Hat"
               },
               {
                 "id": "2",
-                "price": 80.41
+                "price": 80.41,
+                "itemName": "Durable Aluminum Coat"
               },
               {
                 "id": "3",
-                "price": 3.32
+                "price": 3.32,
+                "itemName": "Lightweight Plastic Wallet"
               },
               {
                 "id": "4",
-                "price": 11.95
+                "price": 11.95,
+                "itemName": "Intelligent Paper Lamp"
               }
             ]
           },
@@ -340,19 +345,23 @@
             "storeItems": [
               {
                 "id": "5",
-                "price": 5.26
+                "price": 5.26,
+                "itemName": "Sleek Linen Hat"
               },
               {
                 "id": "6",
-                "price": 13.81
+                "price": 13.81,
+                "itemName": "Durable Aluminum Coat"
               },
               {
                 "id": "7",
-                "price": 20.14
+                "price": 20.14,
+                "itemName": "Lightweight Plastic Wallet"
               },
               {
                 "id": "8",
-                "price": 79.5
+                "price": 79.5,
+                "itemName": "Intelligent Paper Lamp"
               }
             ]
           },
@@ -363,19 +372,23 @@
             "storeItems": [
               {
                 "id": "9",
-                "price": 67.85
+                "price": 67.85,
+                "itemName": "Intelligent Paper Lamp"
               },
               {
                 "id": "10",
-                "price": 22.39
+                "price": 22.39,
+                "itemName": "Durable Steel Chair"
               },
               {
                 "id": "11",
-                "price": 98.89
+                "price": 98.89,
+                "itemName": "Durable Plastic Gloves"
               },
               {
                 "id": "12",
-                "price": 7.16
+                "price": 7.16,
+                "itemName": "Practical Copper Lamp"
               }
             ]
           },
