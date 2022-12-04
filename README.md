@@ -265,4 +265,102 @@
   }
 }
 ```
+​
+# Create UserStore (When a user selects a store)
+```
+mutation {
+  createUserStore(input: {userId: 1, storeId: 1}) {
+    userStore {
+      id
+      userId
+      storeId
+    }
+    errors
+  }
+}
+```
+​
+## Expected Response
+```
+{
+  "data": {
+    "createUserStore": {
+      "userStore": {
+        "id": "4",
+        "userId": 1,
+        "storeId": 1
+      },
+      "errors": []
+    }
+  }
+}
+```
+​
+# Create UserStoreItem (When a user adds an item to their list)
+```
+mutation {
+  createUserStoreItem(input: {userId: 1, storeItemId: 1}) {
+    userStoreItem {
+      id
+      userId
+      storeItemId
+    }
+    errors
+  }
+}
+```
+## Expected response
+```
+{
+  "data": {
+    "createUserStoreItem": {
+      "userStoreItem": {
+        "id": "2",
+        "userId": 1,
+        "storeItemId": 1
+      },
+      "errors": []
+    }
+  }
+}
+```
+# DELETE UserStoreItem
+```
+mutation {
+  userStoreItem: deleteUserStoreItem(input: 
+    {id: 1}) {
+      id
+    }
+  }
+
+```
+## Example Response
+
+
+# Delete UserStore
+```
+
+mutation {
+  userStore: deleteUserStore(input: 
+    {id: 1}) {
+      id
+    }
+  }
+```
+
+## Example Response
+
+# PATCH UserStoreItem
+```
+mutation {
+  userStoreItem: updateUserStoreItem(input:
+  {id: 1, storeId: 1}) {
+    id
+    storeId
+    storeName
+  }
+}
+```
+
+## Example Response
 
