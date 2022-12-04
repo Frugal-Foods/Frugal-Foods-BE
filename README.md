@@ -5,8 +5,6 @@
     id
     name
     address
-    createdAt
-    updatedAt
   }
 }
 ```
@@ -65,7 +63,7 @@
     itemName - comes from item table and store items table (joins)
     storeName #comes from stores table & store items table (joins)
     photoUrl - comes from item table & store_item table (joins)
-    #ask FE if they need the item id
+    itemId
   }
 }
 ```
@@ -165,14 +163,15 @@
       address
       storeItems {
         id
-        price
+        price - will be constant
         itemName
         photoUrl
-        itemQuantity
+        quantity - user store item attribute
+        itemTotal - quantity * price
       }
-      totalPrice #at one particular store
+      storeTotalPrice # all items at one particular store
     }
-    totalPrice #your total price for all stores and all items
+    grandTotalPrice # all items at all stores and all items
   }
 }
 ```
@@ -299,7 +298,7 @@ mutation {
 # Create UserStoreItem (When a user adds an item to their list)
 ```
 mutation {
-  createUserStoreItem(input: {userId: 1, storeItemId: 1}) {
+  createUserStoreItem(input: {userId: 1, storeItemId: 1, quantity: 4}) {
     userStoreItem {
       id
       userId
@@ -352,15 +351,17 @@ mutation {
 
 # PATCH UserStoreItem
 ```
-mutation {
-  userStoreItem: updateUserStoreItem(input:
-  {id: 1, storeId: 1}) {
+mutation { #attributes are optional - you can choose one or the other or both.
+  userStoreItem: updateUserStoreItem(input: {id: 1, storeId: 1, quantity: 3}) {
     id
     storeId
     storeName
+    quantity
   }
 }
 ```
 
 ## Example Response
+
+tbd
 
