@@ -1,11 +1,11 @@
 #the only user
   the_only_user = User.create!(email: Faker::Internet.email)
   
-  store_1 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address)
-  store_2 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address)
-  store_3 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address)
-  store_4 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address)
-  store_5 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address)
+  store_1 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address, zipcode: "83749")
+  store_2 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address, zipcode: "83749")
+  store_3 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address, zipcode: "83749")
+  store_4 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address, zipcode: "83749")
+  store_5 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address, zipcode: "83749")
 
   item_1 = Item.create!(name: Faker::Commerce.product_name, photo_url: Faker::Internet.url)
   item_2 = Item.create!(name: Faker::Commerce.product_name, photo_url: Faker::Internet.url)

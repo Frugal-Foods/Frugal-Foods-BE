@@ -6,13 +6,5 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :price, Float, null: false
-    field :item_name, String, null: false
   end
-
-  def item_name
-    #How should this be changed to retrieve the item name
-    # Item.find(object.item_id).name
-    Item.first.name
-  end
-
 end
