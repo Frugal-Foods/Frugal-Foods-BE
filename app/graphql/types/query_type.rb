@@ -35,6 +35,5 @@ module Types
       store_item.item_name
     end
 
-
   end
 end
