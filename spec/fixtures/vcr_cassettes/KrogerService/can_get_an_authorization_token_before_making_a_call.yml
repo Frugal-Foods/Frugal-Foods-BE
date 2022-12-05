@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.kroger.com/v1/connect/oauth2/token?filter.limit=10&filter.radiusInMiles=10&grant_type=client_credentials
+    uri: https://api.kroger.com/v1/connect/oauth2/token?grant_type=client_credentials
     body:
       encoding: UTF-8
       string: ''
     headers:
       Authorization:
-      - Basic ZnJ1Z2FsZm9vZHMtNzgzODAzNjJjNDZjMDQ0ODg4ZGJkMzAwNzUzZTgxYTk4NjY5NTE1NzYzMDA5OTEyMTEyOnM2NGd1aTgtSEgwSmVQNEQ4YzRZUzA2eGo0Y3JMZHpwSFNuMjBSZWE=
+      - Basic ZnJ1Z2FseWZvb2RzLTU0ODIwMzY3MDJlOGEwMDAwNTE0MjExZmJlMjM1ZTQ3NzA2OTQ3ODcxMDkxOTczNDUzMTpkY2gwNGhSVEU1RlUwSkdLTU1odVNqc1RXdGo0NjZjVlVyWUJ4YXZY
       Content-Type:
       - application/x-www-form-urlencoded
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '941'
+      - '944'
       Server:
       - nginx
       Access-Control-Allow-Credentials:
@@ -43,21 +43,21 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Correlation-Id:
-      - akam_1670218305_43fcfce2-2a66-4db8-85af-9c539d84d778
+      - akam_1670261556_047e3251-d208-49d8-a673-87553a315ce1
       X-Frame-Options:
       - DENY
       X-Kroger-Proxy-Latency:
       - '1'
       X-Kroger-Upstream-Latency:
-      - '23'
+      - '17'
       X-Vcap-Request-Id:
-      - c2dfa1da-05cb-43c9-5562-c9dcdc28f892
+      - 329dda4b-f04e-4b22-4328-7f4152c8c80d
       X-Xss-Protection:
       - '1'
       Vary:
       - Accept-Encoding
       Akamai-Be-Grn:
-      - 0.04032417.1670218305.54bad78
+      - 0.a4d4c217.1670261556.eeb4aaf5
       Access-Control-Allow-Headers:
       - origin, x-requested-with, accept
       Access-Control-Max-Age:
@@ -65,22 +65,22 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, PUT, POST, DELETE
       Date:
-      - Mon, 05 Dec 2022 05:31:45 GMT
+      - Mon, 05 Dec 2022 17:32:36 GMT
       Connection:
       - keep-alive
       Server-Timing:
       - cdn-cache; desc=MISS
-      - edge; dur=23
-      - origin; dur=315
+      - edge; dur=208
+      - origin; dur=431
       Akamai-Grn:
-      - 0.560b3017.1670218305.2a1670a
+      - 0.0d903a17.1670261556.43bce781
       Strict-Transport-Security:
       - max-age=31536000
       Set-Cookie:
-      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=69~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=5e9ba6be404fb925b631c7ce201d8280;
+      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=16~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=8bf53a7971556c6bce0723309bde42c2;
         path=/; HttpOnly; Secure; SameSite=None
     body:
       encoding: UTF-8
-      string: '{"expires_in":1800,"access_token":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWxmb29kcy03ODM4MDM2MmM0NmMwNDQ4ODhkYmQzMDA3NTNlODFhOTg2Njk1MTU3NjMwMDk5MTIxMTIiLCJleHAiOjE2NzAyMjAxMDUsImlhdCI6MTY3MDIxODMwMCwiaXNzIjoiYXBpLmtyb2dlci5jb20iLCJzdWIiOiJhZjdlMjkzMC0yNDNkLTU5NDUtYjY1ZS1iNWNhMWU0YjFkMTgiLCJzY29wZSI6IiIsImF1dGhBdCI6MTY3MDIxODMwNTU0MDk3MDE4MSwiYXpwIjoiZnJ1Z2FsZm9vZHMtNzgzODAzNjJjNDZjMDQ0ODg4ZGJkMzAwNzUzZTgxYTk4NjY5NTE1NzYzMDA5OTEyMTEyIn0.AXQ_SrMy3KWrEQZ0M5qs72egZQsin9ndBWXXJ6DJPlmrIEcD4sRBejA4ndjheKu6Fp1_TSQFm-7Ml1OP69dOWR_Opah5h6m9OzCHH8ixUd4ppWvxCgQI149-SgUx1zvOh56Z4x1YFDfWMLVROoeKYMnM-snxt1s5HZew-c9vYgFaGxA3Gm_lHh2JODZPLGxNVRFZS2OXes4l351lCCyef7K0z19EP97kjVOYoImOeQ7_n3_JPGu_kSFxWADaRnD2l6dArgfoIOK8R2jnCvadDgthfVM_pmlM8dUP3yGt768xSWxGkiY7o-TXtL7jgrnvABRot0gDZzm1Bv-3r0k20w","token_type":"bearer"}'
-  recorded_at: Mon, 05 Dec 2022 05:31:45 GMT
+      string: '{"expires_in":1800,"access_token":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWx5Zm9vZHMtNTQ4MjAzNjcwMmU4YTAwMDA1MTQyMTFmYmUyMzVlNDc3MDY5NDc4NzEwOTE5NzM0NTMxIiwiZXhwIjoxNjcwMjYzMzU2LCJpYXQiOjE2NzAyNjE1NTEsImlzcyI6ImFwaS5rcm9nZXIuY29tIiwic3ViIjoiZTc0OGI1NmUtYTcwZC01YWMwLThiNWEtNTYyN2IwOTIxODE3Iiwic2NvcGUiOiIiLCJhdXRoQXQiOjE2NzAyNjE1NTYyNzkwNzYxNTEsImF6cCI6ImZydWdhbHlmb29kcy01NDgyMDM2NzAyZThhMDAwMDUxNDIxMWZiZTIzNWU0NzcwNjk0Nzg3MTA5MTk3MzQ1MzEifQ.OQpYCwiSp1juIkArZ2dw6gosX9nE1SikQSWTRBwW2tTHcILQQR7L1IjBQsMWi9UpKtLWaZ6GVvJiQRE12SbedL9SM8iD5CdopegZN8OGWqI3t3xyybMZBkKKBXGKo7Xw6dCFeqSl2D83biuAXtz4-NbSlOaslddrgPNxrR7IlHUEYPQ3stijwovAoFB5sVS8v2yGANckxcA4pQtY95UXPn9-MHAzmHmwuaVjcGH9fBhW3z8OdKjAOyuPU_aYAfRVntPeuMjtsaxj4UNB1Dwyn5ehADPQez6L9GPNxPh4rZTNg8HIuJr1TYs6qzVGf8PhzC3OLYP6CGHxU-bf9Y2WGg","token_type":"bearer"}'
+  recorded_at: Mon, 05 Dec 2022 17:32:36 GMT
 recorded_with: VCR 6.1.0
