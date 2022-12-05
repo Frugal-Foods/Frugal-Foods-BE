@@ -1,7 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe KrogerService do
-  it 'returns Kroger grocery stores near a given zipcode', :vcr do
+  it 'gets an authorization token before making the zip code call', :vcr do
+    auth_token = KrogerService.get_authorized
+    require 'pry' ; binding.pry
+    expect(auth_token).to be_an(Object)
+  end
+
+  xit 'returns Kroger grocery stores near a given zipcode', :vcr do
     zipcode = '80108'
     search = KrogerService.get_kroger_stores(zipcode)
 
