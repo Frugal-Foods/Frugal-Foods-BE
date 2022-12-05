@@ -1,6 +1,6 @@
 class Mutations::CreateUserStore < Mutations::BaseMutation
-  argument :store_id, Integer, required: true
-  argument :user_id, Integer, required: true
+  argument :store_id, ID, required: true
+  argument :user_id, ID, required: true
 
   field :user_store, Types::UserStoreType, null: false
   field :errors, [String], null: false
@@ -16,7 +16,7 @@ class Mutations::CreateUserStore < Mutations::BaseMutation
     else
       {
         user: nil,
-        errors: user.errors.full_messages
+        errors: user_store.errors.full_messages
       }
     end
   end
