@@ -11,31 +11,30 @@ class KrogerService
         'Authorization': "Basic #{auth}",
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json'
+      },
+      params: {
+        'filter.radiusInMiles': '10',
+        'filter.limit': '10'
       }
     )
   end
 
-  def self.get_authorized
-    response = auth_conn.post("/v1/connect/oauth2/token") do |faraday|
+  def self.authorize
+    response = auth_conn.post('/v1/connect/oauth2/token') do |faraday|
       faraday.params['grant_type'] = 'client_credentials'
     end
-    JSON.parse(response.body)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
-  
-  # def self.get_kroger_stores(zipcode)
-  #   response = conn.get("/locations?filter.zipCode.near=#{zipcode}")
-  #   parse(response)
-  # end
-  # def self.conn
-  #   Faraday.new('https://api.kroger.com/v1') do |faraday|
-  #     faraday.params['filter.radiusInMiles'] = '10'
-  #     faraday.params['filter.limit'] = '10'
-  #   end
-  # end
+  def self.get_kroger_stores(zipcode)
+    response = auth_conn.get("/v1/locations?filter.zipCode.near=#{zipcode}") do |faraday|
+      faraday.headers['Authorization'] = "Bearer #{authorize[:access_token]}"
+      faraday.params['filter.zipCode.near'] = zipcode
+    end
+    parse(response)
+  end
 
   def self.parse(response)
     JSON.parse(response.body, symbolize_names: true)
   end
-
 end
