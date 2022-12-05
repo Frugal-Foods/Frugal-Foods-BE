@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kroger.com/locations?filter.limit=10&filter.radiusInMiles=10&filter.zipCode.near=80108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '9'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Correlation-Id:
+      - akam_1670198781_49e46bc1-6b02-43af-99bc-e83777d7d8bd
+      X-Kong-Response-Latency:
+      - '1'
+      X-Vcap-Request-Id:
+      - a2407568-13f1-4a40-468e-4b5fcaae712e
+      Date:
+      - Mon, 05 Dec 2022 00:06:21 GMT
+      Connection:
+      - keep-alive
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=36
+      - origin; dur=31
+      Akamai-Grn:
+      - 0.560b3017.1670198781.20a2ce3
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - akaalb_Digital_ALB_API=~op=KT_CT_API_PROD_KCVG_ERPs:api-prod-default-alb|~rv=55~m=api-prod-default-alb:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=37b78edf810b67886a96a4b8faa91182;
+        path=/; HttpOnly; Secure; SameSite=None
+    body:
+      encoding: UTF-8
+      string: Not Found
+  recorded_at: Mon, 05 Dec 2022 00:06:21 GMT
+recorded_with: VCR 6.1.0

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe KrogerService do
-  it 'returns Kroger grocery stores near a given zipcode' do
+  it 'returns Kroger grocery stores near a given zipcode', :vcr do
     zipcode = '80108'
     search = KrogerService.get_kroger_stores(zipcode)
 
