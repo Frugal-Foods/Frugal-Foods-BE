@@ -15,13 +15,13 @@ namespace :json_load do
   kroger_stores_80108[:data].each do |kroger_store|
     Store.create!(name: kroger_store[:name],
                   address: full_address(kroger_store[:address]),
-                  zipcode: kroger_store[:address][:zipCode])
+                  zipcode: "80108") #We hard coded this for the prototype, change to kroger_store[:address][:zipCode] to get a list NEAR 80108
   end
 
   kroger_stores_80206[:data].each do |kroger_store|
     Store.create!(name: kroger_store[:name],
                   address: full_address(kroger_store[:address]),
-                  zipcode: kroger_store[:address][:zipCode])
+                  zipcode: "80206") #We hard coded this for the prototype, change to kroger_store[:address][:zipCode] to get a list NEAR 80206
   end
 
     ActiveRecord::Base.connection.reset_pk_sequence!('stores')
