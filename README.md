@@ -11,45 +11,60 @@
 ## Expected Response
 ```
 {
-  "data": {
-    "stores": [
-      {
-        "id": "1",
-        "name": "Jast, Upton and Barrows",
-        "address": "Suite 456 823 Patricia Garden, East Corrina, CT 64693",
-        "createdAt": "2022-12-03T19:13:05Z",
-        "updatedAt": "2022-12-03T19:13:05Z"
-      },
-      {
-        "id": "2",
-        "name": "Sauer-Stoltenberg",
-        "address": "935 Hamill Freeway, Lake Tyishachester, ID 94653",
-        "createdAt": "2022-12-03T19:13:05Z",
-        "updatedAt": "2022-12-03T19:13:05Z"
-      },
-      {
-        "id": "3",
-        "name": "Thompson, Harber and Braun",
-        "address": "Apt. 975 8157 Carmelo Stream, Port Willis, AR 20248",
-        "createdAt": "2022-12-03T19:13:05Z",
-        "updatedAt": "2022-12-03T19:13:05Z"
-      },
-      {
-        "id": "4",
-        "name": "Carroll Group",
-        "address": "Suite 553 379 Tyron Forest, East Charlott, AK 68271",
-        "createdAt": "2022-12-03T19:13:05Z",
-        "updatedAt": "2022-12-03T19:13:05Z"
-      },
-      {
-        "id": "5",
-        "name": "Ryan-Anderson",
-        "address": "16435 O'Hara Gardens, Boyerview, LA 07350",
-        "createdAt": "2022-12-03T19:13:05Z",
-        "updatedAt": "2022-12-03T19:13:05Z"
-      }
-    ]
-  }
+    "data": {
+        "stores": [
+            {
+                "id": "1",
+                "name": "The Little Clinic - 125 Castle Rock Clinic",
+                "address": "5544 Promenade Pkwy, Castle Rock, CO, 80108"
+            },
+            {
+                "id": "2",
+                "name": "Loaf 'N Jug",
+                "address": "4901 North Castleton Dr., Castle Rock, CO, 80109"
+            },
+            {
+                "id": "3",
+                "name": "King Soopers Marketplace - Castle Rock",
+                "address": "5544 Promenade Parkway, Castle Rock, CO, 80108"
+            },
+            {
+                "id": "4",
+                "name": "King Soopers - Castle Rock",
+                "address": "7284 Lagae Rd, Castle Pines, CO, 80108"
+            },
+            {
+                "id": "5",
+                "name": "King Soopers - Castle Rock",
+                "address": "750 N Ridge Rd, Castle Rock, CO, 80104"
+            },
+            {
+                "id": "6",
+                "name": "The Little Clinic - 075 Parker Clinic",
+                "address": "12959 S Parker Rd, Parker, CO, 80134"
+            },
+            {
+                "id": "7",
+                "name": "King Soopers - Parker",
+                "address": "12959 S Parker Rd, Parker, CO, 80134"
+            },
+            {
+                "id": "8",
+                "name": "King Soopers - Highlands Ranch",
+                "address": "4000 Red Cedar Dr, Highlands Ranch, CO, 80126"
+            },
+            {
+                "id": "9",
+                "name": "King Soopers - Parker",
+                "address": "17031 Lincoln Ave, Parker, CO, 80134"
+            },
+            {
+                "id": "10",
+                "name": "King Soopers - VILLAGE CENTER",
+                "address": "9551 S University Blvd, Highlands Ranch, CO, 80126"
+            }
+        ]
+    }
 }
 ```
 
