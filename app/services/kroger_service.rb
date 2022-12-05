@@ -3,6 +3,16 @@ require 'json'
 
 class KrogerService
 
+  def self.get_kroger_stores(zipcode)
+    response = auth_conn.get("/v1/locations?filter.zipCode.near=#{zipcode}") do |faraday|
+      faraday.headers['Authorization'] = "Bearer #{authorize[:access_token]}"
+      faraday.params['filter.zipCode.near'] = zipcode
+    end
+    parse(response)
+  end
+
+  private
+
   def self.auth_conn
     auth = Base64.strict_encode64("#{ENV['kroger_client_id']}:#{ENV['kroger_client_secret']}")
     Faraday.new(
@@ -24,14 +34,6 @@ class KrogerService
       faraday.params['grant_type'] = 'client_credentials'
     end
     JSON.parse(response.body, symbolize_names: true)
-  end
-
-  def self.get_kroger_stores(zipcode)
-    response = auth_conn.get("/v1/locations?filter.zipCode.near=#{zipcode}") do |faraday|
-      faraday.headers['Authorization'] = "Bearer #{authorize[:access_token]}"
-      faraday.params['filter.zipCode.near'] = zipcode
-    end
-    parse(response)
   end
 
   def self.parse(response)

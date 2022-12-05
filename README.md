@@ -155,7 +155,25 @@
 
 ## User Store Items
 ```
-
+{
+  userStoreItems(user: id) {
+    stores {
+      id
+      name
+      address
+      storeItems {
+        id
+        price - will be constant
+        itemName
+        photoUrl
+        quantity - user store item attribute
+        itemTotal - quantity * price
+      }
+      storeTotalPrice # all items at one particular store
+    }
+    grandTotalPrice # all items at all stores and all items
+  }
+}
 ```
 ## Expected return - this is not accurate at the moment - need to change after we find the query above
 
