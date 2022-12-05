@@ -7,6 +7,8 @@ class YelpService
     parse(response)
   end
 
+  private
+  
   def self.conn
     Faraday.new('https://api.yelp.com') do |faraday|
       faraday.params['term'] = 'target'
