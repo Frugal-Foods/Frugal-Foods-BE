@@ -7,8 +7,13 @@ class KrogerService
     response = auth_conn.get("/v1/locations?filter.zipCode.near=#{zipcode}") do |faraday|
       faraday.headers['Authorization'] = "Bearer #{authorize[:access_token]}"
       faraday.params['filter.zipCode.near'] = zipcode
+      faraday.params['filter.radiusInMiles'] = '10'
+      faraday.params['filter.limit'] = '10'
     end
     parse(response)
+  end
+
+  def self.get_items(store_id:, search_term:)
   end
 
   private
@@ -21,10 +26,6 @@ class KrogerService
         'Authorization': "Basic #{auth}",
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'application/json'
-      },
-      params: {
-        'filter.radiusInMiles': '10',
-        'filter.limit': '10'
       }
     )
   end
