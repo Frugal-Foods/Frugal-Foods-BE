@@ -43,21 +43,21 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Correlation-Id:
-      - akam_1670260826_73da7897-e668-420e-87e1-c66734d0c77c
+      - akam_1670261556_047e3251-d208-49d8-a673-87553a315ce1
       X-Frame-Options:
       - DENY
       X-Kroger-Proxy-Latency:
       - '1'
       X-Kroger-Upstream-Latency:
-      - '18'
+      - '17'
       X-Vcap-Request-Id:
-      - 61d0b708-38af-4362-7589-402686533549
+      - 329dda4b-f04e-4b22-4328-7f4152c8c80d
       X-Xss-Protection:
       - '1'
       Vary:
       - Accept-Encoding
       Akamai-Be-Grn:
-      - 0.04032417.1670260826.6a38282
+      - 0.a4d4c217.1670261556.eeb4aaf5
       Access-Control-Allow-Headers:
       - origin, x-requested-with, accept
       Access-Control-Max-Age:
@@ -65,22 +65,22 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, PUT, POST, DELETE
       Date:
-      - Mon, 05 Dec 2022 17:20:26 GMT
+      - Mon, 05 Dec 2022 17:32:36 GMT
       Connection:
       - keep-alive
       Server-Timing:
       - cdn-cache; desc=MISS
-      - edge; dur=19
-      - origin; dur=209
+      - edge; dur=208
+      - origin; dur=431
       Akamai-Grn:
-      - 0.07903a17.1670260826.284bc6a4
+      - 0.0d903a17.1670261556.43bce781
       Strict-Transport-Security:
       - max-age=31536000
       Set-Cookie:
-      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=1~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=c81579fa7543c6869fabd7c074658af2;
+      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=16~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=8bf53a7971556c6bce0723309bde42c2;
         path=/; HttpOnly; Secure; SameSite=None
     body:
       encoding: UTF-8
-      string: '{"expires_in":1800,"access_token":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWx5Zm9vZHMtNTQ4MjAzNjcwMmU4YTAwMDA1MTQyMTFmYmUyMzVlNDc3MDY5NDc4NzEwOTE5NzM0NTMxIiwiZXhwIjoxNjcwMjYyNjI2LCJpYXQiOjE2NzAyNjA4MjEsImlzcyI6ImFwaS5rcm9nZXIuY29tIiwic3ViIjoiZTc0OGI1NmUtYTcwZC01YWMwLThiNWEtNTYyN2IwOTIxODE3Iiwic2NvcGUiOiIiLCJhdXRoQXQiOjE2NzAyNjA4MjY2OTEzMjE1MzQsImF6cCI6ImZydWdhbHlmb29kcy01NDgyMDM2NzAyZThhMDAwMDUxNDIxMWZiZTIzNWU0NzcwNjk0Nzg3MTA5MTk3MzQ1MzEifQ.HwqOzNAd05WVQFN4hDkKHdrd11exvb4bCsDihmgTepctfbjEH-QJ8a3WWt7lJ9kJ4E8tpoTTgUkXFEoljwWJUUysl-QEpoyecc9e2nt5Ie6uAI2CSOZJdMSx0ELkIdxv7ioSbyjB1rGyIEJeFlYtR28WpwMoFo9fhQw0GzwekFatd74x9h--SeLljY-vqvCJ3wUMau8gdvt0h_FyTCwlX3xqzA29ANAcBuaurBUpb5QuepNo3JWN_k6wygNWss7p2pShO0bQgkKOHpylMVY6zx9CJAf8o2-CPu5KoN1Hqk31v8LGZZh4TGAT6Dxg9_4SSQkGvSJP_j56_34HrHkF9Q","token_type":"bearer"}'
-  recorded_at: Mon, 05 Dec 2022 17:20:26 GMT
+      string: '{"expires_in":1800,"access_token":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWx5Zm9vZHMtNTQ4MjAzNjcwMmU4YTAwMDA1MTQyMTFmYmUyMzVlNDc3MDY5NDc4NzEwOTE5NzM0NTMxIiwiZXhwIjoxNjcwMjYzMzU2LCJpYXQiOjE2NzAyNjE1NTEsImlzcyI6ImFwaS5rcm9nZXIuY29tIiwic3ViIjoiZTc0OGI1NmUtYTcwZC01YWMwLThiNWEtNTYyN2IwOTIxODE3Iiwic2NvcGUiOiIiLCJhdXRoQXQiOjE2NzAyNjE1NTYyNzkwNzYxNTEsImF6cCI6ImZydWdhbHlmb29kcy01NDgyMDM2NzAyZThhMDAwMDUxNDIxMWZiZTIzNWU0NzcwNjk0Nzg3MTA5MTk3MzQ1MzEifQ.OQpYCwiSp1juIkArZ2dw6gosX9nE1SikQSWTRBwW2tTHcILQQR7L1IjBQsMWi9UpKtLWaZ6GVvJiQRE12SbedL9SM8iD5CdopegZN8OGWqI3t3xyybMZBkKKBXGKo7Xw6dCFeqSl2D83biuAXtz4-NbSlOaslddrgPNxrR7IlHUEYPQ3stijwovAoFB5sVS8v2yGANckxcA4pQtY95UXPn9-MHAzmHmwuaVjcGH9fBhW3z8OdKjAOyuPU_aYAfRVntPeuMjtsaxj4UNB1Dwyn5ehADPQez6L9GPNxPh4rZTNg8HIuJr1TYs6qzVGf8PhzC3OLYP6CGHxU-bf9Y2WGg","token_type":"bearer"}'
+  recorded_at: Mon, 05 Dec 2022 17:32:36 GMT
 recorded_with: VCR 6.1.0

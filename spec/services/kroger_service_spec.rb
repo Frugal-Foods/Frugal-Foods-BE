@@ -51,10 +51,10 @@ RSpec.describe KrogerService do
       expect(item[:images][0][:sizes][3][:url]).to be_a String
       expect(item).to have_key :items
       expect(item[:items]).to be_an Array
-      expect(items[0][:price][:regular]).to be_a Float
-      expect(items[0][:price][:promo]).to be_a Float
-      expect(items[0]).to have_key :size
-      expect(items[0][:size]).to be_a String
+      expect(item[:items][0][:price][:regular]).to be_a Float
+      expect(item[:items][0][:price]).to have_key :promo
+      expect(item[:items][0]).to have_key :size
+      expect(item[:items][0][:size]).to be_a String
     end
   end
 end
