@@ -9,6 +9,9 @@ module Types
     field :item_name, [Types::StoreItemType], null: true do
       argument :store_item, String, required: true
     end
+    field :user_store_items, [Types::UserStoreItemType], null: true do
+      argument :user_id, ID, required: true
+    end
 
     def stores(zipcode:)
       Store.where(zipcode: zipcode)
@@ -21,6 +24,5 @@ module Types
     def item_name(store_item)
       store_item.item_name
     end
-
   end
 end
