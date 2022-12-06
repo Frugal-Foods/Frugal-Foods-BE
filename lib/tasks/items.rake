@@ -9,7 +9,7 @@ namespace :json_load do
       kroger_items4 = JSON.parse(File.read('./db/data/items/1-80206_king_soopers.json'), symbolize_names: true)
       kroger_items5 = JSON.parse(File.read('./db/data/items/2-80206_king_soopers.json'), symbolize_names: true)
       kroger_items6 = JSON.parse(File.read('./db/data/items/3-80206_king_soopers.json'), symbolize_names: true)
-      # Kroger files currently contain 30 items (from search: produce, snack, dairy)
+      # Kroger files each currently contain 50 items (from search: produce, snack, dairy, frozen, deli)
 
       def self.target_stores
         Store.where(name: 'Target')
