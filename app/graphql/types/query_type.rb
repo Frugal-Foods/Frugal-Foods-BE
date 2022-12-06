@@ -24,5 +24,13 @@ module Types
     def item_name(store_item)
       store_item.item_name
     end
+
+    field :items, [Types::ItemType], null: true do
+      argument :search, String, required: true
+    end
+
+    def items(search:)
+      Item.where("name ILIKE ?", search)      
+    end
   end
 end

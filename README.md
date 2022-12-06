@@ -106,100 +106,69 @@ The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. A
 }
 ```
 
-## Stores Items 
+## GET Stores Items 
 ```
-{
-  storeItems(search: "bananas") {
-    id - comes from store items table
-    price - comes from store items table
-    storeId - comes from stores table
-    itemName - comes from item table and store items table (joins)
-    storeName #comes from stores table & store items table (joins)
-    photoUrl - comes from item table & store_item table (joins)
-    itemId
+query storeItems {
+  items(search: "bananas") {
+    id
+    name
+    photoUrl
+    stores {
+      name
+      id
+      storeProducts(search: "bananas") {
+        id
+        storeId
+        price
+      }
+    }
   }
 }
+
 ```
-## Expected Return - will need to change this later after we do query above
+## Expected Return
 ```
 {
   "data": {
-    "stores": [
+    "items": [
       {
         "id": "1",
-        "name": "Jast, Upton and Barrows",
-        "items": [
+        "name": "bananas",
+        "photoUrl": "http://quigley.info/heath_bashirian",
+        "stores": [
           {
+            "name": "Fisher-Block",
             "id": "1",
-            "name": "Sleek Linen Hat"
+            "storeProducts": [
+              {
+                "id": "1",
+                "storeId": 1,
+                "price": 29.95
+              },
+              {
+                "id": "5",
+                "storeId": 2,
+                "price": 7.04
+              }
+            ]
           },
           {
+            "name": "Ebert Group",
             "id": "2",
-            "name": "Durable Aluminum Coat"
-          },
-          {
-            "id": "3",
-            "name": "Lightweight Plastic Wallet"
-          },
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
+            "storeProducts": [
+              {
+                "id": "1",
+                "storeId": 1,
+                "price": 29.95
+              },
+              {
+                "id": "5",
+                "storeId": 2,
+                "price": 7.04
+              }
+            ]
           }
         ]
-      },
-      {
-        "id": "2",
-        "name": "Sauer-Stoltenberg",
-        "items": [
-          {
-            "id": "1",
-            "name": "Sleek Linen Hat"
-          },
-          {
-            "id": "2",
-            "name": "Durable Aluminum Coat"
-          },
-          {
-            "id": "3",
-            "name": "Lightweight Plastic Wallet"
-          },
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "name": "Thompson, Harber and Braun",
-        "items": [
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          },
-          {
-            "id": "5",
-            "name": "Durable Steel Chair"
-          },
-          {
-            "id": "6",
-            "name": "Durable Plastic Gloves"
-          },
-          {
-            "id": "7",
-            "name": "Practical Copper Lamp"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "name": "Carroll Group",
-        "items": []
-      },
-      {
-        "id": "5",
-        "name": "Ryan-Anderson",
-        "items": []
       }
     ]
   }
