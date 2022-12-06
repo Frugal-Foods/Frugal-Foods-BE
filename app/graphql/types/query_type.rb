@@ -17,8 +17,8 @@ module Types
       Store.where(zipcode: zipcode)
     end
 
-    def store_items #this will need to edited later according to the endpoints ## User Store Items & store items
-      UserStoreItem.all
+    def user_store_items(user_id:)
+      UserStoreItem.where(user_id: user_id)
     end
 
     def item_name(store_item)

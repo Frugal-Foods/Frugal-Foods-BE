@@ -61,8 +61,8 @@ storeitem3 = StoreItem.create(store_id: store3.id, item_id: item1.id, price: Fak
 storeitem4 = StoreItem.create(store_id: store2.id, item_id: item2.id, price: Faker::Commerce.price(range: 0..10.0))
 storeitem5 = StoreItem.create(store_id: store3.id, item_id: item3.id, price: Faker::Commerce.price(range: 0..10.0))
 
-UserStoreItem.create(user_id: user.id, store_item_id: storeitem1.id)
-UserStoreItem.create(user_id: user.id, store_item_id: storeitem4.id)
+UserStoreItem.create(user_id: user.id, store_item_id: storeitem1.id, quantity: 2)
+UserStoreItem.create(user_id: user.id, store_item_id: storeitem4.id, quantity: 5)
 
 
 
