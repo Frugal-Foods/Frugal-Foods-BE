@@ -1,41 +1,20 @@
 namespace :json_load do
-    desc "Read JSON File of Items"
+  desc "Read JSON File of Items"
     task items: :environment do
-      target_items = JSON.parse(File.read('./db/data/target_items.json', symbolize_names: true)
+    target_items = JSON.parse(File.read('./db/data/items/target_items.json'), symbolize_names: true)
+    # This file only contains the first 28 items (there are 50 pages of data to potentially use)
 
-  
-    def kroger_full_address(store)
-      "#{store[:addressLine1]}, #{store[:city]}, #{store[:state]}, #{store[:zipCode]}"
+    def self.target_stores
+      Store.where(name: 'Target')
     end
-    
-    kroger_stores_80108[:data].each do |kroger_store|
-      Store.create!(name: kroger_store[:name],
-        address: kroger_full_address(kroger_store[:address]),
-        zipcode: "80108") #This zip code is not the store's zipcode. It is the zipcode of the search. 
+
+    target_items[:category_results].each do |item|
+      Item.create!(name: item[:product][:title], photo_url: item[:product][:main_image])
+      target_stores.each do |store|
+        StoreItem.create!(item_id: Item.last.id, store_id: store.id, price: item[:offers][:primary][:price])
+      end
     end
-      
-    kroger_stores_80206[:data].each do |kroger_store|
-      Store.create!(name: kroger_store[:name],
-        address: kroger_full_address(kroger_store[:address]),
-        zipcode: "80206") #This zip code is not the store's zipcode. It is the zipcode of the search. 
+
+    ActiveRecord::Base.connection.reset_pk_sequence!('items')
     end
-        
-    def target_full_address(store)
-      "#{store[:address1]}, #{store[:city]}, #{store[:state]}, #{store[:zip_code]}"
-    end
-  
-    target_stores_80108[:businesses].each do |target_store|
-      Store.create!(name: target_store[:name],
-                    address: target_full_address(target_store[:location]),
-                    zipcode: "80108")
-    end
-  
-    target_stores_80206[:businesses].each do |target_store|
-      Store.create!(name: target_store[:name],
-                    address: target_full_address(target_store[:location]),
-                    zipcode: "80108")
-    end
-  
-      ActiveRecord::Base.connection.reset_pk_sequence!('stores')
-    end
-  end
+end
