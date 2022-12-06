@@ -1,1 +1,148 @@
-{"businesses": [{"id": "ZCTCd8NdINi9zSjR8lxuAg", "alias": "target-glendale-8", "name": "Target", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/6E48yPOZhmpsx9sjBc4k4w/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/target-glendale-8?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 225, "categories": [{"alias": "deptstores", "title": "Department Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics", "title": "Electronics"}], "rating": 3.5, "coordinates": {"latitude": 39.708204, "longitude": -104.937705}, "transactions": [], "price": "$$", "location": {"address1": "4301 E Virginia Ave", "address2": "", "address3": "", "city": "Glendale", "zip_code": "80246", "country": "US", "state": "CO", "display_address": ["4301 E Virginia Ave", "Glendale, CO 80246"]}, "phone": "+13032090182", "display_phone": "(303) 209-0182", "distance": 2675.6918731907544}, {"id": "txy-VwVMGwYhSxUbGy-XKg", "alias": "target-denver-13", "name": "Target", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6zUWgEsqMvUO7F-rCAaF7w/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/target-denver-13?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 49, "categories": [{"alias": "deptstores", "title": "Department Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics", "title": "Electronics"}], "rating": 3.0, "coordinates": {"latitude": 39.745186, "longitude": -104.99177}, "transactions": [], "price": "$$", "location": {"address1": "1600 California St", "address2": "", "address3": null, "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address": ["1600 California St", "Denver, CO 80202"]}, "phone": "+13032227520", "display_phone": "(303) 222-7520", "distance": 3766.7535666011117}, {"id": "dVMEtmUM1I_E8SvKGKZ2NQ", "alias": "target-denver-17", "name": "Target", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Xeus0C1Om-sXWi8h3nUkhw/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/target-denver-17?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 7, "categories": [{"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics", "title": "Electronics"}, {"alias": "deptstores", "title": "Department Stores"}], "rating": 4.5, "coordinates": {"latitude": 39.71816522673769, "longitude": -104.9039918001669}, "transactions": [], "location": {"address1": "93 N Quebec St", "address2": "", "address3": null, "city": "Denver", "zip_code": "80230", "country": "US", "state": "CO", "display_address": ["93 N Quebec St", "Denver, CO 80230"]}, "phone": "+13032185430", "display_phone": "(303) 218-5430", "distance": 4360.780939988187}, {"id": "Xvbu4rec1DRlbygHgoI4ew", "alias": "target-denver-16", "name": "Target", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/g5xxSBQrazMPOpWS6Y3uVA/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/target-denver-16?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 5, "categories": [{"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics", "title": "Electronics"}, {"alias": "deptstores", "title": "Department Stores"}], "rating": 4.0, "coordinates": {"latitude": 39.67082, "longitude": -104.939056}, "transactions": [], "location": {"address1": "2490 S Colorado Blvd", "address2": "", "address3": null, "city": "Denver", "zip_code": "80222", "country": "US", "state": "CO", "display_address": ["2490 S Colorado Blvd", "Denver, CO 80222"]}, "phone": "+13032185745", "display_phone": "(303) 218-5745", "distance": 6602.629583431501}, {"id": "h_DjQpEDPhJyR-q3JDce5w", "alias": "target-denver-6", "name": "Target", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/6LZf89eQnYvNSDMnpEYTQw/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/target-denver-6?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 111, "categories": [{"alias": "deptstores", "title": "Department Stores"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "electronics", "title": "Electronics"}], "rating": 2.5, "coordinates": {"latitude": 39.78392, "longitude": -104.895}, "transactions": [], "price": "$$", "location": {"address1": "7930 Northfield Blvd", "address2": "", "address3": "", "city": "Denver", "zip_code": "80238", "country": "US", "state": "CO", "display_address": ["7930 Northfield Blvd", "Denver, CO 80238"]}, "phone": "+13032098720", "display_phone": "(303) 209-8720", "distance": 7840.84087454386}, {"id": "wEM_jXvvJ3s106_te3AzbA", "alias": "homebody-denver", "name": "Homebody", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_4RAj5bVpEhPj5cbBmddvw/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/homebody-denver?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 6, "categories": [{"alias": "homedecor", "title": "Home Decor"}, {"alias": "furniture", "title": "Furniture Stores"}, {"alias": "accessories", "title": "Accessories"}], "rating": 5.0, "coordinates": {"latitude": 39.725305, "longitude": -104.952558}, "transactions": [], "location": {"address1": "2920 E 6th Ave", "address2": null, "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["2920 E 6th Ave", "Denver, CO 80206"]}, "phone": "+17207390860", "display_phone": "(720) 739-0860", "distance": 422.4093738331284}, {"id": "N0NMuyMKtT6XIcUax4I06A", "alias": "pure-barre-denver-5", "name": "Pure Barre", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/gZBacmWfyJ1hU63p45vedA/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/pure-barre-denver-5?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 41, "categories": [{"alias": "barreclasses", "title": "Barre Classes"}, {"alias": "womenscloth", "title": "Women's Clothing"}, {"alias": "cardioclasses", "title": "Cardio Classes"}], "rating": 4.0, "coordinates": {"latitude": 39.7198997464355, "longitude": -104.9598865}, "transactions": [], "location": {"address1": "201 University Blvd", "address2": "Ste 107", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["201 University Blvd", "Ste 107", "Denver, CO 80206"]}, "phone": "+17202761493", "display_phone": "(720) 276-1493", "distance": 1197.3651438442266}, {"id": "ThJbPoqqjt9K2bOm7riS1w", "alias": "coloradical-denver-2", "name": "Coloradical", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bpsY-4WkQIlqh4Qf9Gp0TA/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/coloradical-denver-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 16, "categories": [{"alias": "menscloth", "title": "Men's Clothing"}, {"alias": "womenscloth", "title": "Women's Clothing"}, {"alias": "souvenirs", "title": "Souvenir Shops"}], "rating": 5.0, "coordinates": {"latitude": 39.740441, "longitude": -104.950954}, "transactions": [], "price": "$$", "location": {"address1": "3109 E Colfax Ave", "address2": "", "address3": "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO", "display_address": ["3109 E Colfax Ave", "Denver, CO 80203"]}, "phone": "", "display_phone": "", "distance": 1251.1765026912299}, {"id": "q0q8VMW_EipQi_he2iNhYA", "alias": "goodwill-store-and-donation-center-archer-denver", "name": "Goodwill Store and Donation Center - Archer", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/mLAdRxaeQbMDQQ3itlYgng/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/goodwill-store-and-donation-center-archer-denver?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 156, "categories": [{"alias": "vintage", "title": "Used, Vintage & Consignment"}, {"alias": "thrift_stores", "title": "Thrift Stores"}], "rating": 4.0, "coordinates": {"latitude": 39.715902, "longitude": -104.988438}, "transactions": [], "price": "$", "location": {"address1": "21 S Broadway", "address2": "", "address3": "", "city": "Denver", "zip_code": "80209", "country": "US", "state": "CO", "display_address": ["21 S Broadway", "Denver, CO 80209"]}, "phone": "+13037221440", "display_phone": "(303) 722-1440", "distance": 3381.1076702787814}, {"id": "q-UmrAUXDwbFEKXp9SNz0Q", "alias": "macys-denver-8", "name": "Macy's", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/HMptnarOLjJkgOqlSKUKGQ/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/macys-denver-8?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 92, "categories": [{"alias": "deptstores", "title": "Department Stores"}, {"alias": "menscloth", "title": "Men's Clothing"}, {"alias": "womenscloth", "title": "Women's Clothing"}], "rating": 2.5, "coordinates": {"latitude": 39.716932, "longitude": -104.956391}, "transactions": [], "price": "$$", "location": {"address1": "2500 E 1st Ave", "address2": "", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["2500 E 1st Ave", "Denver, CO 80206"]}, "phone": "+13033902200", "display_phone": "(303) 390-2200", "distance": 1400.062222552384}, {"id": "fcjd9Ez8oGepw333mJBoUw", "alias": "t-j-maxx-denver-3", "name": "T J Maxx", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HkA1zMWMp6E4HaiNvNjS4A/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/t-j-maxx-denver-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 48, "categories": [{"alias": "deptstores", "title": "Department Stores"}], "rating": 3.0, "coordinates": {"latitude": 39.74532, "longitude": -104.99261}, "transactions": [], "price": "$$", "location": {"address1": "710 16th St", "address2": null, "address3": "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address": ["710 16th St", "Denver, CO 80202"]}, "phone": "+13038926020", "display_phone": "(303) 892-6020", "distance": 3839.952286005707}, {"id": "dwuO8mzsMqOGKFfZ6YPMDA", "alias": "world-martial-arts-supply-and-gifts-denver", "name": "World Martial arts supply and gifts", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/0A1M3kFXPqwp2c72du0DaQ/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/world-martial-arts-supply-and-gifts-denver?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 2, "categories": [{"alias": "sportswear", "title": "Sports Wear"}, {"alias": "karate", "title": "Karate"}, {"alias": "kickboxing", "title": "Kickboxing"}], "rating": 5.0, "coordinates": {"latitude": 39.740031, "longitude": -104.9493715}, "transactions": [], "price": "$", "location": {"address1": "1480 Steele St", "address2": "", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["1480 Steele St", "Denver, CO 80206"]}, "phone": "+13033881408", "display_phone": "(303) 388-1408", "distance": 1237.9845974049379}, {"id": "GJ_rOQMm1KpxmqNX-pfwKQ", "alias": "little-feet-denver-3", "name": "Little Feet", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ObkJsJlu7O9JvXcsEVsSfA/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/little-feet-denver-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 37, "categories": [{"alias": "shoes", "title": "Shoe Stores"}], "rating": 4.5, "coordinates": {"latitude": 39.7207572, "longitude": -104.9598784}, "transactions": [], "price": "$$", "location": {"address1": "201 University Blvd", "address2": "Ste 103", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["201 University Blvd", "Ste 103", "Denver, CO 80206"]}, "phone": "+13033889535", "display_phone": "(303) 388-9535", "distance": 1115.3510939329917}, {"id": "svxi0tT1Oytrx_G2swL-dw", "alias": "herm\u00e8s-denver-2", "name": "Herm\u00e8s", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ArraMIhDgYXq0HsuxHJy_w/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/herm%C3%A8s-denver-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 31, "categories": [{"alias": "womenscloth", "title": "Women's Clothing"}, {"alias": "accessories", "title": "Accessories"}, {"alias": "leather", "title": "Leather Goods"}], "rating": 3.5, "coordinates": {"latitude": 39.7169025, "longitude": -104.9566822}, "transactions": [], "price": "$$$$", "location": {"address1": "3000 E First Ave", "address2": "Ste P-206", "address3": "Cherry Creek Shopping Center", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["3000 E First Ave", "Ste P-206", "Cherry Creek Shopping Center", "Denver, CO 80206"]}, "phone": "+13033880700", "display_phone": "(303) 388-0700", "distance": 1408.7651537188106}, {"id": "IjcNxayTZkTMGUUlQo41SA", "alias": "nordstrom-denver-3", "name": "Nordstrom", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ndo6BEVgGAP0s_enRDLJoA/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/nordstrom-denver-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 128, "categories": [{"alias": "deptstores", "title": "Department Stores"}, {"alias": "cosmetics", "title": "Cosmetics & Beauty Supply"}, {"alias": "womenscloth", "title": "Women's Clothing"}], "rating": 3.5, "coordinates": {"latitude": 39.7171, "longitude": -104.95537}, "transactions": [], "price": "$$$", "location": {"address1": "2810 E 1st Ave", "address2": "", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["2810 E 1st Ave", "Denver, CO 80206"]}, "phone": "+17207462424", "display_phone": "(720) 746-2424", "distance": 1350.2076629312533}, {"id": "1FE5SRz2jfa-ADuOUnGdLw", "alias": "lawrence-and-larimer-denver-3", "name": "Lawrence & Larimer", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/8wUEzFkP9aBvgIssNSgaQw/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/lawrence-and-larimer-denver-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 4, "categories": [{"alias": "menscloth", "title": "Men's Clothing"}, {"alias": "womenscloth", "title": "Women's Clothing"}, {"alias": "accessories", "title": "Accessories"}], "rating": 5.0, "coordinates": {"latitude": 39.74037, "longitude": -104.94923}, "transactions": [], "location": {"address1": "3229 E Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["3229 E Colfax Ave", "Denver, CO 80206"]}, "phone": "+17202956468", "display_phone": "(720) 295-6468", "distance": 1273.2102326890622}, {"id": "87ZTiWmLghE4HAExacdXew", "alias": "kate-spade-new-york-denver", "name": "kate spade new york", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_zCPe6o_CHszLFIsVQzCCQ/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/kate-spade-new-york-denver?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 21, "categories": [{"alias": "womenscloth", "title": "Women's Clothing"}, {"alias": "accessories", "title": "Accessories"}], "rating": 5.0, "coordinates": {"latitude": 39.717017232065544, "longitude": -104.9526665433689}, "transactions": [], "price": "$$$", "location": {"address1": "3000 E 1st Ave", "address2": "Ste 277", "address3": "Cherry Creek Shopping Center", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["3000 E 1st Ave", "Ste 277", "Cherry Creek Shopping Center", "Denver, CO 80206"]}, "phone": "+13032700195", "display_phone": "(303) 270-0195", "distance": 1358.6768571742177}, {"id": "nhibZGthCzOpjH9RdK4RQA", "alias": "margaret-o-leary-denver", "name": "Margaret O'Leary", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/u5_XAYwE22PLeJOSEBAoeg/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/margaret-o-leary-denver?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 2, "categories": [{"alias": "womenscloth", "title": "Women's Clothing"}], "rating": 5.0, "coordinates": {"latitude": 39.725474909036, "longitude": -104.9525522}, "transactions": [], "location": {"address1": "2930 E 6th Ave", "address2": null, "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["2930 E 6th Ave", "Denver, CO 80206"]}, "phone": "+17204190202", "display_phone": "(720) 419-0202", "distance": 419.17386609616347}, {"id": "R3iSvgmSXRcJRDt1fm8CRg", "alias": "icon-suit-denver-3", "name": "Icon Suit", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/gHvqufE3VEOWyGJUBBdC3A/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/icon-suit-denver-3?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 21, "categories": [{"alias": "menscloth", "title": "Men's Clothing"}, {"alias": "formalwear", "title": "Formal Wear"}, {"alias": "bespoke", "title": "Bespoke Clothing"}], "rating": 5.0, "coordinates": {"latitude": 39.71992, "longitude": -104.94946}, "transactions": [], "price": "$$", "location": {"address1": "220 Steele St", "address2": "", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["220 Steele St", "Denver, CO 80206"]}, "phone": "+17204871062", "display_phone": "(720) 487-1062", "distance": 1078.3534686081694}, {"id": "L_8XLR8PkQ7XEPs_Vompgw", "alias": "neiman-marcus-denver", "name": "Neiman Marcus", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/waYBdG63_JxfOD9d-D4DBg/o.jpg", "is_closed": false, "url": "https://www.yelp.com/biz/neiman-marcus-denver?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA", "review_count": 96, "categories": [{"alias": "shoes", "title": "Shoe Stores"}, {"alias": "menscloth", "title": "Men's Clothing"}, {"alias": "womenscloth", "title": "Women's Clothing"}], "rating": 3.0, "coordinates": {"latitude": 39.7172966003418, "longitude": -104.952087402344}, "transactions": [], "price": "$$$$", "location": {"address1": "3030 E 1st Ave", "address2": "", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["3030 E 1st Ave", "Denver, CO 80206"]}, "phone": "+13033292600", "display_phone": "(303) 329-2600", "distance": 1331.4534370066897}], "total": 271, "region": {"center": {"longitude": -104.95290756225586, "latitude": 39.72923471384817}}}
+{
+  "businesses": [
+    {
+      "id": "ZCTCd8NdINi9zSjR8lxuAg",
+      "alias": "target-glendale-8",
+      "name": "Target",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/6E48yPOZhmpsx9sjBc4k4w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/target-glendale-8?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+      "review_count": 225,
+      "categories": [
+        {
+          "alias": "deptstores",
+          "title": "Department Stores"
+        },
+        {
+          "alias": "furniture",
+          "title": "Furniture Stores"
+        },
+        {
+          "alias": "electronics",
+          "title": "Electronics"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.708204,
+        "longitude": -104.937705
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "4301 E Virginia Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Glendale",
+        "zip_code": "80246",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "4301 E Virginia Ave",
+          "Glendale, CO 80246"
+        ]
+      },
+      "phone": "+13032090182",
+      "display_phone": "(303) 209-0182",
+      "distance": 2675.6918731907544
+    },
+    {
+      "id": "txy-VwVMGwYhSxUbGy-XKg",
+      "alias": "target-denver-13",
+      "name": "Target",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6zUWgEsqMvUO7F-rCAaF7w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/target-denver-13?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+      "review_count": 49,
+      "categories": [
+        {
+          "alias": "deptstores",
+          "title": "Department Stores"
+        },
+        {
+          "alias": "furniture",
+          "title": "Furniture Stores"
+        },
+        {
+          "alias": "electronics",
+          "title": "Electronics"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.745186,
+        "longitude": -104.99177
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1600 California St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1600 California St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032227520",
+      "display_phone": "(303) 222-7520",
+      "distance": 3766.7535666011117
+    },
+    {
+      "id": "dVMEtmUM1I_E8SvKGKZ2NQ",
+      "alias": "target-denver-17",
+      "name": "Target",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Xeus0C1Om-sXWi8h3nUkhw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/target-denver-17?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "furniture",
+          "title": "Furniture Stores"
+        },
+        {
+          "alias": "electronics",
+          "title": "Electronics"
+        },
+        {
+          "alias": "deptstores",
+          "title": "Department Stores"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.71816522673769,
+        "longitude": -104.9039918001669
+      },
+      "transactions": [],
+      "location": {
+        "address1": "93 N Quebec St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80230",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "93 N Quebec St",
+          "Denver, CO 80230"
+        ]
+      },
+      "phone": "+13032185430",
+      "display_phone": "(303) 218-5430",
+      "distance": 4360.780939988187
+    }
+  ],
+  "total": 271,
+  "region": {
+    "center": {
+      "longitude": -104.95290756225586,
+      "latitude": 39.72923471384817
+    }
+  }
+}
