@@ -15,6 +15,12 @@ namespace :json_load do
       end
     end
 
+    # kroger_items_80108_store_1 = JSON.parse(file, symbolize_names: true)
+
+    # kroger_items[].each do |item|
+        # Item.find_or_create_by_name(name: , photo_url: )
+    # end
+
     ActiveRecord::Base.connection.reset_pk_sequence!('items')
     end
 end
