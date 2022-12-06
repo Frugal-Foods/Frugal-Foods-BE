@@ -1,0 +1,1194 @@
+{
+    "data": [
+        {
+            "productId": "0001111001615",
+            "upc": "0001111001615",
+            "aisleLocations": [
+                {
+                    "description": "PRODUCE",
+                    "number": "0"
+                }
+            ],
+            "brand": "Simple Truth Organic",
+            "categories": [
+                "Produce",
+                "Natural \u0026 Organic"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Simple Truth Organic™ Blueberries",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0001111001615"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0001111001615"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0001111001615"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0001111001615"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0001111001615"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0001111001615"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0001111001615"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0001111001615"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0001111001615"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0001111001615"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0001111001615",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 3.99,
+                        "promo": 2.98
+                    },
+                    "size": "6 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "2.0",
+                "height": "2.0",
+                "width": "2.0"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0000000094046",
+            "upc": "0000000094046",
+            "aisleLocations": [
+                {
+                    "description": "PRODUCE",
+                    "number": "0"
+                }
+            ],
+            "categories": [
+                "Produce",
+                "Natural \u0026 Organic"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Organic Avocado",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0000000094046"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0000000094046"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0000000094046"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0000000094046"
+                        },
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0000000094046"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0000000094046",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 1.5,
+                        "promo": 1.25
+                    },
+                    "size": "1 ct",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "4.0",
+                "height": "4.0",
+                "width": "4.5"
+            },
+            "temperature": {
+                "indicator": "Ambient",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0000000094068",
+            "upc": "0000000094068",
+            "aisleLocations": [
+                {
+                    "description": "PRODUCE",
+                    "number": "0"
+                }
+            ],
+            "categories": [
+                "Natural \u0026 Organic",
+                "Produce"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Organic Green Onions",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0000000094068"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0000000094068"
+                        },
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0000000094068"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0000000094068"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0000000094068"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0000000094068",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 1.59,
+                        "promo": 0
+                    },
+                    "size": "1 each",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "2.0",
+                "height": "2.0",
+                "width": "2.0"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0000000094011",
+            "upc": "0000000094011",
+            "aisleLocations": [
+                {
+                    "description": "PRODUCE",
+                    "number": "0"
+                }
+            ],
+            "categories": [
+                "Natural \u0026 Organic",
+                "Produce"
+            ],
+            "countryOrigin": "COLOMBIA; COSTA RICA; ECUADOR; GUATEMALA; HONDURAS; MEXICO; PERU",
+            "description": "Organic Banana",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0000000094011"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0000000094011"
+                        },
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0000000094011"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0000000094011"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0000000094011"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0000000094011"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0000000094011"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0000000094011"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0000000094011"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0000000094011"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0000000094011",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 0.69,
+                        "promo": 0,
+                        "regularPerUnitEstimate": 0.69
+                    },
+                    "size": "1 lb",
+                    "soldBy": "WEIGHT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "4.0",
+                "height": "1.6",
+                "width": "8.55"
+            },
+            "temperature": {
+                "indicator": "Ambient",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0001111091128",
+            "upc": "0001111091128",
+            "aisleLocations": [
+                {
+                    "bayNumber": "9",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "1"
+                },
+                {
+                    "bayNumber": "9",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "3"
+                },
+                {
+                    "bayNumber": "9",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "2"
+                },
+                {
+                    "bayNumber": "8",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "5"
+                },
+                {
+                    "bayNumber": "8",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "6"
+                },
+                {
+                    "bayNumber": "8",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "4"
+                },
+                {
+                    "bayNumber": "8",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "3"
+                },
+                {
+                    "bayNumber": "8",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "2"
+                },
+                {
+                    "bayNumber": "8",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "2",
+                    "shelfPositionInBay": "1"
+                }
+            ],
+            "brand": "Simple Truth Organic",
+            "categories": [
+                "Produce",
+                "Natural \u0026 Organic"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Simple Truth Organic™ Baby Spinach",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0001111091128"
+                        },
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0001111091128"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0001111091128"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0001111091128"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0001111091128"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "right",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/right/0001111091128"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/right/0001111091128"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/right/0001111091128"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/right/0001111091128"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/right/0001111091128"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0001111091128"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0001111091128"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0001111091128"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0001111091128"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0001111091128"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "left",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/left/0001111091128"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/left/0001111091128"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/left/0001111091128"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/left/0001111091128"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/left/0001111091128"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0001111091128",
+                    "inventory": {
+                        "stockLevel": "HIGH"
+                    },
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 3.49,
+                        "promo": 0
+                    },
+                    "size": "5 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "2.75",
+                "height": "9.0",
+                "width": "7.5"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0001111079548",
+            "upc": "0001111079548",
+            "aisleLocations": [
+                {
+                    "bayNumber": "28",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "2",
+                    "side": "L",
+                    "shelfNumber": "1",
+                    "shelfPositionInBay": "1"
+                }
+            ],
+            "brand": "Kroger",
+            "categories": [
+                "Produce",
+                "Produce"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Kroger® Vegetable Medley Family Size",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0001111079548"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0001111079548"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0001111079548"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0001111079548"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0001111079548"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "right",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/right/0001111079548"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/right/0001111079548"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/right/0001111079548"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/right/0001111079548"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/right/0001111079548"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0001111079548"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0001111079548"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0001111079548"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0001111079548"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0001111079548"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "top",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/top/0001111079548"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/top/0001111079548"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/top/0001111079548"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/top/0001111079548"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/top/0001111079548"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0001111079548",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 6.19,
+                        "promo": 5
+                    },
+                    "size": "32 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "8.45",
+                "height": "3.3",
+                "width": "12.6"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0007878352451",
+            "upc": "0007878352451",
+            "aisleLocations": [
+                {
+                    "bayNumber": "1",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "6",
+                    "shelfPositionInBay": "5"
+                }
+            ],
+            "brand": "Cal-Organic",
+            "categories": [
+                "Natural \u0026 Organic",
+                "Produce"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Organic Shredded Carrots",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0007878352451"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0007878352451"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0007878352451"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0007878352451"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0007878352451"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0007878352451",
+                    "inventory": {
+                        "stockLevel": "HIGH"
+                    },
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 2.19,
+                        "promo": 0
+                    },
+                    "size": "10 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "1.5",
+                "height": "7.0",
+                "width": "7.0"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0001111001664",
+            "upc": "0001111001664",
+            "aisleLocations": [
+                {
+                    "bayNumber": "27",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "4",
+                    "shelfPositionInBay": "6"
+                }
+            ],
+            "brand": "Simple Truth Organic",
+            "categories": [
+                "Natural \u0026 Organic"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Simple Truth Organic® Green Beans",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0001111001664"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0001111001664"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0001111001664"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0001111001664"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0001111001664"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0001111001664"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0001111001664"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0001111001664"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0001111001664"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0001111001664"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0001111001664",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 3.99,
+                        "promo": 0
+                    },
+                    "size": "12 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "6.6",
+                "height": "2.15",
+                "width": "9.6"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0085099600494",
+            "upc": "0085099600494",
+            "aisleLocations": [
+                {
+                    "bayNumber": "27",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "5",
+                    "shelfPositionInBay": "1"
+                }
+            ],
+            "brand": "Love Beets",
+            "categories": [
+                "Produce",
+                "Produce"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Love Beets™ Cooked Beets",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0085099600494"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0085099600494"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0085099600494"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0085099600494"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0085099600494"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "right",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/right/0085099600494"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/right/0085099600494"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/right/0085099600494"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/right/0085099600494"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/right/0085099600494"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0085099600494"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0085099600494"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0085099600494"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0085099600494"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0085099600494"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "left",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/left/0085099600494"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/left/0085099600494"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/left/0085099600494"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/left/0085099600494"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/left/0085099600494"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "top",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/top/0085099600494"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/top/0085099600494"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/top/0085099600494"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/top/0085099600494"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/top/0085099600494"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0085099600494",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 3.49,
+                        "promo": 0
+                    },
+                    "size": "8.8 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "2.2",
+                "height": "4.85",
+                "width": "5.57"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        },
+        {
+            "productId": "0001111060319",
+            "upc": "0001111060319",
+            "aisleLocations": [
+                {
+                    "bayNumber": "27",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "4",
+                    "shelfPositionInBay": "7"
+                },
+                {
+                    "bayNumber": "27",
+                    "description": "PRODUCE",
+                    "number": "105",
+                    "numberOfFacings": "1",
+                    "side": "L",
+                    "shelfNumber": "4",
+                    "shelfPositionInBay": "8"
+                }
+            ],
+            "brand": "Kroger",
+            "categories": [
+                "Produce"
+            ],
+            "countryOrigin": "UNITED STATES",
+            "description": "Kroger® Brand Broccoli Florets",
+            "images": [
+                {
+                    "perspective": "front",
+                    "featured": true,
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/front/0001111060319"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/front/0001111060319"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/front/0001111060319"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/front/0001111060319"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/front/0001111060319"
+                        }
+                    ]
+                },
+                {
+                    "perspective": "back",
+                    "sizes": [
+                        {
+                            "size": "thumbnail",
+                            "url": "https://www.kroger.com/product/images/thumbnail/back/0001111060319"
+                        },
+                        {
+                            "size": "small",
+                            "url": "https://www.kroger.com/product/images/small/back/0001111060319"
+                        },
+                        {
+                            "size": "medium",
+                            "url": "https://www.kroger.com/product/images/medium/back/0001111060319"
+                        },
+                        {
+                            "size": "large",
+                            "url": "https://www.kroger.com/product/images/large/back/0001111060319"
+                        },
+                        {
+                            "size": "xlarge",
+                            "url": "https://www.kroger.com/product/images/xlarge/back/0001111060319"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "itemId": "0001111060319",
+                    "favorite": false,
+                    "fulfillment": {
+                        "curbside": true,
+                        "delivery": true,
+                        "inStore": true,
+                        "shipToHome": false
+                    },
+                    "price": {
+                        "regular": 2.99,
+                        "promo": 0
+                    },
+                    "size": "12 oz",
+                    "soldBy": "UNIT"
+                }
+            ],
+            "itemInformation": {
+                "depth": "2.04",
+                "height": "9.08",
+                "width": "6.0"
+            },
+            "temperature": {
+                "indicator": "Refrigerated",
+                "heatSensitive": false
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "start": 0,
+            "limit": 10,
+            "total": 237
+        }
+    }
+}
