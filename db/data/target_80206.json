@@ -1,0 +1,148 @@
+{
+  "businesses": [
+    {
+      "id": "ZCTCd8NdINi9zSjR8lxuAg",
+      "alias": "target-glendale-8",
+      "name": "Target",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/6E48yPOZhmpsx9sjBc4k4w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/target-glendale-8?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+      "review_count": 225,
+      "categories": [
+        {
+          "alias": "deptstores",
+          "title": "Department Stores"
+        },
+        {
+          "alias": "furniture",
+          "title": "Furniture Stores"
+        },
+        {
+          "alias": "electronics",
+          "title": "Electronics"
+        }
+      ],
+      "rating": 3.5,
+      "coordinates": {
+        "latitude": 39.708204,
+        "longitude": -104.937705
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "4301 E Virginia Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Glendale",
+        "zip_code": "80246",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "4301 E Virginia Ave",
+          "Glendale, CO 80246"
+        ]
+      },
+      "phone": "+13032090182",
+      "display_phone": "(303) 209-0182",
+      "distance": 2675.6918731907544
+    },
+    {
+      "id": "txy-VwVMGwYhSxUbGy-XKg",
+      "alias": "target-denver-13",
+      "name": "Target",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6zUWgEsqMvUO7F-rCAaF7w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/target-denver-13?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+      "review_count": 49,
+      "categories": [
+        {
+          "alias": "deptstores",
+          "title": "Department Stores"
+        },
+        {
+          "alias": "furniture",
+          "title": "Furniture Stores"
+        },
+        {
+          "alias": "electronics",
+          "title": "Electronics"
+        }
+      ],
+      "rating": 3,
+      "coordinates": {
+        "latitude": 39.745186,
+        "longitude": -104.99177
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1600 California St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80202",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "1600 California St",
+          "Denver, CO 80202"
+        ]
+      },
+      "phone": "+13032227520",
+      "display_phone": "(303) 222-7520",
+      "distance": 3766.7535666011117
+    },
+    {
+      "id": "dVMEtmUM1I_E8SvKGKZ2NQ",
+      "alias": "target-denver-17",
+      "name": "Target",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Xeus0C1Om-sXWi8h3nUkhw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/target-denver-17?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "furniture",
+          "title": "Furniture Stores"
+        },
+        {
+          "alias": "electronics",
+          "title": "Electronics"
+        },
+        {
+          "alias": "deptstores",
+          "title": "Department Stores"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 39.71816522673769,
+        "longitude": -104.9039918001669
+      },
+      "transactions": [],
+      "location": {
+        "address1": "93 N Quebec St",
+        "address2": "",
+        "address3": null,
+        "city": "Denver",
+        "zip_code": "80230",
+        "country": "US",
+        "state": "CO",
+        "display_address": [
+          "93 N Quebec St",
+          "Denver, CO 80230"
+        ]
+      },
+      "phone": "+13032185430",
+      "display_phone": "(303) 218-5430",
+      "distance": 4360.780939988187
+    }
+  ],
+  "total": 271,
+  "region": {
+    "center": {
+      "longitude": -104.95290756225586,
+      "latitude": 39.72923471384817
+    }
+  }
+}
