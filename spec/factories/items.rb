@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :item do
-    name { "MyString" }
-    photo_url { "MyString" }
+    name { Faker::Commerce.product_name }
+    photo_url { Faker::Internet.url }
   end
 end

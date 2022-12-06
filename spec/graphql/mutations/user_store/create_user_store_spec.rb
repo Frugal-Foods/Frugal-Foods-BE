@@ -30,6 +30,7 @@ module Mutations
           messages = json['errors'].first['message']
           expect(json['data']).to eq(nil)
           expect(messages).to include("Parse error")
+            
         end
 
         def query(user_id:, store_id:)

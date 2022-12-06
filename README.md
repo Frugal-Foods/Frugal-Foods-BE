@@ -329,9 +329,10 @@ mutation {
   "data": {
     "createUserStoreItem": {
       "userStoreItem": {
-        "id": "2",
+        "id": "1",
         "userId": 1,
-        "storeItemId": 1
+        "storeItemId": 1,
+        "quantity": 4
       },
       "errors": []
     }
