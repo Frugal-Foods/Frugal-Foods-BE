@@ -19,7 +19,7 @@ namespace :json_load do
     kroger_stores_80206[:data].each do |kroger_store|
       Store.create!(name: kroger_store[:name],
                     address: kroger_full_address(kroger_store[:address]),
-                    zipcode: "80206") #This zip code is not the store's zipcode. It is the zipcode of the search. 
+                    zipcode: '80206') # This zip code is not the store's zipcode. It is the zipcode of the search. 
     end
 
     def target_full_address(store)
