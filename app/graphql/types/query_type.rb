@@ -30,7 +30,7 @@ module Types
     end
 
     def items(search:)
-      Item.where("name ILIKE ?", search)      
+      Item.search_items(search)
     end
   end
 end
