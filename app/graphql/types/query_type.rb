@@ -9,18 +9,20 @@ module Types
     field :item_name, [Types::StoreItemType], null: true do
       argument :store_item, String, required: true
     end
+    field :user_store_items, [Types::UserStoreType], null: true do
+      argument :user_id, ID, required: true
+    end
 
     def stores(zipcode:)
       Store.where(zipcode: zipcode)
     end
 
-    def store_items #this will need to edited later according to the endpoints ## User Store Items & store items
-      UserStoreItem.all
+    def user_store_items(user_id:)
+      UserStore.where(user_id: user_id)
     end
 
     def item_name(store_item)
       store_item.item_name
     end
-
   end
 end

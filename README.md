@@ -168,112 +168,77 @@
 }
 ```
 
-## User Store Items
+## Get UserStoreItems (a User's final shopping list)
 ```
 {
-  userStoreItems(user: id) {
-    stores {
+  userStoreItems(userId: id) {
+    storeId
+    name
+    address
+    storeTotalPrice
+    listItems {
       id
-      name
-      address
-      storeItems {
-        id
-        price - will be constant
-        itemName
-        photoUrl
-        quantity - user store item attribute
-        itemTotal - quantity * price
-      }
-      storeTotalPrice # all items at one particular store
+      itemName
+      itemPhotoUrl
+      price
+      quantity
+      itemTotal
     }
-    grandTotalPrice # all items at all stores and all items
   }
 }
 ```
-## Expected return - this is not accurate at the moment - need to change after we find the query above
+## Expected return
 
 ```
 {
   "data": {
-    "users": [
+    "userStoreItems": [
       {
-        "id": "1",
-        "email": "casie@bailey.biz",
-        "stores": [
+        "storeId": 1,
+        "name": "Walmart",
+        "address": "Suite 744 46455 Wilderman Spurs, Hammesfurt, GA 52267",
+        "storeTotalPrice": 17.8,
+        "listItems": [
           {
             "id": "1",
-            "name": "Jast, Upton and Barrows",
-            "address": "Suite 456 823 Patricia Garden, East Corrina, CT 64693",
-            "storeItems": [
-              {
-                "id": "1",
-                "price": 41.67
-              },
-              {
-                "id": "2",
-                "price": 80.41
-              },
-              {
-                "id": "3",
-                "price": 3.32
-              },
-              {
-                "id": "4",
-                "price": 11.95
-              }
-            ]
+            "itemName": "Cloves",
+            "itemPhotoUrl": "http://schowalter-abbott.info/gabriel",
+            "price": 8.9,
+            "quantity": 2,
+            "itemTotal": 17.8
+          }
+        ]
+      },
+      {
+        "storeId": 2,
+        "name": "Dollar General",
+        "address": "Apt. 952 19860 Wisozk Ports, West Mellieside, WV 81121",
+        "storeTotalPrice": 27.43,
+        "listItems": [
+          {
+            "id": "4",
+            "itemName": "Starfruit",
+            "itemPhotoUrl": "http://bogan.io/collene_champlin",
+            "price": 4.68,
+            "quantity": 5,
+            "itemTotal": 23.4
           },
           {
             "id": "2",
-            "name": "Sauer-Stoltenberg",
-            "address": "935 Hamill Freeway, Lake Tyishachester, ID 94653",
-            "storeItems": [
-              {
-                "id": "5",
-                "price": 5.26
-              },
-              {
-                "id": "6",
-                "price": 13.81
-              },
-              {
-                "id": "7",
-                "price": 20.14
-              },
-              {
-                "id": "8",
-                "price": 79.5
-              }
-            ]
-          },
-          {
-            "id": "3",
-            "name": "Thompson, Harber and Braun",
-            "address": "Apt. 975 8157 Carmelo Stream, Port Willis, AR 20248",
-            "storeItems": [
-              {
-                "id": "9",
-                "price": 67.85
-              },
-              {
-                "id": "10",
-                "price": 22.39
-              },
-              {
-                "id": "11",
-                "price": 98.89
-              },
-              {
-                "id": "12",
-                "price": 7.16
-              }
-            ]
-          },
-          {
-            "id": "12",
-            "price": 7.16
+            "itemName": "Cloves",
+            "itemPhotoUrl": "http://schowalter-abbott.info/gabriel",
+            "price": 4.03,
+            "quantity": 1,
+            "itemTotal": 4.03
           }
         ]
+      },
+      {
+        "storeId": 3,
+        "name": "Amazon",
+        "address": "92710 Hessel Flat, Lonaville, OK 57954-0845",
+        "storeTotalPrice": 0,
+        "listItems": []
       }
     ]
   }
