@@ -168,7 +168,7 @@
 }
 ```
 
-## User Store Items
+## Get UserStoreItems (a User's final shopping list)
 ```
 {
   userStoreItems(user: id) {

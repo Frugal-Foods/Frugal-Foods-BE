@@ -9,7 +9,7 @@ module Types
     field :item_name, [Types::StoreItemType], null: true do
       argument :store_item, String, required: true
     end
-    field :shopping_list, [Types::UserStoreType], null: true do
+    field :user_store_items, [Types::UserStoreType], null: true do
       argument :user_id, ID, required: true
     end
 
@@ -17,7 +17,7 @@ module Types
       Store.where(zipcode: zipcode)
     end
 
-    def shopping_list(user_id:)
+    def user_store_items(user_id:)
       UserStore.where(user_id: user_id)
     end
 
