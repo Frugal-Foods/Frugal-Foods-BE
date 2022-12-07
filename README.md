@@ -1,4 +1,42 @@
+## BE Local Setup
+1) Clone down the repo.
+```
+git clone git@github.com:Frugal-Foods/Frugal-Foods-BE.git
+```
+2) Switch your working directory to the root directory.
+```
+cd Frugal-Foods-BE/
+```
+(If you have not installed Ruby before, you can follow [this tutorial](https://stackify.com/install-ruby-on-your-mac-everything-you-need-to-get-going/) (for Mac computers).<br>
+3) Install bundler if you haven't before.
+```
+gem install bundler
+```
+4) Install the project's gem dependencies.
+```
+bundle install
+```
+5) Set up the database.
+```
+rails db:{create,migrate}
+```
+6) Seed the DB (*prototype version only*).
+```
+rails json_load:all
+```
+7) Run the Rails server.
+```
+rails s
+```
+At this point, you can run the front-end application (put link to FE set-up instructions here) and it can make queries to the Rails server at `localhost:3000/graphql`.
+
+You can also access queries through Postman by using a POST request to `localhost:3000/graphql` and sending the request (seen below) in the body of your request.
+### Deployed Application
+The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. All endpoints below can be accessed with POST request to `https://frugal-foods-be.fly.dev/graphql` and the query (below) sent in the request body.<br><br>
+
+
 ## Stores Query
+<b>Note:</b> This prototype currently has two zipcodes available for demo: '80108' and '80206'
   ```
   {
   stores(zipcode: "83749") {
