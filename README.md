@@ -110,18 +110,13 @@ The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. A
 ```
 query storeItems {
   items(search: "bananas") {
-    id
-    name
-    photoUrl
-    stores {
-      name
-      id
-      storeProducts(search: "bananas") {
-        id
-        storeId
-        price
-      }
-    }
+      itemName
+      itemId
+      photoUrl
+      storeName
+      price
+      storeItemId
+      storeId
   }
 }
 
@@ -132,47 +127,27 @@ query storeItems {
   "data": {
     "items": [
       {
-        "id": "1",
-        "name": "bananas",
+        "itemName": "bananas",
+        "itemId": "1",
         "photoUrl": "http://quigley.info/heath_bashirian",
-        "stores": [
-          {
-            "name": "Fisher-Block",
-            "id": "1",
-            "storeProducts": [
-              {
-                "id": "1",
-                "storeId": 1,
-                "price": 29.95
-              },
-              {
-                "id": "5",
-                "storeId": 2,
-                "price": 7.04
-              }
-            ]
-          },
-          {
-            "name": "Ebert Group",
-            "id": "2",
-            "storeProducts": [
-              {
-                "id": "1",
-                "storeId": 1,
-                "price": 29.95
-              },
-              {
-                "id": "5",
-                "storeId": 2,
-                "price": 7.04
-              }
-            ]
-          }
-        ]
+        "storeName": "Target",
+        "price": 29.95,
+        "storeItemId": "1",
+        "storeId": "1"
+      },
+      {
+        "itemName": "bananas",
+        "itemId": "1",
+        "photoUrl": "http://quigley.info/heath_bashirian",
+        "storeName": "Kroger",
+        "price": 7.04,
+        "storeItemId": "5",
+        "storeId": "2"
       }
     ]
   }
 }
+
 ```
 
 ## Get UserStoreItems (a User's final shopping list)
