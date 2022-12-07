@@ -51,9 +51,9 @@ store1 = user.stores.create(name: Faker::Commerce.vendor, address: Faker::Addres
 store2 = user.stores.create(name: Faker::Commerce.vendor, address: Faker::Address.full_address, zipcode: "12345")
 store3 = user.stores.create(name: Faker::Commerce.vendor, address: Faker::Address.full_address, zipcode: "12345")
 
-item1 = Item.create(name: Faker::Food.ingredient, photo_url: 'url.com')
-item2 = Item.create(name: Faker::Food.ingredient, photo_url: 'url.com')
-item3 = Item.create(name: Faker::Food.ingredient, photo_url: 'url.com')
+item1 = Item.create(name: Faker::Food.ingredient, photo_url: Faker::Internet.url)
+item2 = Item.create(name: Faker::Food.ingredient, photo_url: Faker::Internet.url)
+item3 = Item.create(name: Faker::Food.ingredient, photo_url: Faker::Internet.url)
 
 storeitem1 = StoreItem.create(store_id: store1.id, item_id: item1.id, price: Faker::Commerce.price(range: 0..10.0))
 storeitem2 = StoreItem.create(store_id: store2.id, item_id: item1.id, price: Faker::Commerce.price(range: 0..10.0))
@@ -63,6 +63,7 @@ storeitem5 = StoreItem.create(store_id: store3.id, item_id: item3.id, price: Fak
 
 UserStoreItem.create(user_id: user.id, store_item_id: storeitem1.id, quantity: 2)
 UserStoreItem.create(user_id: user.id, store_item_id: storeitem4.id, quantity: 5)
+UserStoreItem.create(user_id: user.id, store_item_id: storeitem2.id, quantity: 1)
 
 
 
