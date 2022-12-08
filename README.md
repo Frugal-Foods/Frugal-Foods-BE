@@ -106,104 +106,48 @@ The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. A
 }
 ```
 
-## Stores Items 
+## GET Stores Items 
 ```
-{
-  storeItems(search: "bananas") {
-    id - comes from store items table
-    price - comes from store items table
-    storeId - comes from stores table
-    itemName - comes from item table and store items table (joins)
-    storeName #comes from stores table & store items table (joins)
-    photoUrl - comes from item table & store_item table (joins)
-    itemId
+query storeItems {
+  items(search: "bananas") {
+      itemName
+      itemId
+      photoUrl
+      storeName
+      price
+      storeItemId
+      storeId
   }
 }
+
 ```
-## Expected Return - will need to change this later after we do query above
+## Expected Return
 ```
 {
   "data": {
-    "stores": [
+    "items": [
       {
-        "id": "1",
-        "name": "Jast, Upton and Barrows",
-        "items": [
-          {
-            "id": "1",
-            "name": "Sleek Linen Hat"
-          },
-          {
-            "id": "2",
-            "name": "Durable Aluminum Coat"
-          },
-          {
-            "id": "3",
-            "name": "Lightweight Plastic Wallet"
-          },
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          }
-        ]
+        "itemName": "bananas",
+        "itemId": "1",
+        "photoUrl": "http://quigley.info/heath_bashirian",
+        "storeName": "Target",
+        "price": 29.95,
+        "storeItemId": "1",
+        "storeId": "1"
       },
       {
-        "id": "2",
-        "name": "Sauer-Stoltenberg",
-        "items": [
-          {
-            "id": "1",
-            "name": "Sleek Linen Hat"
-          },
-          {
-            "id": "2",
-            "name": "Durable Aluminum Coat"
-          },
-          {
-            "id": "3",
-            "name": "Lightweight Plastic Wallet"
-          },
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "name": "Thompson, Harber and Braun",
-        "items": [
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          },
-          {
-            "id": "5",
-            "name": "Durable Steel Chair"
-          },
-          {
-            "id": "6",
-            "name": "Durable Plastic Gloves"
-          },
-          {
-            "id": "7",
-            "name": "Practical Copper Lamp"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "name": "Carroll Group",
-        "items": []
-      },
-      {
-        "id": "5",
-        "name": "Ryan-Anderson",
-        "items": []
+        "itemName": "bananas",
+        "itemId": "1",
+        "photoUrl": "http://quigley.info/heath_bashirian",
+        "storeName": "Kroger",
+        "price": 7.04,
+        "storeItemId": "5",
+        "storeId": "2"
       }
     ]
   }
 }
+
 ```
 
 ## Get UserStoreItems (a User's final shopping list)

@@ -7,7 +7,7 @@ module Mutations
         let!(:user) {create(:user)}
         let!(:store) {create(:store)}
         let!(:item) {create(:item)}
-        let!(:store_item) {StoreItem.create!(store: store, item: item, price: "1.99")}
+        let!(:store_item) {StoreItem.create!(store: store, item: item, price: 1.99)}
 
         it 'creates a user store item' do
           expect(UserStoreItem.count).to eq(0)
