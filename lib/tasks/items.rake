@@ -37,12 +37,12 @@ namespace :json_load do
       end
 
       seed_target_items(item_data_file: target_items)
-      seed_kroger_items(item_data_file: kroger_items1, store_id: 1)
-      seed_kroger_items(item_data_file: kroger_items2, store_id: 2)
-      seed_kroger_items(item_data_file: kroger_items3, store_id: 3)
-      seed_kroger_items(item_data_file: kroger_items4, store_id: 4)
-      seed_kroger_items(item_data_file: kroger_items5, store_id: 5)
-      seed_kroger_items(item_data_file: kroger_items6, store_id: 6)
+      seed_kroger_items(item_data_file: kroger_items1, store_id: Store.all[0].id)
+      seed_kroger_items(item_data_file: kroger_items2, store_id: Store.all[1].id)
+      seed_kroger_items(item_data_file: kroger_items3, store_id: Store.all[2].id)
+      seed_kroger_items(item_data_file: kroger_items4, store_id: Store.all[3].id)
+      seed_kroger_items(item_data_file: kroger_items5, store_id: Store.all[4].id)
+      seed_kroger_items(item_data_file: kroger_items6, store_id: Store.all[5].id)
 
       ActiveRecord::Base.connection.reset_pk_sequence!('items')
     end
