@@ -1,6 +1,5 @@
 class Mutations::DestroyUserStore < Mutations::BaseMutation
     field :id, ID, null: false
-    field :errors, [String], null: false
   
     argument :id, ID, required: true
 

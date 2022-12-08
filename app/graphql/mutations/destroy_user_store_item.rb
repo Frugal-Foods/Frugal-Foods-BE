@@ -1,13 +1,17 @@
 class Mutations::DestroyUserStoreItem < Mutations::BaseMutation
-    # TODO: define return fields
-    # field :post, Types::PostType, null: false
+  field :id, ID, null: false
+  
+  argument :id, ID, required: true
 
-    # TODO: define arguments
-    # argument :name, String, required: true
-
-    # TODO: define resolve method
-    # def resolve(name:)
-    #   { post: ... }
-    # end
+  def resolve(id:)
+    user_store_item = UserStoreItem.find_by(id: id)
+    if user_store_item.present?
+      user_store_item.destroy
+    else
+    {
+      id: "Invalid ID or query parameter. Please try again."
+    }
+  end
+end
   
 end
