@@ -265,6 +265,7 @@ mutation {
       id
       userId
       storeItemId
+      quantity
     }
     errors
   }
