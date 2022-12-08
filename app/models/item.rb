@@ -17,6 +17,6 @@ class Item < ApplicationRecord
         store_items.id AS store_item_id,
         stores.id AS store_id
         ")
-      .where("items.name ILIKE ?", search)
+      .where("items.name ILIKE ?", "%#{search}%")
   end
 end
