@@ -1,4 +1,42 @@
+## BE Local Setup
+1) Clone down the repo.
+```
+git clone git@github.com:Frugal-Foods/Frugal-Foods-BE.git
+```
+2) Switch your working directory to the root directory.
+```
+cd Frugal-Foods-BE/
+```
+(If you have not installed Ruby before, you can follow [this tutorial](https://stackify.com/install-ruby-on-your-mac-everything-you-need-to-get-going/) (for Mac computers).<br>
+3) Install bundler if you haven't before.
+```
+gem install bundler
+```
+4) Install the project's gem dependencies.
+```
+bundle install
+```
+5) Set up the database.
+```
+rails db:{create,migrate}
+```
+6) Seed the DB (*prototype version only*).
+```
+rails json_load:all
+```
+7) Run the Rails server.
+```
+rails s
+```
+At this point, you can run the front-end application (put link to FE set-up instructions here) and it can make queries to the Rails server at `localhost:3000/graphql`.
+
+You can also access queries through Postman by using a POST request to `localhost:3000/graphql` and sending the request (seen below) in the body of your request.
+### Deployed Application
+The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. All endpoints below can be accessed with POST request to `https://frugal-foods-be.fly.dev/graphql` and the query (below) sent in the request body.<br><br>
+
+
 ## Stores Query
+<b>Note:</b> This prototype currently has two zipcodes available for demo: '80108' and '80206'
   ```
   {
   stores(zipcode: "83749") {
@@ -68,212 +106,121 @@
 }
 ```
 
-## Stores Items 
+## GET Stores Items 
 ```
-{
-  storeItems(search: "bananas") {
-    id - comes from store items table
-    price - comes from store items table
-    storeId - comes from stores table
-    itemName - comes from item table and store items table (joins)
-    storeName #comes from stores table & store items table (joins)
-    photoUrl - comes from item table & store_item table (joins)
-    itemId
+query storeItems {
+  items(search: "bananas") {
+      itemName
+      itemId
+      photoUrl
+      storeName
+      price
+      storeItemId
+      storeId
   }
 }
+
 ```
-## Expected Return - will need to change this later after we do query above
+## Expected Return
 ```
 {
   "data": {
-    "stores": [
+    "items": [
       {
-        "id": "1",
-        "name": "Jast, Upton and Barrows",
-        "items": [
-          {
-            "id": "1",
-            "name": "Sleek Linen Hat"
-          },
-          {
-            "id": "2",
-            "name": "Durable Aluminum Coat"
-          },
-          {
-            "id": "3",
-            "name": "Lightweight Plastic Wallet"
-          },
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          }
-        ]
+        "itemName": "bananas",
+        "itemId": "1",
+        "photoUrl": "http://quigley.info/heath_bashirian",
+        "storeName": "Target",
+        "price": 29.95,
+        "storeItemId": "1",
+        "storeId": "1"
       },
       {
-        "id": "2",
-        "name": "Sauer-Stoltenberg",
-        "items": [
-          {
-            "id": "1",
-            "name": "Sleek Linen Hat"
-          },
-          {
-            "id": "2",
-            "name": "Durable Aluminum Coat"
-          },
-          {
-            "id": "3",
-            "name": "Lightweight Plastic Wallet"
-          },
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "name": "Thompson, Harber and Braun",
-        "items": [
-          {
-            "id": "4",
-            "name": "Intelligent Paper Lamp"
-          },
-          {
-            "id": "5",
-            "name": "Durable Steel Chair"
-          },
-          {
-            "id": "6",
-            "name": "Durable Plastic Gloves"
-          },
-          {
-            "id": "7",
-            "name": "Practical Copper Lamp"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "name": "Carroll Group",
-        "items": []
-      },
-      {
-        "id": "5",
-        "name": "Ryan-Anderson",
-        "items": []
+        "itemName": "bananas",
+        "itemId": "1",
+        "photoUrl": "http://quigley.info/heath_bashirian",
+        "storeName": "Kroger",
+        "price": 7.04,
+        "storeItemId": "5",
+        "storeId": "2"
       }
     ]
   }
 }
+
 ```
 
-## User Store Items
+## Get UserStoreItems (a User's final shopping list)
 ```
 {
-  userStoreItems(user: id) {
-    stores {
+  userStoreItems(userId: id) {
+    storeId
+    name
+    address
+    storeTotalPrice
+    listItems {
       id
-      name
-      address
-      storeItems {
-        id
-        price - will be constant
-        itemName
-        photoUrl
-        quantity - user store item attribute
-        itemTotal - quantity * price
-      }
-      storeTotalPrice # all items at one particular store
+      itemName
+      itemPhotoUrl
+      price
+      quantity
+      itemTotal
     }
-    grandTotalPrice # all items at all stores and all items
   }
 }
 ```
-## Expected return - this is not accurate at the moment - need to change after we find the query above
+## Expected return
 
 ```
 {
   "data": {
-    "users": [
+    "userStoreItems": [
       {
-        "id": "1",
-        "email": "casie@bailey.biz",
-        "stores": [
+        "storeId": 1,
+        "name": "Walmart",
+        "address": "Suite 744 46455 Wilderman Spurs, Hammesfurt, GA 52267",
+        "storeTotalPrice": 17.8,
+        "listItems": [
           {
             "id": "1",
-            "name": "Jast, Upton and Barrows",
-            "address": "Suite 456 823 Patricia Garden, East Corrina, CT 64693",
-            "storeItems": [
-              {
-                "id": "1",
-                "price": 41.67
-              },
-              {
-                "id": "2",
-                "price": 80.41
-              },
-              {
-                "id": "3",
-                "price": 3.32
-              },
-              {
-                "id": "4",
-                "price": 11.95
-              }
-            ]
+            "itemName": "Cloves",
+            "itemPhotoUrl": "http://schowalter-abbott.info/gabriel",
+            "price": 8.9,
+            "quantity": 2,
+            "itemTotal": 17.8
+          }
+        ]
+      },
+      {
+        "storeId": 2,
+        "name": "Dollar General",
+        "address": "Apt. 952 19860 Wisozk Ports, West Mellieside, WV 81121",
+        "storeTotalPrice": 27.43,
+        "listItems": [
+          {
+            "id": "4",
+            "itemName": "Starfruit",
+            "itemPhotoUrl": "http://bogan.io/collene_champlin",
+            "price": 4.68,
+            "quantity": 5,
+            "itemTotal": 23.4
           },
           {
             "id": "2",
-            "name": "Sauer-Stoltenberg",
-            "address": "935 Hamill Freeway, Lake Tyishachester, ID 94653",
-            "storeItems": [
-              {
-                "id": "5",
-                "price": 5.26
-              },
-              {
-                "id": "6",
-                "price": 13.81
-              },
-              {
-                "id": "7",
-                "price": 20.14
-              },
-              {
-                "id": "8",
-                "price": 79.5
-              }
-            ]
-          },
-          {
-            "id": "3",
-            "name": "Thompson, Harber and Braun",
-            "address": "Apt. 975 8157 Carmelo Stream, Port Willis, AR 20248",
-            "storeItems": [
-              {
-                "id": "9",
-                "price": 67.85
-              },
-              {
-                "id": "10",
-                "price": 22.39
-              },
-              {
-                "id": "11",
-                "price": 98.89
-              },
-              {
-                "id": "12",
-                "price": 7.16
-              }
-            ]
-          },
-          {
-            "id": "12",
-            "price": 7.16
+            "itemName": "Cloves",
+            "itemPhotoUrl": "http://schowalter-abbott.info/gabriel",
+            "price": 4.03,
+            "quantity": 1,
+            "itemTotal": 4.03
           }
         ]
+      },
+      {
+        "storeId": 3,
+        "name": "Amazon",
+        "address": "92710 Hessel Flat, Lonaville, OK 57954-0845",
+        "storeTotalPrice": 0,
+        "listItems": []
       }
     ]
   }
