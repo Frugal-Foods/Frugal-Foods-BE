@@ -20,11 +20,11 @@ RSpec.describe Item, type: :model do
       let!(:store_2_item_1) { create(:store_item, store_id: store_2.id, item_id: item_1.id)}
       
       it 'returns partial matches' do
-        expect(Item.search_items("bananas").first.item_name).to eq(item_1.name)
-        expect(Item.search_items("bananas").first.store_id).to eq(store_1.id)
-        expect(Item.search_items("bananas").first.store_name).to eq(store_1.name)
-        expect(Item.search_items("bananas").first.price).to eq(store_1_item_1.price)
-        expect(Item.search_items("bananas").length).to eq(2)
+        expect(Item.search_items("bana").first.item_name).to eq(item_1.name)
+        expect(Item.search_items("bana").first.store_id).to eq(store_1.id)
+        expect(Item.search_items("bana").first.store_name).to eq(store_1.name)
+        expect(Item.search_items("bana").first.price).to eq(store_1_item_1.price)
+        expect(Item.search_items("bana").length).to eq(2)
       end
 
       it 'returns nil if no item name matches the search word' do
