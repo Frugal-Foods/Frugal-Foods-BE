@@ -341,17 +341,23 @@ mutation {
 ```
 # DELETE UserStoreItem
 ```
-mutation {
-  userStoreItem: deleteUserStoreItem(input: 
-    {id: 1}) {
-      id
-    }
+mutation{
+	destroyUserStoreItem(input:
+  { id:"13"}) {
+	  id
   }
+}
 
 ```
 ## Example Response
 
-
+{
+  "data": {
+    "destroyUserStoreItem": {
+      "id": "13"
+    }
+  }
+}
 # Delete UserStore
 ```
 
