@@ -22,13 +22,4 @@ RSpec.describe StoreItem, type: :model do
       end
     end
   end
-
-  describe 'class methods' do
-    describe '#method_name' do
-     it 'description of method' do
-      #expect statement here
-     end
-    end
-  end
-
 end
