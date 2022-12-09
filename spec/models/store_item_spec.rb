@@ -13,22 +13,13 @@ RSpec.describe StoreItem, type: :model do
     describe '#item_name' do
       it 'returns the name of an item when called on a store item' do
         the_only_user = User.create!(email: Faker::Internet.email)
-        store_1 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address)
+        store_1 = Store.create!(name: Faker::Company.name, address: Faker::Address.full_address, zipcode: "10010")
         item_1 = Item.create!(name: Faker::Commerce.product_name, photo_url: Faker::Internet.url)
         store_1_item_1 = StoreItem.create!(store_id: store_1.id, item_id: item_1.id, price: Faker::Commerce.price)
-        user_store_1_item_1 = UserStoreItem.create!(user_id: the_only_user.id, store_item_id: store_1_item_1.id)
+        user_store_1_item_1 = UserStoreItem.create!(user_id: the_only_user.id, store_item_id: store_1_item_1.id, quantity: 4)
 
         expect(store_1_item_1.item_name).to eq(item_1.name)
       end
     end
   end
-
-  describe 'class methods' do
-    describe '#method_name' do
-     it 'description of method' do
-      #expect statement here
-     end
-    end
-  end
-
 end
