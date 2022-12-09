@@ -10,29 +10,17 @@ module Mutations
         @user_store_item = UserStoreItem.create!(user: user, store_item: store_item, quantity: 3)
 
         @query = <<~GQL
-        mutation{
-          updateUserStoreItem(input:{
-            id: "#{@user_store_item.id}",
-            quantity: 9
-              }) {
-                id
-                quantity
+          mutation{
+            updateUserStoreItem(input:{
+              id: "#{@user_store_item.id}",
+              quantity: 9
+                }) {
+                  id
+                  quantity
+              }
             }
-          }
-        GQL
-        
-
-
-        # @bad_query = <<~GQL
-        # mutation{
-        #   destroyUserStoreItem(input:{
-        #     id: "8"
-        #   }) {
-        #     id
-        #   }
-        # }
-        # GQL
-      end
+          GQL
+        end
 
       describe '.resolve' do
         it 'updates a user store items quantity' do
@@ -55,14 +43,6 @@ module Mutations
           expect(data["id"].to_i).to eq(@user_store_item.id)
           expect(data["quantity"]).to_not eq(@user_store_item.quantity)
           expect(data["quantity"]).to be_a(Integer)
-        end
-    
-
-        xit 'returns an error message if user store item parameters are invalid' do
-          post '/graphql', params: { query: @bad_query}
-          json = JSON.parse(response.body)
-      
-
         end
       end
     end

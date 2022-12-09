@@ -329,17 +329,25 @@ mutation{
 
 # PATCH UserStoreItem
 ```
-mutation { #attributes are optional - you can choose one or the other or both.
-  userStoreItem: updateUserStoreItem(input: {id: 1, storeId: 1, quantity: 3}) {
-    id
-    storeId
-    storeName
-    quantity
+mutation{
+  updateUserStoreItem(input:{
+    id: "16",
+    quantity: 11
+      }) {
+        id
+        quantity
+    }
   }
-}
 ```
 
 ## Example Response
 
-tbd
+{
+  "data": {
+    "updateUserStoreItem": {
+      "id": "16",
+      "quantity": 11
+    }
+  }
+}
 
