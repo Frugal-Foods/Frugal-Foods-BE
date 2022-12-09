@@ -9,35 +9,18 @@ module Mutations
         store_item = StoreItem.create!(store: store, item: item, price: "1.55")
         @user_store_item = UserStoreItem.create!(user: user, store_item: store_item, quantity: 3)
 
-        # @query = <<~GQL
-        # mutation{
-        #   updateUserStoreItem(input:{
-        #     id: "#{@user_store_item.id}",
-        #     storeId: 3
-        #     quantity: 4
-        #   }) {
-        #     id
-            
-        #     storeId
-        #     quantity
-        #   }
-        # }
-        # GQL
-        
         @query = <<~GQL
         mutation{
           updateUserStoreItem(input:{
             id: "#{@user_store_item.id}",
-            storeId: 3
-            quantity: 4
-          }) {
-            id
-            
-            storeId
-            quantity
+            quantity: 9
+              }) {
+                id
+                quantity
+            }
           }
-        }
         GQL
+        
 
 
         # @bad_query = <<~GQL
@@ -52,18 +35,26 @@ module Mutations
       end
 
       describe '.resolve' do
-        it 'updates a user store item' do
-          expect(@user_store_item.quantity).to eq(3)
-
-          post '/graphql', params: { query: @query}
-   
-          expect(@user_store_item.quantity).to eq(4)
-        end
-
-        xit 'returns a list of user store items after update' do
+        it 'updates a user store items quantity' do
+          expect(@user_store_item.quantity).to eq(UserStoreItem.last.quantity)
+          expect(UserStoreItem.last.quantity).to eq(3)
+          
           post '/graphql', params: { query: @query}
           json = JSON.parse(response.body)
+          data = json["data"]["updateUserStoreItem"]
 
+          expect(data["quantity"]).to eq(UserStoreItem.last.quantity)
+          expect(data["quantity"]).to eq(9)
+        end
+
+        it 'returns the user store item id and updated quantity' do
+          post '/graphql', params: { query: @query}
+          json = JSON.parse(response.body)
+          data = json["data"]["updateUserStoreItem"]
+
+          expect(data["id"].to_i).to eq(@user_store_item.id)
+          expect(data["quantity"]).to_not eq(@user_store_item.quantity)
+          expect(data["quantity"]).to be_a(Integer)
         end
     
 

@@ -7,7 +7,8 @@ class Mutations::UpdateUserStoreItem < Mutations::BaseMutation
 
   def resolve(attributes)
     user_store_item = UserStoreItem.find_by(id: attributes[:id])
-    user_store_item.update(quantity: attributes[:quantity])
-    user_store_item
+      user_store_item.update(quantity: attributes[:quantity])
+      user_store_item
+
   end
 end
