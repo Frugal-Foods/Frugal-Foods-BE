@@ -6,32 +6,53 @@ module Mutations
         user = create(:user)
         store = create(:store)
         item = create(:item)
-        store_item = StoreItem.create!(store: store, item: item, price: "$1.55")
+        store_item = StoreItem.create!(store: store, item: item, price: "1.55")
         @user_store_item = UserStoreItem.create!(user: user, store_item: store_item, quantity: 3)
+
+        # @query = <<~GQL
+        # mutation{
+        #   updateUserStoreItem(input:{
+        #     id: "#{@user_store_item.id}",
+        #     storeId: 3
+        #     quantity: 4
+        #   }) {
+        #     id
+            
+        #     storeId
+        #     quantity
+        #   }
+        # }
+        # GQL
         
         @query = <<~GQL
         mutation{
-          destroyUserStoreItem(input:{
-            id: "#{@user_store_item.id}"
+          updateUserStoreItem(input:{
+            id: "#{@user_store_item.id}",
+            storeId: 3
+            quantity: 4
           }) {
             id
+            
+            storeId
+            quantity
           }
         }
         GQL
 
-        @bad_query = <<~GQL
-        mutation{
-          destroyUserStoreItem(input:{
-            id: "8"
-          }) {
-            id
-          }
-        }
-        GQL
+
+        # @bad_query = <<~GQL
+        # mutation{
+        #   destroyUserStoreItem(input:{
+        #     id: "8"
+        #   }) {
+        #     id
+        #   }
+        # }
+        # GQL
       end
 
       describe '.resolve' do
-        xit 'updates a user store item' do
+        it 'updates a user store item' do
           expect(@user_store_item.quantity).to eq(3)
 
           post '/graphql', params: { query: @query}
