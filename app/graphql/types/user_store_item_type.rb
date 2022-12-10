@@ -11,6 +11,7 @@ module Types
     field :item_total, Float
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :user_store_item_id, Integer
 
     def item_name
       store_item = StoreItem.find(object.store_item_id)

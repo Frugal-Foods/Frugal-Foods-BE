@@ -9,13 +9,16 @@ module Types
     field :list_items, [Types::UserStoreItemType]
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :user_store_item_id, Integer
 
     def store_total_price
       object.total_price(object.store_id)
     end
 
     def list_items
+      # require 'pry' ; binding.pry
       object.user_store_items_by_store(object.store_id)
     end
+
   end
 end

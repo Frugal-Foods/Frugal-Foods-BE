@@ -32,5 +32,6 @@ module Types
     def items(search:)
       Item.search_items(search)
     end
+
   end
 end
