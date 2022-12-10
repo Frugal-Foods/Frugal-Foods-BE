@@ -3,8 +3,4 @@ class UserStoreItem < ApplicationRecord
   belongs_to :store_item
   validates :quantity, numericality: { greater_than: 0 }
   validates :quantity, presence: true
-
-  def user_store_item_id
-    id
-  end
 end

@@ -16,7 +16,6 @@ module Types
     end
 
     def list_items
-      # require 'pry' ; binding.pry
       object.user_store_items_by_store(object.store_id)
     end
 
