@@ -49,13 +49,15 @@ RSpec.describe Types::QueryType do
         user_store_items = store[:listItems]
 
         user_store_items&.each do |item|
-          expect(item).to have_key :id
+          expect(item).to have_key :itemId
           expect(item).to have_key :itemName
           expect(item).to have_key :itemPhotoUrl
           expect(item).to have_key :price
           expect(item).to have_key :quantity
           expect(item).to have_key :itemTotal
-          expect(item[:id]).to be_a String
+          expect(item).to have_key :storeItemId
+          expect(item).to have_key :userStoreItemId
+          expect(item[:itemId]).to be_an Integer
           expect(item[:itemName]).to be_a String
           expect(item[:itemPhotoUrl]).to be_a String
           expect(item[:price]).to be_a Float
@@ -74,12 +76,14 @@ RSpec.describe Types::QueryType do
           address
           storeTotalPrice
           listItems {
-                id
+                itemId
                 itemName
                 itemPhotoUrl
                 price
                 quantity
                 itemTotal
+                storeItemId
+                userStoreItemId
               }
          }
     }
