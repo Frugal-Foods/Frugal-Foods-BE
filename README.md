@@ -226,6 +226,19 @@ query storeItems {
   }
 }
 ```
+
+# Get UserStore
+```
+query {
+  userStores {
+    id
+    storeId
+    userId
+  }
+}
+```
+
+## Expected Response
 ​
 # Create UserStore (When a user selects a store)
 ```

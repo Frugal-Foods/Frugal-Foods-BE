@@ -5,12 +5,20 @@ module Types
     field :stores, [Types::StoreType], null: true do
       argument :zipcode, String, required: true
     end
+
     field :store_items, [Types::StoreItemType], null: true
     field :item_name, [Types::StoreItemType], null: true do
       argument :store_item, String, required: true
     end
+
     field :user_store_items, [Types::UserStoreType], null: true do
       argument :user_id, ID, required: true
+    end
+
+    field :user_stores, [Types::UserStoreType], null: true
+
+    def user_stores
+      UserStore.all
     end
 
     def stores(zipcode:)
