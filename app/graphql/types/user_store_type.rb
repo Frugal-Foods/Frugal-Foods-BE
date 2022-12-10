@@ -18,6 +18,5 @@ module Types
     def list_items
       object.user_store_items_by_store(object.store_id)
     end
-
   end
 end

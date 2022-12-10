@@ -33,8 +33,5 @@ module Types
       object.quantity * price
     end
 
-    # def item_id
-    #   require 'pry' ; binding.pry
-    # end
   end
 end
