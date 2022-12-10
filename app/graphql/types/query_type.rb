@@ -27,10 +27,11 @@ module Types
 
     field :items, [Types::ItemType], null: true do
       argument :search, String, required: true
+      argument :user_id, Integer, required: true
     end
 
-    def items(search:)
-      Item.search_items(search)
+    def items(search:, user_id:)
+      Item.search_items(search, user_id)
     end
   end
 end

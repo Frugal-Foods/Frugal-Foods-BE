@@ -26,36 +26,42 @@ http_interactions:
       - application/json
       Ratelimit-Dailylimit:
       - '5000'
-      X-B3-Sampled:
-      - '0'
-      Ratelimit-Remaining:
-      - '5000'
-      Ratelimit-Resettime:
-      - '2022-12-10T00:00:00+00:00'
-      X-Routing-Service:
-      - routing-main--useast1-64bdc8b4bb-6snpj; site=public_api_v3
+
       X-Zipkin-Id:
-      - 3b70c9015295725d
+      - 92ee8adeb077d4dd
+      Ratelimit-Remaining:
+      - '4997'
+      X-Routing-Service:
+      - routing-main--useast1-64bdc8b4bb-zssmj; site=public_api_v3
       Server:
       - envoy
+      Ratelimit-Resettime:
+      - '2022-12-11T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+
       X-Cloudmap:
       - routing_useast1
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-75-6-useast1aprod
+
+      - 10-65-68-45-useast1aprod
       X-Extlb:
-      - 10-65-75-6-useast1aprod
+      - 10-65-68-45-useast1aprod
+
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 09 Dec 2022 23:08:37 GMT
+
+      - Sat, 10 Dec 2022 22:51:50 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-pdk17821-PDK
+      - cache-chi-kigq8000038-CHI
+
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -131,7 +137,7 @@ http_interactions:
         "3I3oT34cXoZQx-yv4LCnQw", "alias": "target-highlands-ranch-2", "name": "Target",
         "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/uJSKywsfqgwGIFAp-WsZIw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/target-highlands-ranch-2?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
-        "review_count": 52, "categories": [{"alias": "deptstores", "title": "Department
+        "review_count": 53, "categories": [{"alias": "deptstores", "title": "Department
         Stores"}, {"alias": "electronics", "title": "Electronics"}, {"alias": "furniture",
         "title": "Furniture Stores"}], "rating": 2.5, "coordinates": {"latitude":
         39.549552, "longitude": -105.005107}, "transactions": [], "price": "$$", "location":
@@ -173,7 +179,7 @@ http_interactions:
         {"id": "w19iMKbfoHAnp4PMMTX5EQ", "alias": "walmart-supercenter-highlands-ranch",
         "name": "Walmart Supercenter", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/iVYTaen-gJJv9P3rNthYiw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/walmart-supercenter-highlands-ranch?adjust_creative=HXaFGsDa_NpgBlPglTMuTA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HXaFGsDa_NpgBlPglTMuTA",
-        "review_count": 77, "categories": [{"alias": "deptstores", "title": "Department
+        "review_count": 78, "categories": [{"alias": "deptstores", "title": "Department
         Stores"}, {"alias": "grocery", "title": "Grocery"}], "rating": 2.0, "coordinates":
         {"latitude": 39.5623887, "longitude": -104.9107392}, "transactions": [], "price":
         "$", "location": {"address1": "6675 Business Center Dr", "address2": "", "address3":
@@ -274,5 +280,7 @@ http_interactions:
         ["18901 E Mainstreet", "Ste E", "Parker, CO 80134"]}, "phone": "+17206939128",
         "display_phone": "(720) 693-9128", "distance": 10754.364431832873}], "total":
         226, "region": {"center": {"longitude": -104.84527587890625, "latitude": 39.44198084067493}}}'
-  recorded_at: Fri, 09 Dec 2022 23:08:37 GMT
+
+  recorded_at: Sat, 10 Dec 2022 22:51:50 GMT
+
 recorded_with: VCR 6.1.0

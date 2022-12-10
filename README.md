@@ -109,7 +109,8 @@ The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. A
 ## GET Stores Items 
 ```
 query storeItems {
-  items(search: "bananas") {
+  items(search: "boar", userId: 1) {
+    	userId
       itemName
       itemId
       photoUrl
@@ -127,21 +128,23 @@ query storeItems {
   "data": {
     "items": [
       {
-        "itemName": "bananas",
-        "itemId": "1",
-        "photoUrl": "http://quigley.info/heath_bashirian",
-        "storeName": "Target",
-        "price": 29.95,
-        "storeItemId": "1",
+        "userId": 1,
+        "itemName": "Organic Banana",
+        "itemId": "323",
+        "photoUrl": "https://www.kroger.com/product/images/small/front/0000000094011",
+        "storeName": "King Soopers Marketplace - Castle Rock",
+        "price": 0.69,
+        "storeItemId": "1718",
         "storeId": "1"
       },
       {
-        "itemName": "bananas",
-        "itemId": "1",
-        "photoUrl": "http://quigley.info/heath_bashirian",
-        "storeName": "Kroger",
-        "price": 7.04,
-        "storeItemId": "5",
+        "userId": 1,
+        "itemName": "Organic Banana",
+        "itemId": "323",
+        "photoUrl": "https://www.kroger.com/product/images/small/front/0000000094011",
+        "storeName": "King Soopers - Castle Rock",
+        "price": 0.69,
+        "storeItemId": "1768",
         "storeId": "2"
       }
     ]
