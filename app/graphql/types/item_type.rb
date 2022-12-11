@@ -13,5 +13,6 @@ module Types
     field :store_item_id, String, null: false
     field :item_id, String, null: false
     field :store_id, String, null: false
+    field :user_id, Integer, null: false
   end
 end

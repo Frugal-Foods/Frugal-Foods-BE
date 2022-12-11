@@ -47,7 +47,7 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Kroger-Proxy-Latency:
-      - '2'
+      - '1'
       X-Kroger-Upstream-Latency:
       - '18'
       X-Vcap-Request-Id:
@@ -116,7 +116,7 @@ http_interactions:
       X-Correlation-Id:
       - akam_1670776144_2cb0b383-c2c4-4ec3-b4b2-63fb50fe409f
       X-Kroger-Proxy-Latency:
-      - '9'
+      - '12'
       X-Kroger-Upstream-Latency:
       - '47'
       X-Vcap-Request-Id:

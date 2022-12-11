@@ -39,7 +39,7 @@ http_interactions:
       Server:
       - envoy
       X-Cloudmap:
-      - routing_uswest2
+      - routing_useast1
       X-Mode:
       - ro
       X-Proxied:

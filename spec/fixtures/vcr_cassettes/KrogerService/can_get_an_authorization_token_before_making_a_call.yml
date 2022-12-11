@@ -49,7 +49,7 @@ http_interactions:
       X-Kroger-Proxy-Latency:
       - '3'
       X-Kroger-Upstream-Latency:
-      - '17'
+      - '16'
       X-Vcap-Request-Id:
       - 2fe2bb0a-aa3e-40d7-5318-2ec6f065de97
       X-Xss-Protection:

@@ -5,9 +5,9 @@ class Item < ApplicationRecord
   has_many :stores, through: :store_items
   validates :name, presence: true
 
-  def self.search_items(search)
+  def self.search_items(search, user_id)
     Item
-      .joins(:stores)
+      .joins(stores: :user_stores)
       .select("
         items.id AS item_id,
         items.name AS item_name,
@@ -15,8 +15,9 @@ class Item < ApplicationRecord
         stores.name AS store_name,
         store_items.price,
         store_items.id AS store_item_id,
-        stores.id AS store_id
-        ")
+        stores.id AS store_id,
+        user_stores.user_id AS user_id")
       .where("items.name ILIKE ?", "%#{search}%")
+      .where("user_stores.user_id = ?", "#{user_id}")
   end
 end

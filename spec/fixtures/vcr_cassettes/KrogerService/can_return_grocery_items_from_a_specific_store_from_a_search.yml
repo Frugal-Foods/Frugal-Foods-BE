@@ -333,9 +333,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Kroger-Proxy-Latency:
-      - '1'
+      - '3'
       X-Kroger-Upstream-Latency:
-      - '19'
+      - '23'
       X-Vcap-Request-Id:
       - 3b91c951-99d8-4023-65c9-ecde6d38c71d
       X-Xss-Protection:
