@@ -18,8 +18,8 @@ class UserStore < ApplicationRecord
 
   def user_store_items_by_store(object_store_id)
     UserStoreItem
-      .select('*')
-      .joins(:store_item)
-      .where('store_items.store_id = ?', object_store_id)
+    .select('user_store_items.id as user_store_item_id', 'user_store_items.quantity', 'store_items.id as store_item_id', 'store_items.price', 'store_items.item_id')
+    .joins(:store_item)
+    .where('store_items.store_id = ?', object_store_id)
   end
 end

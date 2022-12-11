@@ -26,42 +26,36 @@ http_interactions:
       - application/json
       Ratelimit-Dailylimit:
       - '5000'
-
-      X-Zipkin-Id:
-      - 92ee8adeb077d4dd
       Ratelimit-Remaining:
-      - '4997'
-      X-Routing-Service:
-      - routing-main--useast1-64bdc8b4bb-zssmj; site=public_api_v3
-      Server:
-      - envoy
+      - '5000'
+      X-Zipkin-Id:
+      - abb4a9ea9f104155
       Ratelimit-Resettime:
       - '2022-12-11T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-69cb4c47f7-l5dj5; site=public_api_v3
       X-B3-Sampled:
       - '0'
-
+      Server:
+      - envoy
       X-Cloudmap:
       - routing_useast1
       X-Mode:
       - ro
       X-Proxied:
-
-      - 10-65-68-45-useast1aprod
+      - 10-69-99-143-uswest2aprod
       X-Extlb:
-      - 10-65-68-45-useast1aprod
-
+      - 10-69-99-143-uswest2aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-
-      - Sat, 10 Dec 2022 22:51:50 GMT
+      - Sat, 10 Dec 2022 17:24:59 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-chi-kigq8000038-CHI
-
+      - cache-den8272-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -280,7 +274,5 @@ http_interactions:
         ["18901 E Mainstreet", "Ste E", "Parker, CO 80134"]}, "phone": "+17206939128",
         "display_phone": "(720) 693-9128", "distance": 10754.364431832873}], "total":
         226, "region": {"center": {"longitude": -104.84527587890625, "latitude": 39.44198084067493}}}'
-
-  recorded_at: Sat, 10 Dec 2022 22:51:50 GMT
-
+  recorded_at: Sat, 10 Dec 2022 17:24:59 GMT
 recorded_with: VCR 6.1.0

@@ -33,5 +33,6 @@ module Types
     def items(search:, user_id:)
       Item.search_items(search, user_id)
     end
+
   end
 end
