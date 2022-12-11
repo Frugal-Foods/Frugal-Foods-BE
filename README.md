@@ -269,6 +269,25 @@ mutation {
   }
 }
 ```
+# Delete AllUserStores (When a User returns to home)
+```
+mutation {
+  destroyAllUserStores(input: {userId: "1"}) {
+    userId
+  }
+}
+```
+
+## Expected Response
+```
+{
+  "data": {
+    "destroyAllUserStores": {
+      "userId": "[]"
+    }
+  }
+}
+```
 ​
 # Create UserStoreItem (When a user adds an item to their list)
 ```
