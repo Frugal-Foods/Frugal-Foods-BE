@@ -3,10 +3,12 @@ require 'rails_helper'
 RSpec.describe Types::QueryType, type: :request do
   describe 'get store items' do
     before  :each do
+      @user = create(:user)
       @store_1 = create(:store, zipcode: "83749")
       @store_2 = create(:store, zipcode: "83749")
       @item_1 = create(:item, name: "bananas")
       @item_2 = create(:item)
+      @user_store_1 = UserStore.create!(user_id: @user.id, store_id: @store_1.id)
       @store_1_item_1 = create(:store_item, store_id: @store_1.id, item_id: @item_1.id)
       @store_1_item_2 = create(:store_item, store_id: @store_1.id, item_id: @item_2.id)
       @store_2_item_1 = create(:store_item, store_id: @store_2.id, item_id: @item_1.id)
@@ -47,14 +49,15 @@ RSpec.describe Types::QueryType, type: :request do
     def query
       <<~GQL
       query storeItems {
-        items(search: "bananas") {
-          itemName
-          itemId
-          photoUrl
-          storeName
-          price
-          storeItemId
-          storeId
+        items(search: "banan", userId: #{@user.id}) {
+            userId
+            itemName
+            itemId
+            photoUrl
+            storeName
+            price
+            storeItemId
+            storeId
         }
       }
       GQL

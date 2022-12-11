@@ -11,6 +11,9 @@ module Types
     field :item_total, Float
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :user_store_item_id, Integer
+    field :store_id, Integer
+    field :item_id, Integer
 
     def item_name
       store_item = StoreItem.find(object.store_item_id)
@@ -27,7 +30,8 @@ module Types
     end
 
     def item_total
-      object.quantity * object.price
+      object.quantity * price
     end
+
   end
 end
