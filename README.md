@@ -159,12 +159,14 @@ query storeItems {
     address
     storeTotalPrice
     listItems {
-      id
+      itemId
       itemName
       itemPhotoUrl
       price
       quantity
       itemTotal
+      storeItemId
+      userStoreItemId
     }
   }
 }
@@ -177,50 +179,58 @@ query storeItems {
     "userStoreItems": [
       {
         "storeId": 1,
-        "name": "Walmart",
-        "address": "Suite 744 46455 Wilderman Spurs, Hammesfurt, GA 52267",
-        "storeTotalPrice": 17.8,
-        "listItems": [
-          {
-            "id": "1",
-            "itemName": "Cloves",
-            "itemPhotoUrl": "http://schowalter-abbott.info/gabriel",
-            "price": 8.9,
-            "quantity": 2,
-            "itemTotal": 17.8
-          }
-        ]
-      },
-      {
-        "storeId": 2,
-        "name": "Dollar General",
-        "address": "Apt. 952 19860 Wisozk Ports, West Mellieside, WV 81121",
-        "storeTotalPrice": 27.43,
-        "listItems": [
-          {
-            "id": "4",
-            "itemName": "Starfruit",
-            "itemPhotoUrl": "http://bogan.io/collene_champlin",
-            "price": 4.68,
-            "quantity": 5,
-            "itemTotal": 23.4
-          },
-          {
-            "id": "2",
-            "itemName": "Cloves",
-            "itemPhotoUrl": "http://schowalter-abbott.info/gabriel",
-            "price": 4.03,
-            "quantity": 1,
-            "itemTotal": 4.03
-          }
-        ]
-      },
-      {
-        "storeId": 3,
-        "name": "Amazon",
-        "address": "92710 Hessel Flat, Lonaville, OK 57954-0845",
+        "name": "King Soopers Marketplace - Castle Rock",
+        "address": "5544 Promenade Parkway, Castle Rock, CO, 80108",
         "storeTotalPrice": 0,
         "listItems": []
+      },
+      {
+        "storeId": 7,
+        "name": "Target",
+        "address": "5010 Founders Pkwy, Castle Rock, CO, 80108",
+        "storeTotalPrice": 1024.66,
+        "listItems": [
+          {
+            "itemId": 1,
+            "itemName": "Ocean Spray Jellied Cranberry Sauce - 14oz",
+            "itemPhotoUrl": "https://target.scene7.com/is/image/Target/GUEST_3b1f8b32-1532-4df8-be7b-4ba3b3acf2aa",
+            "price": 2.19,
+            "quantity": 4,
+            "itemTotal": 8.76,
+            "storeItemId": 1,
+            "userStoreItemId": 1
+          },
+          {
+            "itemId": 2,
+            "itemName": "Aquafina Pure Unflavored Water - 24pk/16.9 fl oz Bottles",
+            "itemPhotoUrl": "https://target.scene7.com/is/image/Target/GUEST_65a11503-43e2-49aa-9a8d-d21e727e9af0",
+            "price": 2,
+            "quantity": 8,
+            "itemTotal": 16,
+            "storeItemId": 1975,
+            "userStoreItemId": 6
+          },
+          {
+            "itemId": 329,
+            "itemName": "Kroger® Brand Broccoli Florets",
+            "itemPhotoUrl": "https://www.kroger.com/product/images/large/front/0001111060319",
+            "price": 99.99,
+            "quantity": 9,
+            "itemTotal": 899.91,
+            "storeItemId": 1976,
+            "userStoreItemId": 7
+          },
+          {
+            "itemId": 329,
+            "itemName": "Kroger® Brand Broccoli Florets",
+            "itemPhotoUrl": "https://www.kroger.com/product/images/large/front/0001111060319",
+            "price": 99.99,
+            "quantity": 1,
+            "itemTotal": 99.99,
+            "storeItemId": 1976,
+            "userStoreItemId": 8
+          }
+        ]
       }
     ]
   }
