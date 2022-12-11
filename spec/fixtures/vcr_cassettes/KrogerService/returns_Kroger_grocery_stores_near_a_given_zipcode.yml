@@ -1,0 +1,292 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.kroger.com/v1/connect/oauth2/token?grant_type=client_credentials
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic ZnJ1Z2FseWZvb2RzLTU0ODIwMzY3MDJlOGEwMDAwNTE0MjExZmJlMjM1ZTQ3NzA2OTQ3ODcxMDkxOTczNDUzMTpkY2gwNGhSVEU1RlUwSkdLTU1odVNqc1RXdGo0NjZjVlVyWUJ4YXZY
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Server:
+      - nginx
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Security-Policy:
+      - default-src 'self' localhost:*; script-src 'self' 'unsafe-inline' 'unsafe-eval'
+        assets.adobedtm.com s.pinimg.com www.googletagmanager.com bat.bing.com www.googleadservices.com
+        googleads.g.doubleclick.net ct.pinterest.com; connect-src 'self' dpm.demdex.net
+        stats.kroger.com; font-src 'self' fonts.gstatic.com; frame-src kroger.demdex.com
+        *.kroger.demdex.com bid.g.doubleclick.net; img-src 'self' *.kroger.com sstats.kroger.com
+        *.google.com dpm.demdex.net bat.bing.com ct.pinterest.com cm.everesttech.net;
+        style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - akam_1670776144_2dbc029e-5cac-4951-ac17-6fbd8dda9f8f
+      X-Frame-Options:
+      - DENY
+      X-Kroger-Proxy-Latency:
+      - '2'
+      X-Kroger-Upstream-Latency:
+      - '18'
+      X-Vcap-Request-Id:
+      - 24d538dd-f795-47d5-4bf5-29328bc9ed5e
+      X-Xss-Protection:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Akamai-Be-Grn:
+      - 0.a4d4c217.1670776144.25e94006
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '7200'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Date:
+      - Sun, 11 Dec 2022 16:29:04 GMT
+      Connection:
+      - keep-alive
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=62
+      - origin; dur=165
+      Akamai-Grn:
+      - 0.a7034017.1670776144.2460ad9d
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=79~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=d80ec6e6c8bc03c1d9b4ac2e8ae03ce9;
+        path=/; HttpOnly; Secure; SameSite=None
+    body:
+      encoding: UTF-8
+      string: '{"expires_in":1800,"access_token":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWx5Zm9vZHMtNTQ4MjAzNjcwMmU4YTAwMDA1MTQyMTFmYmUyMzVlNDc3MDY5NDc4NzEwOTE5NzM0NTMxIiwiZXhwIjoxNjcwNzc3OTQ0LCJpYXQiOjE2NzA3NzYxMzksImlzcyI6ImFwaS5rcm9nZXIuY29tIiwic3ViIjoiZTc0OGI1NmUtYTcwZC01YWMwLThiNWEtNTYyN2IwOTIxODE3Iiwic2NvcGUiOiIiLCJhdXRoQXQiOjE2NzA3NzYxNDQyMDc4Njk3ODEsImF6cCI6ImZydWdhbHlmb29kcy01NDgyMDM2NzAyZThhMDAwMDUxNDIxMWZiZTIzNWU0NzcwNjk0Nzg3MTA5MTk3MzQ1MzEifQ.DFKN3I40Ufa1pxhTCVWspvdV5gmlxAD00Iz-eqlI5gR2MLujAWSHxNiondHM9K5-CIaTdq6BEE7bE4CCXtRxRUSwvMT5cBRhCy3TPSEVEZmdggGsEeOY7zHe6Hm9LMnNNbu7Y50fPVOsfvsd3PL_oJjjfwm55sBvTYbh0v_vds1aaOzGcRcUIO3nJDhAM5gKOsG4HAuz97XmK-7VNQ56STBcna4ZVA086YY4HEZjUfWojU9ZJBAgkwPApzLH6tWM_kqlTZQnCErp3G1rftI1qaF7MNRg-xSuBgaAJeXYEMvhhLV9ukJOVeG0KbrDhJIrLIZP7ziRtruA4GUpz8HxEA","token_type":"bearer"}'
+  recorded_at: Sun, 11 Dec 2022 16:29:04 GMT
+- request:
+    method: get
+    uri: https://api.kroger.com/v1/locations?filter.limit=10&filter.radiusInMiles=10&filter.zipCode.near=80108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWx5Zm9vZHMtNTQ4MjAzNjcwMmU4YTAwMDA1MTQyMTFmYmUyMzVlNDc3MDY5NDc4NzEwOTE5NzM0NTMxIiwiZXhwIjoxNjcwNzc3OTQ0LCJpYXQiOjE2NzA3NzYxMzksImlzcyI6ImFwaS5rcm9nZXIuY29tIiwic3ViIjoiZTc0OGI1NmUtYTcwZC01YWMwLThiNWEtNTYyN2IwOTIxODE3Iiwic2NvcGUiOiIiLCJhdXRoQXQiOjE2NzA3NzYxNDQyMDc4Njk3ODEsImF6cCI6ImZydWdhbHlmb29kcy01NDgyMDM2NzAyZThhMDAwMDUxNDIxMWZiZTIzNWU0NzcwNjk0Nzg3MTA5MTk3MzQ1MzEifQ.DFKN3I40Ufa1pxhTCVWspvdV5gmlxAD00Iz-eqlI5gR2MLujAWSHxNiondHM9K5-CIaTdq6BEE7bE4CCXtRxRUSwvMT5cBRhCy3TPSEVEZmdggGsEeOY7zHe6Hm9LMnNNbu7Y50fPVOsfvsd3PL_oJjjfwm55sBvTYbh0v_vds1aaOzGcRcUIO3nJDhAM5gKOsG4HAuz97XmK-7VNQ56STBcna4ZVA086YY4HEZjUfWojU9ZJBAgkwPApzLH6tWM_kqlTZQnCErp3G1rftI1qaF7MNRg-xSuBgaAJeXYEMvhhLV9ukJOVeG0KbrDhJIrLIZP7ziRtruA4GUpz8HxEA
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '21495'
+      Server:
+      - nginx
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Correlation-Id:
+      - akam_1670776144_2cb0b383-c2c4-4ec3-b4b2-63fb50fe409f
+      X-Kroger-Proxy-Latency:
+      - '9'
+      X-Kroger-Upstream-Latency:
+      - '47'
+      X-Vcap-Request-Id:
+      - 93b1d58b-30d8-4486-4c07-a97440934024
+      Vary:
+      - Accept-Encoding
+      Akamai-Be-Grn:
+      - 0.a4d4c217.1670776144.25e936f8
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '7200'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      X-Ratelimit-Limit-Day:
+      - '5000'
+      X-Ratelimit-Remaining-Day:
+      - '4996'
+      Date:
+      - Sun, 11 Dec 2022 16:29:04 GMT
+      Connection:
+      - keep-alive
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=202
+      - origin; dur=262
+      Akamai-Grn:
+      - 0.a7034017.1670776144.2460ae8c
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=100~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=44ebfd47ab74604e6438ae74298adb7d;
+        path=/; HttpOnly; Secure; SameSite=None
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"locationId":"85200113","chain":"THE LITTLE CLINIC","address":{"addressLine1":"5544
+        Promenade Pkwy","city":"Castle Rock","state":"CO","zipCode":"80108","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.414941,"longitude":-104.879766,"latLng":"39.414941,-104.879766"},"name":"The
+        Little Clinic - 125 Castle Rock Clinic","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"08:30","close":"19:30","open24":false},"tuesday":{"open":"08:30","close":"19:30","open24":false},"wednesday":{"open":"08:30","close":"19:30","open24":false},"thursday":{"open":"08:30","close":"19:30","open24":false},"friday":{"open":"08:30","close":"19:30","open24":false},"saturday":{"open":"08:30","close":"17:00","open24":false},"sunday":{"open":"09:30","close":"16:00","open24":false}},"phone":"3035629157"},{"locationId":"62070019","chain":"LOAF
+        ''N JUG","address":{"addressLine1":"4901 North Castleton Dr.","city":"Castle
+        Rock","state":"CO","zipCode":"80109"},"geolocation":{"latitude":39.409918,"longitude":-104.872368,"latLng":"39.409918,-104.872368"},"name":"Loaf
+        ''N Jug","departments":[{"departmentId":"10","name":"Gas Station"}]},{"locationId":"62000125","chain":"KINGSOOPERS","address":{"addressLine1":"5544
+        Promenade Parkway","city":"Castle Rock","state":"CO","zipCode":"80108","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.4146152,"longitude":-104.8796695,"latLng":"39.4146152,-104.8796695"},"name":"King
+        Soopers Marketplace - Castle Rock","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"3035629128","departments":[{"departmentId":"08","name":"Floral"},{"departmentId":"09","name":"Pharmacy","phone":"3035629131","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"10","name":"Gas
+        Station","phone":"3035629128","address":{"addressLine1":"5546 Promenade Parkway","city":"Castle
+        Rock","state":"CO","zipCode":"80108"},"geolocation":{"latitude":39.4146152,"longitude":-104.8796695,"latLng":"39.4146152,-104.8796695"},"offsite":true},{"departmentId":"36","name":"Home
+        Fashion And Decor"},{"departmentId":"37","name":"Shoes"},{"departmentId":"38","name":"Apparel"},{"departmentId":"40","name":"Coffee
+        Bar"},{"departmentId":"54","name":"Chef"},{"departmentId":"58","name":"Free
+        Wireless Access"},{"departmentId":"66","name":"Murray''s Cheese"},{"departmentId":"94","name":"Pickup"},{"departmentId":"69","name":"Online
+        Deli/Bakery Ordering"},{"departmentId":"05","name":"Seafood Department"},{"departmentId":"06","name":"Liquor"},{"departmentId":"16","name":"Drive-thru
+        Pharmacy"},{"departmentId":"21","name":"Self Checkout"},{"departmentId":"29","name":"Event
+        Tickets"},{"departmentId":"46","name":"Sushi"},{"departmentId":"55","name":"Atm"},{"departmentId":"01","name":"Deli"},{"departmentId":"02","name":"Bakery"},{"departmentId":"0K","name":"Full
+        Strength Beer"},{"departmentId":"13","name":"Cell Phone"},{"departmentId":"03","name":"Cheese
+        Counter"},{"departmentId":"04","name":"Meat Department"},{"departmentId":"28","name":"Driver''s
+        Registration Services"},{"departmentId":"32","name":"Natural And Organics"},{"departmentId":"64","name":"Baby
+        World"},{"departmentId":"LY","name":"Lottery Tickets"},{"departmentId":"19","name":"Videos"},{"departmentId":"23","name":"Drug
+        \u0026 General Merchandise"},{"departmentId":"30","name":"Salad Bar"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"49","name":"Kitchen
+        Place"},{"departmentId":"56","name":"Little Clinic/Medical Center/Urgent Care"},{"departmentId":"65","name":"Money
+        Services"},{"departmentId":"12","name":"Cosmetics"},{"departmentId":"17","name":"Bath"},{"departmentId":"18","name":"Books
+        And Magazines"},{"departmentId":"44","name":"Beer"},{"departmentId":"53","name":"Boar''s
+        Head"},{"departmentId":"50","name":"Olive Bar"}]},{"locationId":"62000091","chain":"KINGSOOPERS","address":{"addressLine1":"7284
+        Lagae Rd","city":"Castle Pines","state":"CO","zipCode":"80108","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.4685225,"longitude":-104.8793798,"latLng":"39.4685225,-104.8793798"},"name":"King
+        Soopers - Castle Rock","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"3036886200","departments":[{"departmentId":"LY","name":"Lottery
+        Tickets"},{"departmentId":"23","name":"Drug \u0026 General Merchandise"},{"departmentId":"26","name":"Kosher
+        Food"},{"departmentId":"63","name":"I-wireless"},{"departmentId":"31","name":"Coin
+        Star"},{"departmentId":"53","name":"Boar''s Head"},{"departmentId":"65","name":"Money
+        Services"},{"departmentId":"05","name":"Seafood Department"},{"departmentId":"10","name":"Gas
+        Station"},{"departmentId":"29","name":"Event Tickets"},{"departmentId":"02","name":"Bakery"},{"departmentId":"66","name":"Murray''s
+        Cheese"},{"departmentId":"60","name":"Red Box"},{"departmentId":"04","name":"Meat
+        Department"},{"departmentId":"0K","name":"Full Strength Beer"},{"departmentId":"46","name":"Sushi"},{"departmentId":"11","name":"Bank"},{"departmentId":"21","name":"Self
+        Checkout"},{"departmentId":"94","name":"Pickup"},{"departmentId":"08","name":"Floral"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"55","name":"Atm"},{"departmentId":"69","name":"Online
+        Deli/Bakery Ordering"},{"departmentId":"01","name":"Deli"},{"departmentId":"03","name":"Cheese
+        Counter"},{"departmentId":"09","name":"Pharmacy","phone":"3036889721","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"50","name":"Olive
+        Bar"},{"departmentId":"58","name":"Free Wireless Access"},{"departmentId":"95","name":"Diesel"}]},{"locationId":"62000132","chain":"KINGSOOPERS","address":{"addressLine1":"750
+        N Ridge Rd","city":"Castle Rock","state":"CO","zipCode":"80104","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.375845,"longitude":-104.827526,"latLng":"39.375845,-104.827526"},"name":"King
+        Soopers - Castle Rock","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"3036602500","departments":[{"departmentId":"16","name":"Drive-thru
+        Pharmacy"},{"departmentId":"LY","name":"Lottery Tickets"},{"departmentId":"58","name":"Free
+        Wireless Access"},{"departmentId":"95","name":"Diesel"},{"departmentId":"11","name":"Bank"},{"departmentId":"50","name":"Olive
+        Bar"},{"departmentId":"55","name":"Atm"},{"departmentId":"10","name":"Gas
+        Station"},{"departmentId":"23","name":"Drug \u0026 General Merchandise"},{"departmentId":"66","name":"Murray''s
+        Cheese"},{"departmentId":"08","name":"Floral"},{"departmentId":"0K","name":"Full
+        Strength Beer"},{"departmentId":"28","name":"Driver''s Registration Services"},{"departmentId":"29","name":"Event
+        Tickets"},{"departmentId":"01","name":"Deli"},{"departmentId":"04","name":"Meat
+        Department"},{"departmentId":"40","name":"Coffee Bar"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"69","name":"Online
+        Deli/Bakery Ordering"},{"departmentId":"05","name":"Seafood Department"},{"departmentId":"09","name":"Pharmacy","phone":"3036602510","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"65","name":"Money
+        Services"},{"departmentId":"73","name":"Eco Atm"},{"departmentId":"94","name":"Pickup"},{"departmentId":"02","name":"Bakery"},{"departmentId":"60","name":"Red
+        Box"},{"departmentId":"53","name":"Boar''s Head"},{"departmentId":"63","name":"I-wireless"},{"departmentId":"21","name":"Self
+        Checkout"},{"departmentId":"31","name":"Coin Star"}]},{"locationId":"85200109","chain":"THE
+        LITTLE CLINIC","address":{"addressLine1":"12959 S Parker Rd","city":"Parker","state":"CO","zipCode":"80134","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.479628,"longitude":-104.760632,"latLng":"39.479628,-104.760632"},"name":"The
+        Little Clinic - 075 Parker Clinic","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"08:30","close":"19:30","open24":false},"tuesday":{"open":"08:30","close":"19:30","open24":false},"wednesday":{"open":"08:30","close":"19:30","open24":false},"thursday":{"open":"08:30","close":"19:30","open24":false},"friday":{"open":"08:30","close":"19:30","open24":false},"saturday":{"open":"08:30","close":"17:00","open24":false},"sunday":{"open":"09:30","close":"16:00","open24":false}},"phone":"7208424089"},{"locationId":"62000075","chain":"KINGSOOPERS","address":{"addressLine1":"12959
+        S Parker Rd","city":"Parker","state":"CO","zipCode":"80134","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.4797451,"longitude":-104.7606324,"latLng":"39.4797451,-104.7606324"},"name":"King
+        Soopers - Parker","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"3038401223","departments":[{"departmentId":"65","name":"Money
+        Services"},{"departmentId":"03","name":"Cheese Counter"},{"departmentId":"04","name":"Meat
+        Department"},{"departmentId":"09","name":"Pharmacy","phone":"3038407683","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"28","name":"Driver''s
+        Registration Services"},{"departmentId":"46","name":"Sushi"},{"departmentId":"50","name":"Olive
+        Bar"},{"departmentId":"60","name":"Red Box"},{"departmentId":"0K","name":"Full
+        Strength Beer"},{"departmentId":"58","name":"Free Wireless Access"},{"departmentId":"63","name":"I-wireless"},{"departmentId":"73","name":"Eco
+        Atm"},{"departmentId":"94","name":"Pickup"},{"departmentId":"10","name":"Gas
+        Station"},{"departmentId":"31","name":"Coin Star"},{"departmentId":"32","name":"Natural
+        And Organics"},{"departmentId":"55","name":"Atm"},{"departmentId":"LY","name":"Lottery
+        Tickets"},{"departmentId":"23","name":"Drug \u0026 General Merchandise"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"66","name":"Murray''s
+        Cheese"},{"departmentId":"01","name":"Deli"},{"departmentId":"21","name":"Self
+        Checkout"},{"departmentId":"95","name":"Diesel"},{"departmentId":"02","name":"Bakery"},{"departmentId":"05","name":"Seafood
+        Department"},{"departmentId":"08","name":"Floral"},{"departmentId":"29","name":"Event
+        Tickets"},{"departmentId":"53","name":"Boar''s Head"},{"departmentId":"56","name":"Little
+        Clinic/Medical Center/Urgent Care"},{"departmentId":"69","name":"Online Deli/Bakery
+        Ordering"}]},{"locationId":"62000108","chain":"KINGSOOPERS","address":{"addressLine1":"4000
+        Red Cedar Dr","city":"Highlands Ranch","state":"CO","zipCode":"80126","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.5253356,"longitude":-104.9401432,"latLng":"39.5253356,-104.9401432"},"name":"King
+        Soopers - Highlands Ranch","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"3036837383","departments":[{"departmentId":"53","name":"Boar''s
+        Head"},{"departmentId":"55","name":"Atm"},{"departmentId":"58","name":"Free
+        Wireless Access"},{"departmentId":"60","name":"Red Box"},{"departmentId":"0K","name":"Full
+        Strength Beer"},{"departmentId":"26","name":"Kosher Food"},{"departmentId":"42","name":"Walk
+        Up Pharmacy"},{"departmentId":"65","name":"Money Services"},{"departmentId":"21","name":"Self
+        Checkout"},{"departmentId":"23","name":"Drug \u0026 General Merchandise"},{"departmentId":"01","name":"Deli"},{"departmentId":"73","name":"Eco
+        Atm"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"69","name":"Online
+        Deli/Bakery Ordering"},{"departmentId":"94","name":"Pickup"},{"departmentId":"LY","name":"Lottery
+        Tickets"},{"departmentId":"02","name":"Bakery"},{"departmentId":"29","name":"Event
+        Tickets"},{"departmentId":"66","name":"Murray''s Cheese"},{"departmentId":"31","name":"Coin
+        Star"},{"departmentId":"63","name":"I-wireless"},{"departmentId":"03","name":"Cheese
+        Counter"},{"departmentId":"09","name":"Pharmacy","phone":"3036834288","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"46","name":"Sushi"},{"departmentId":"50","name":"Olive
+        Bar"},{"departmentId":"04","name":"Meat Department"},{"departmentId":"05","name":"Seafood
+        Department"},{"departmentId":"08","name":"Floral"}]},{"locationId":"62000088","chain":"KINGSOOPERS","address":{"addressLine1":"17031
+        Lincoln Ave","city":"Parker","state":"CO","zipCode":"80134","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.5360557,"longitude":-104.7906572,"latLng":"39.5360557,-104.7906572"},"name":"King
+        Soopers - Parker","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"7208517750","departments":[{"departmentId":"04","name":"Meat
+        Department"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"50","name":"Olive
+        Bar"},{"departmentId":"63","name":"I-wireless"},{"departmentId":"0K","name":"Full
+        Strength Beer"},{"departmentId":"09","name":"Pharmacy","phone":"7208517754","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"23","name":"Drug
+        \u0026 General Merchandise"},{"departmentId":"31","name":"Coin Star"},{"departmentId":"58","name":"Free
+        Wireless Access"},{"departmentId":"73","name":"Eco Atm"},{"departmentId":"94","name":"Pickup"},{"departmentId":"01","name":"Deli"},{"departmentId":"02","name":"Bakery"},{"departmentId":"11","name":"Bank"},{"departmentId":"42","name":"Walk
+        Up Pharmacy"},{"departmentId":"53","name":"Boar''s Head"},{"departmentId":"05","name":"Seafood
+        Department"},{"departmentId":"26","name":"Kosher Food"},{"departmentId":"32","name":"Natural
+        And Organics"},{"departmentId":"54","name":"Chef"},{"departmentId":"60","name":"Red
+        Box"},{"departmentId":"08","name":"Floral"},{"departmentId":"29","name":"Event
+        Tickets"},{"departmentId":"55","name":"Atm"},{"departmentId":"69","name":"Online
+        Deli/Bakery Ordering"},{"departmentId":"03","name":"Cheese Counter"},{"departmentId":"66","name":"Murray''s
+        Cheese"},{"departmentId":"LY","name":"Lottery Tickets"},{"departmentId":"21","name":"Self
+        Checkout"},{"departmentId":"46","name":"Sushi"},{"departmentId":"65","name":"Money
+        Services"}]},{"locationId":"62000027","chain":"KINGSOOPERS","address":{"addressLine1":"9551
+        S University Blvd","city":"Highlands Ranch","state":"CO","zipCode":"80126","county":"DOUGLAS
+        COUNTY"},"geolocation":{"latitude":39.5422823,"longitude":-104.9441651,"latLng":"39.5422823,-104.9441651"},"name":"King
+        Soopers - VILLAGE CENTER","hours":{"timezone":"America/Denver","gmtOffset":"(UTC-07:00)
+        Mountain Time (US Canada)","open24":false,"monday":{"open":"06:00","close":"23:00","open24":false},"tuesday":{"open":"06:00","close":"23:00","open24":false},"wednesday":{"open":"06:00","close":"23:00","open24":false},"thursday":{"open":"06:00","close":"23:00","open24":false},"friday":{"open":"06:00","close":"23:00","open24":false},"saturday":{"open":"06:00","close":"23:00","open24":false},"sunday":{"open":"06:00","close":"23:00","open24":false}},"phone":"3034703216","departments":[{"departmentId":"28","name":"Driver''s
+        Registration Services"},{"departmentId":"56","name":"Little Clinic/Medical
+        Center/Urgent Care"},{"departmentId":"01","name":"Deli"},{"departmentId":"03","name":"Cheese
+        Counter"},{"departmentId":"21","name":"Self Checkout"},{"departmentId":"55","name":"Atm"},{"departmentId":"58","name":"Free
+        Wireless Access"},{"departmentId":"65","name":"Money Services"},{"departmentId":"69","name":"Online
+        Deli/Bakery Ordering"},{"departmentId":"71","name":"Home Shop"},{"departmentId":"09","name":"Pharmacy","phone":"3034706445","hours":{"open24":false,"monday":{"open":"09:00","close":"20:00","open24":false},"tuesday":{"open":"09:00","close":"20:00","open24":false},"wednesday":{"open":"09:00","close":"20:00","open24":false},"thursday":{"open":"09:00","close":"20:00","open24":false},"friday":{"open":"09:00","close":"20:00","open24":false},"saturday":{"open":"09:00","close":"18:00","open24":false},"sunday":{"open":"10:00","close":"17:00","open24":false}}},{"departmentId":"0K","name":"Full
+        Strength Beer"},{"departmentId":"23","name":"Drug \u0026 General Merchandise"},{"departmentId":"11","name":"Bank"},{"departmentId":"31","name":"Coin
+        Star"},{"departmentId":"53","name":"Boar''s Head"},{"departmentId":"73","name":"Eco
+        Atm"},{"departmentId":"02","name":"Bakery"},{"departmentId":"04","name":"Meat
+        Department"},{"departmentId":"05","name":"Seafood Department"},{"departmentId":"08","name":"Floral"},{"departmentId":"54","name":"Chef"},{"departmentId":"66","name":"Murray''s
+        Cheese"},{"departmentId":"49","name":"Kitchen Place"},{"departmentId":"94","name":"Pickup"},{"departmentId":"LY","name":"Lottery
+        Tickets"},{"departmentId":"26","name":"Kosher Food"},{"departmentId":"29","name":"Event
+        Tickets"},{"departmentId":"48","name":"Starbucks"},{"departmentId":"32","name":"Natural
+        And Organics"},{"departmentId":"50","name":"Olive Bar"},{"departmentId":"63","name":"I-wireless"},{"departmentId":"60","name":"Red
+        Box"}]}],"meta":{"pagination":{"start":1,"limit":10,"total":10}}}'
+  recorded_at: Sun, 11 Dec 2022 16:29:04 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.kroger.com/v1/connect/oauth2/token?grant_type=client_credentials
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic ZnJ1Z2FseWZvb2RzLTU0ODIwMzY3MDJlOGEwMDAwNTE0MjExZmJlMjM1ZTQ3NzA2OTQ3ODcxMDkxOTczNDUzMTpkY2gwNGhSVEU1RlUwSkdLTU1odVNqc1RXdGo0NjZjVlVyWUJ4YXZY
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '944'
+      Server:
+      - nginx
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Security-Policy:
+      - default-src 'self' localhost:*; script-src 'self' 'unsafe-inline' 'unsafe-eval'
+        assets.adobedtm.com s.pinimg.com www.googletagmanager.com bat.bing.com www.googleadservices.com
+        googleads.g.doubleclick.net ct.pinterest.com; connect-src 'self' dpm.demdex.net
+        stats.kroger.com; font-src 'self' fonts.gstatic.com; frame-src kroger.demdex.com
+        *.kroger.demdex.com bid.g.doubleclick.net; img-src 'self' *.kroger.com sstats.kroger.com
+        *.google.com dpm.demdex.net bat.bing.com ct.pinterest.com cm.everesttech.net;
+        style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+      X-Content-Type-Options:
+      - nosniff
+      X-Correlation-Id:
+      - akam_1670776143_53083440-db3c-4224-9721-aaadb43bdea2
+      X-Frame-Options:
+      - DENY
+      X-Kroger-Proxy-Latency:
+      - '3'
+      X-Kroger-Upstream-Latency:
+      - '17'
+      X-Vcap-Request-Id:
+      - 2fe2bb0a-aa3e-40d7-5318-2ec6f065de97
+      X-Xss-Protection:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      Akamai-Be-Grn:
+      - 0.a4d4c217.1670776143.25e9397a
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '7200'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Date:
+      - Sun, 11 Dec 2022 16:29:03 GMT
+      Connection:
+      - keep-alive
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=213
+      - origin; dur=182
+      Akamai-Grn:
+      - 0.a7034017.1670776143.2460ac4e
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - akaalb_Digital_ALB_API=~op=KT_Digital_API_Apigee:api-apigee|~rv=50~m=api-apigee:0|~os=75b4a9ec926d2a9e67035451773cec6c~id=168478b35c45b01af22000a59ad34aff;
+        path=/; HttpOnly; Secure; SameSite=None
+    body:
+      encoding: UTF-8
+      string: '{"expires_in":1800,"access_token":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJmcnVnYWx5Zm9vZHMtNTQ4MjAzNjcwMmU4YTAwMDA1MTQyMTFmYmUyMzVlNDc3MDY5NDc4NzEwOTE5NzM0NTMxIiwiZXhwIjoxNjcwNzc3OTQzLCJpYXQiOjE2NzA3NzYxMzgsImlzcyI6ImFwaS5rcm9nZXIuY29tIiwic3ViIjoiZTc0OGI1NmUtYTcwZC01YWMwLThiNWEtNTYyN2IwOTIxODE3Iiwic2NvcGUiOiIiLCJhdXRoQXQiOjE2NzA3NzYxNDM2MjkxNDU5NTQsImF6cCI6ImZydWdhbHlmb29kcy01NDgyMDM2NzAyZThhMDAwMDUxNDIxMWZiZTIzNWU0NzcwNjk0Nzg3MTA5MTk3MzQ1MzEifQ.qsK_vDLoZz9EgETMKZ0qT_8o0OE87uDUkYqL3JY03yu8MKC48Crl3-q5OglbH6SkKiY-AyE97yhGnXue5rY_P-zTDH6QXuUM9E6bX80m3NWfQwK0rU5yElKZdbR3zecTIudgRlYnT-nu995bgr97DjoRTFKqFOEYujNo1Eo60HIaPnj0KhAQmdR8Gr76A0XDuomQVml3OWqnFvDgWzYVgKW84ZOTBeUd-dgx3FkZFQJnWHTPMViCm598hV7cLOAcPv3unqDn3Xp1QvgxKl1m_ANGYkWSOMsRw9bLuAsdUKUuP47JW7JGZhQ87NiVa8nq0l5v-Bckrr9uMM3C69wjnQ","token_type":"bearer"}'
+  recorded_at: Sun, 11 Dec 2022 16:29:03 GMT
+recorded_with: VCR 6.1.0
