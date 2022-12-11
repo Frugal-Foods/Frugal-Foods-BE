@@ -239,6 +239,37 @@ query storeItems {
   }
 }
 ```
+
+# Get UserStore
+```
+query {
+  userStores(userId: 1) {
+    id
+    storeId
+    userId
+  }
+}
+```
+
+## Expected Response
+```
+{
+  "data": {
+    "userStores": [
+      {
+        "id": "1",
+        "storeId": "1",
+        "userId": 1
+      },
+      {
+        "id": "2",
+        "storeId": "2",
+        "userId": 1
+      }
+    ]
+  }
+}
+```
 ​
 # Create UserStore (When a user selects a store)
 ```

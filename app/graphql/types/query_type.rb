@@ -34,5 +34,12 @@ module Types
       Item.search_items(search, user_id)
     end
 
+    field :user_stores, [Types::ItemType], null: true do
+      argument :user_id, Integer, required: true
+    end
+
+    def user_stores(user_id:)
+      UserStore.where(user_id: user_id)
+    end
   end
 end
