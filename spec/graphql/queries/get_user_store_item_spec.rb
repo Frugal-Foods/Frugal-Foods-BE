@@ -23,11 +23,10 @@ RSpec.describe Types::QueryType do
       UserStoreItem.create(user_id: @user.id, store_item_id: storeitem1.id, quantity: 2)
       UserStoreItem.create(user_id: @user.id, store_item_id: storeitem4.id, quantity: 5)
       UserStoreItem.create(user_id: @user.id, store_item_id: storeitem2.id, quantity: 1)
-
-      @result = JSON.parse(FrugalFoodsBeSchema.execute(query).to_json, symbolize_names: true)
     end
-
+    
     it 'can return all UserStoreItems, organized by store' do
+      @result = JSON.parse(FrugalFoodsBeSchema.execute(query).to_json, symbolize_names: true)
       expect(@result).to be_a Hash
       expect(@result[:data][:userStoreItems]).to be_an Array
       expect(@result[:data][:userStoreItems].count).to eq(3)
@@ -63,14 +62,49 @@ RSpec.describe Types::QueryType do
           expect(item[:price]).to be_a Float
           expect(item[:quantity]).to be_an Integer
           expect(item[:itemTotal]).to be_a Float
+          expect(item[:userStoreItemId]).to be_a Integer
         end
       end
+    end
+
+    it 'returns an empty array of userStoreItems when there is no user with that userID in the database' do
+      @result = JSON.parse(FrugalFoodsBeSchema.execute(bad_query).to_json, symbolize_names: true)
+
+      expect(@result).to be_a Hash
+
+      expect(@result[:data][:userStoreItems]).to be_an Array
+      expect(@result[:data][:userStoreItems].count).to eq(0)
+      expect(@result[:data][:userStoreItems]).to eq([])
     end
 
     def query
       <<~GQL
       {
         userStoreItems(userId: #{@user.id}) {
+          storeId
+          name
+          address
+          storeTotalPrice
+          listItems {
+                itemId
+                itemName
+                itemPhotoUrl
+                price
+                quantity
+                itemTotal
+                storeItemId
+                userStoreItemId
+              }
+         }
+    }
+      GQL
+    end
+
+
+    def bad_query
+      <<~GQL
+      {
+        userStoreItems(userId: 999) {
           storeId
           name
           address
