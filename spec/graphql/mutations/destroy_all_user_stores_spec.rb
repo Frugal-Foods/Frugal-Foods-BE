@@ -14,7 +14,7 @@ module Mutations
           destroyAllUserStores(input:{
             userId: "#{@user.id}"
           }) {
-            id
+            userId
           }
         }
         GQL
@@ -24,7 +24,7 @@ module Mutations
           destroyAllUserStores(input:{
             userId: "8"
           }) {
-            id
+            userId
           }
         }
         GQL
@@ -35,24 +35,16 @@ module Mutations
           expect(UserStore.count).to eq(2)
 
           post '/graphql', params: { query: @query}
-   
+
           expect(UserStore.count).to eq(0)
         end
 
         it 'returns an empty array after deletion' do
           post '/graphql', params: { query: @query}
           json = JSON.parse(response.body)
-          id = json["data"]["destroyUserStore"]["id"]
+          user_id = json["data"]["destroyAllUserStores"]["userId"]
           
-          expect(id).to eq([])
-        end
-    
-        it 'returns an error message if user store parameters are invalid' do
-          post '/graphql', params: { query: @bad_query}
-          json = JSON.parse(response.body)
-      
-          message = json["data"]["destroyUserStore"]["id"]
-          expect(message).to eq("Invalid ID or query parameter. Please try again.")
+          expect(user_id).to eq("[]")
         end
       end
     end
