@@ -21,7 +21,6 @@ module Mutations
                                     "userId" => user.id,
                                     "storeId" => store.id})
         end
-    
 
         it 'returns an error message if user store parameters are invalid' do
           post '/graphql', params: { query: bad_query(user_id: "", store_id: "")}
@@ -29,8 +28,18 @@ module Mutations
 
           messages = json['errors'].first['message']
           expect(json['data']).to eq(nil)
-          expect(messages).to include("Parse error")
-            
+          expect(messages).to include("Parse error")  
+        end
+
+        it 'returns an error message if userstore relationship is already created' do
+          post '/graphql', params: { query: query(user_id: user.id, store_id: store.id)}
+          post '/graphql', params: { query: redundant_post_query(user_id: "#{UserStore.last.user_id}", store_id: "#{UserStore.last.store_id}")}
+          json = JSON.parse(response.body)
+
+          messages = json['errors'].first['message']
+          expect(json['data']['createUserStore']).to be(nil)
+          expect(messages).to eq("Cannot return null for non-nullable field CreateUserStorePayload.userStore")  
+          expect(UserStore.all.count).to eq(1)
         end
 
         def query(user_id:, store_id:)
@@ -51,6 +60,22 @@ module Mutations
         end
 
         def bad_query(user_id:, store_id:)
+          <<~GQL
+            mutation {
+              createUserStore(
+                input: {userId: #{user_id}, storeId: #{store_id}}) {
+                userStore {
+                  id
+                  userId
+                  storeId
+                }
+                errors
+              }
+            }
+          GQL
+        end
+
+        def redundant_post_query(user_id:, store_id:)
           <<~GQL
             mutation {
               createUserStore(
