@@ -151,6 +151,8 @@ query {
 ```
 
 ## Get StoreItems 
+Note: For the prototype data, Target has currently has 279 items available (pages 1-10 of items from their Products API). The Kroger stores have 50 items each (10 results from each keyword search of their Products API). The keywords for those searches were: "produce," "snack," "dairy," "frozen," and "deli".
+
 This endpoint requires a `search` parameter and a `userId` parameter.  It returns all items that match the search parameter from stores that are associated with a specific User. 
 ### Request
 ```ruby
