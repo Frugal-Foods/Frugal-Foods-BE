@@ -1,3 +1,7 @@
+## Schema: 
+
+<img src="./app/assets/images/schema.jpg" alt="The schema of this project includes users, stores, and items. And many joins tables between them."  width="600" height="350" />
+
 ## BE Local Setup
 1) Clone down the repo.
 ```
@@ -418,3 +422,16 @@ mutation{
     }
 }
 ```
+
+## Contributors
+-   **Sid Mann** -  [GitHub Profile](https://github.com/sjmann2) - [LinkedIn](https://www.linkedin.com/in/sidmann/)
+-   **Becka Hendricks** -  [GitHub Profile](https://github.com/rebeckahendricks) - [LinkedIn](https://www.linkedin.com/in/rebecka-hendricks/)
+-   **Carter Ball** -  [GitHub Profile](https://github.com/cballrun) - [LinkedIn](https://www.linkedin.com/in/carter-ball-01b669160/)
+-   **Alaina Kneiling** -  [GitHub Profile](https://github.com/alaina-noel) - [LinkedIn](https://www.linkedin.com/in/alaina-noel/)
+
+## Mentor
+-   **Khoa Nguyen** -  [GitHub Profile](https://github.com/omegaeye-he)
+
+## Project Manager
+-   **Nik Seif** -  [GitHub Profile](https://github.com/niksseif)
+
