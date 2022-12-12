@@ -1,20 +1,21 @@
 # Description
 This is the back-end API for our Frugal Foods application. For for detailed information about the application please visit the [frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe).
 
-This app includes a PostgreSQL database that stores users, stores, items, store items, user store items, and user stores information for the app. Store and product information is provided by consumption of both the [Target](https://www.redcircleapi.com/docs/target-product-data-api/overview) and [Kroger] (https://developer.kroger.com/reference/) API's. This app consolidates the data provided by the external API's to be consumed by our front end and served to the end user. This prototype currently has two zipcodes available for demo: '80108' and '80206'.
+This app includes a PostgreSQL database that stores users, stores, items, store items, user store items, and user stores information for the app. Store and product information are provided by consumption of both the [Target](https://www.redcircleapi.com/docs/target-product-data-api/overview) and [Kroger](https://developer.kroger.com/reference/) API's. This app consolidates the data provided by the external API's to be consumed by our front end and served to the end user. This prototype currently has two zipcodes available for demo: '80108' and '80206'.
 
 # Links
 [Frugal Foods BE deployment](https://frugal-foods-be.fly.dev/)
-[frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe)
+
+[Frugal Foods FE repository](https://github.com/Frugal-Foods/frugal-foods-fe)
 
 ## Technologies Used
-Rails 5.2.8
-Ruby 2.7.4
-PostgreSQL Database
-CircleCI for CI/CD
-Fly.io for deployment
+- Rails 5.2.8
+- Ruby 2.7.4
+- PostgreSQL Database
+- CircleCI for CI/CD
+- Fly.io for deployment
 
-## Schema: 
+## Schema 
 
 <img src="./app/assets/images/schema.jpg" alt="The schema of this project includes users, stores, and items. And many joins tables between them."  width="600" height="350" />
 
@@ -62,8 +63,8 @@ You can also access queries through Postman by sending a POST request to `localh
 - Implement a map feature that creates a route for the user depending on which stores were chosen.
 
 ## Endpoints Available
-Base URL: `https://frugal-foods-be.fly.dev/` 
-All endpoints below can be accessed with POST request to `https://frugal-foods-be.fly.dev/graphql` and the query (below) sent in the request body.<br><br>
+- Base URL: `https://frugal-foods-be.fly.dev/` 
+- All endpoints below can be accessed with POST request to `https://frugal-foods-be.fly.dev/graphql` and the query (below) sent in the request body.<br><br>
 
 
 # Endpoints
@@ -71,7 +72,7 @@ All endpoints below can be accessed with POST request to `https://frugal-foods-b
 This endpoint requires a `zipcode` parameter.<br>
 <b>Note:</b> This prototype currently has two zipcodes available for demo: '80108' and '80206'.  It is returning all Kroger and Target stores within 10 miles of the zipcode.
 ### Request
-```
+```ruby
 {
   stores(zipcode: "80206") {
     id
@@ -83,7 +84,7 @@ This endpoint requires a `zipcode` parameter.<br>
 
 ### Expected Response
 
-```
+```JSON
 {
     "data": {
         "stores": [
@@ -110,7 +111,7 @@ This endpoint requires a `zipcode` parameter.<br>
 ## Get UserStores
 This endpoint requires a `userId` parameter and returns all stores that are associated with that user.
 ### Request
-```
+```ruby
 query {
   userStores(userId: 5) {
     id
@@ -120,7 +121,7 @@ query {
 }
 ```
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "userStores": [
@@ -152,7 +153,7 @@ query {
 ## Get StoreItems 
 This endpoint requires a `search` parameter and a `userId` parameter.  It returns all items that match the search parameter from stores that are associated with a specific User. 
 ### Request
-```
+```ruby
 query storeItems {
   items(search: "banana", userId: 5) {
     	userId
@@ -168,7 +169,7 @@ query storeItems {
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "items": [
@@ -230,7 +231,7 @@ query storeItems {
 ## Get UserStoreItems
 This endpoint requires a `userId` parameter.  It returns all items associated with a User, organized by store. This can be used for a final shopping list.
 ### Request
-```
+```ruby
   { userStoreItems(userId: 5) {
     storeId
     name
@@ -249,7 +250,7 @@ This endpoint requires a `userId` parameter.  It returns all items associated wi
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "userStoreItems": [
@@ -297,7 +298,7 @@ This endpoint requires a `userId` parameter.  It returns all items associated wi
 ## Create UserStore 
 This mutation requires `userId` and `storeId` parameters. It creates an object in the database that creates an association between a User and a Store.
 ### Request
-```
+```ruby
 mutation {
   createUserStore(input: {userId: 5, storeId: 91}) {
     userStore {
@@ -311,7 +312,7 @@ mutation {
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "createUserStore": {
@@ -329,7 +330,7 @@ mutation {
 ## Create UserStoreItem
 This mutation requires `userId`, `storeItemId`, and `quantity` parameters. This mutation creates an association between a User and a StoreItem (for example: used when adding items from a specific store to a cart).
 ### Request
-```
+```ruby
 mutation {
   createUserStoreItem(input: {userId: 5, storeItemId: 19615, quantity: 4}) {
     userStoreItem {
@@ -344,7 +345,7 @@ mutation {
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "createUserStoreItem": {
@@ -363,7 +364,7 @@ mutation {
 ## Delete UserStore
 This mutation requires an `id` (UserStore) parameter.  It destroys the association between a User and a Store.
 ### Request
-```
+```ruby
 mutation{
 	destroyUserStore(input:
   { id:"213"}) {
@@ -373,7 +374,7 @@ mutation{
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "destroyUserStore": {
@@ -386,7 +387,7 @@ mutation{
 ## Delete UserStoreItem
 This mutation requires an `id` (UserStoreItem) parameter. It destroys the association between a User and a StoreItem (removes an item from a cart).
 ### Request
-```
+```ruby
 mutation{
 	destroyUserStoreItem(input:
   { id:"13"}) {
@@ -396,7 +397,7 @@ mutation{
 
 ```
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "destroyUserStore": {
@@ -409,7 +410,7 @@ mutation{
 ## Delete ALL UserStores
 This endpoint requires a `userId` parameter and destroys ALL associations between a User and a Store. (This is used for restarting a shopping session.)
 ### Request
-```
+```ruby
 mutation {
   destroyAllUserStores(input: {userId: "5"}) {
     userId
@@ -418,7 +419,7 @@ mutation {
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "destroyAllUserStores": {
@@ -431,7 +432,7 @@ mutation {
 ## Update UserStoreItem
 This endpoint requires `id` (UserStoreItem) and `quantity` parameters. This endpoint patches / updates the quantity of a UserStoreItem (can be used to update the quantity of items in a cart).
 ### Request
-```
+```ruby
 mutation{
   updateUserStoreItem(input:{
     id: "175",
@@ -444,7 +445,7 @@ mutation{
 ```
 
 ### Expected Response
-```
+```JSON
 {
     "data": {
         "updateUserStoreItem": {
