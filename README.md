@@ -1,4 +1,20 @@
-## BE Local Setup
+# Description
+This is the back-end API for our Frugal Foods application. For for detailed information about the application please visit the [frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe).
+
+This app includes a PostgreSQL database that stores users, stores, items, store items, user store items, and user stores information for the app. Store and product information is provided by consumption of both the [Target](https://www.redcircleapi.com/docs/target-product-data-api/overview) and [Kroger] (https://developer.kroger.com/reference/) API's. This app consolidates the data provided by the external API's to be consumed by our front end and served to the end user. This prototype currently has two zipcodes available for demo: '80108' and '80206'.
+
+# Links
+[Frugal Foods BE deployment](https://frugal-foods-be.fly.dev/)
+[frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe)
+
+## Technologies Used
+Rails 5.2.8
+Ruby 2.7.4
+PostgreSQL Database
+CircleCI for CI/CD
+Fly.io for deployment
+
+## Local setup directions
 1) Clone down the repo.
 ```
 git clone git@github.com:Frugal-Foods/Frugal-Foods-BE.git
@@ -28,11 +44,21 @@ rails json_load:all
 ```
 rails s
 ```
-At this point, you can run the front-end application (put link to FE set-up instructions here) and it can make queries to the Rails server at `localhost:3000/graphql`.
+Follow the setup instructions for the [frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe) in order to make queries to the [frugal foods API](https://frugal-foods-be.fly.dev/).
 
-You can also access queries through Postman by using a POST request to `localhost:3000/graphql` and sending the request (seen below) in the body of your request.
-### Deployed Application
-The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. All endpoints below can be accessed with POST request to `https://frugal-foods-be.fly.dev/graphql` and the query (below) sent in the request body.<br><br>
+You can also access queries through Postman by sending a POST request to `localhost:3000/graphql` and sending the query (shown below) in the body of your request.
+
+## Future goals
+- Due to rate limiting for free usage of both the Target and Kroger API's, our prototype only includes data from two zipcodes. Our goal moving forward to make this application more dynamic is to make live API calls to return data for any user in any zipcode.
+- Implement authentication, allowing a user to create an account and have their popular stores and items remembered
+- Implement 'shop by department' feature that allows user to browse all products for a store along with the ability to search for a specific item.
+- Collect data for other popular grocery stores to allow the user more options when choosing stores near them.
+- Implement 'cheapest in one stop' feature that allows a user to search all items on their grocery list and see which store would have the cheapest total if they only wanted to stop at one store.
+- Implement a map feature that creates a route for the user depending on which stores were chosen.
+
+## Endpoints Available
+Base URL: `https://frugal-foods-be.fly.dev/` 
+All endpoints below can be accessed with POST request to `https://frugal-foods-be.fly.dev/graphql` and the query (below) sent in the request body.<br><br>
 
 
 ## Stores Query
@@ -47,7 +73,7 @@ The link for the deployed API is located at: https://frugal-foods-be.fly.dev/. A
 }
 ```
 ## Expected Response
-```
+```JSON
 {
     "data": {
         "stores": [
@@ -123,7 +149,7 @@ query storeItems {
 
 ```
 ## Expected Return
-```
+```JSON
 {
   "data": {
     "items": [
@@ -176,7 +202,7 @@ query storeItems {
 ```
 ## Expected return
 
-```
+```JSON
 {
   "data": {
     "userStoreItems": [
@@ -252,7 +278,7 @@ query {
 ```
 
 ## Expected Response
-```
+```JSON
 {
   "data": {
     "userStores": [
@@ -286,7 +312,7 @@ mutation {
 ```
 ​
 ## Expected Response
-```
+```JSON
 {
   "data": {
     "createUserStore": {
@@ -310,7 +336,7 @@ mutation {
 ```
 
 ## Expected Response
-```
+```JSON
 {
   "data": {
     "destroyAllUserStores": {
@@ -335,7 +361,7 @@ mutation {
 }
 ```
 ## Expected response
-```
+```JSON
 {
   "data": {
     "createUserStoreItem": {
@@ -361,7 +387,7 @@ mutation{
 
 ```
 ## Example Response
-
+```JSON
 {
   "data": {
     "destroyUserStoreItem": {
@@ -369,9 +395,10 @@ mutation{
     }
   }
 }
-# Delete UserStore
 ```
+# Delete UserStore
 
+```
 mutation{
 	destroyUserStore(input:
   { id:"13"}) {
@@ -381,7 +408,7 @@ mutation{
 ```
 
 ## Example Response
-
+```JSON
 {
   "data": {
     "destroyUserStore": {
@@ -389,6 +416,7 @@ mutation{
     }
   }
 }
+```
 
 # PATCH UserStoreItem
 ```
@@ -404,6 +432,7 @@ mutation{
 ```
 
 ## Example Response
+```JSON
 
 {
   "data": {
@@ -413,4 +442,4 @@ mutation{
     }
   }
 }
-
+```
