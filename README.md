@@ -234,66 +234,58 @@ query storeItems {
 This endpoint requires a `userId` parameter.  It returns all items associated with a User, organized by store. This can be used for a final shopping list.
 ### Request
 ```ruby
-  { userStoreItems(userId: 5) {
+  {
+  userStoreItems(userId: 5) {
     storeId
     name
     address
     storeTotalPrice
     listItems {
-      id
+      itemId
       itemName
       itemPhotoUrl
       price
       quantity
       itemTotal
+      storeItemId
+      userStoreItemId
     }
   }
-  }
+}
 ```
 
 ### Expected Response
 ```JSON
 {
-    "data": {
-        "userStoreItems": [
-            {
-                "storeId": 84,
-                "name": "King Soopers - CAPITOL HILL",
-                "address": "1155 E 9Th Ave, Denver, CO, 80218",
-                "storeTotalPrice": 0.0,
-                "listItems": []
-            },
-            {
-                "storeId": 82,
-                "name": "King Soopers - Castle Rock",
-                "address": "7284 Lagae Rd, Castle Pines, CO, 80108",
-                "storeTotalPrice": 0.0,
-                "listItems": []
-            },
-            {
-                "storeId": 83,
-                "name": "King Soopers - Castle Rock",
-                "address": "750 N Ridge Rd, Castle Rock, CO, 80104",
-                "storeTotalPrice": 1.38,
-                "listItems": null
-            },
-            {
-                "storeId": 88,
-                "name": "Target",
-                "address": "11150 S Twenty Mile Rd, Parker, CO, 80134",
-                "storeTotalPrice": 4.19,
-                "listItems": null
-            }
+  "data": {
+    "userStoreItems": [
+      {
+        "storeId": 1,
+        "name": "King Soopers Marketplace - Castle Rock",
+        "address": "5544 Promenade Parkway, Castle Rock, CO, 80108",
+        "storeTotalPrice": 14.97,
+        "listItems": [
+          {
+            "itemId": 280,
+            "itemName": "Boar's Head® Pepper House™ Smoked Hummus",
+            "itemPhotoUrl": "https://www.kroger.com/product/images/large/back/0004242116288",
+            "price": 4.99,
+            "quantity": 1,
+            "itemTotal": 4.99,
+            "storeItemId": 1675,
+            "userStoreItemId": 7
+          }
         ]
-    },
-    "errors": [
-        {
-            "message": "Cannot return null for non-nullable field UserStoreItem.id"
-        },
-        {
-            "message": "Cannot return null for non-nullable field UserStoreItem.id"
-        }
+      },
+      {
+        "storeId": 2,
+        "name": "King Soopers - Castle Rock",
+        "address": "7284 Lagae Rd, Castle Pines, CO, 80108",
+        "storeTotalPrice": 0,
+        "listItems": []
+      }
     ]
+  }
 }
 ```
 
