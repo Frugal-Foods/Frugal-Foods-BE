@@ -260,10 +260,10 @@ This endpoint requires a `userId` parameter.  It returns all items associated wi
   "data": {
     "userStoreItems": [
       {
-        "storeId": 1,
+        "storeId": 85,
         "name": "King Soopers Marketplace - Castle Rock",
         "address": "5544 Promenade Parkway, Castle Rock, CO, 80108",
-        "storeTotalPrice": 14.97,
+        "storeTotalPrice": 4.99,
         "listItems": [
           {
             "itemId": 280,
