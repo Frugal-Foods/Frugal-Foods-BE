@@ -407,7 +407,7 @@ mutation{
 ```
 
 ## Delete ALL UserStores
-This endpoint requires a `userId` parameter and destroys ALL associations between a User and a Store. (This is used for restarting a shopping session.)
+This endpoint requires a `userId` parameter and destroys ALL associations between a User and a Store. It will also destroy all associations between a User and a StoreItem (clear the shopping cart). This is used for restarting a shopping session.
 ### Request
 ```
 mutation {
