@@ -6,9 +6,14 @@ module Mutations
         @user = create(:user)
         store1 = create(:store)
         store2 = create(:store)
-        @user_store1 = UserStore.create!(user: @user, store: store1)
-        @user_store2 = UserStore.create!(user: @user, store: store2)
-        
+        item = create(:item)
+        store_item1 = StoreItem.create!(store: store1, item: item, price: 99)
+        store_item2 = StoreItem.create!(store: store2, item: item, price: 10)
+        user_store1 = UserStore.create!(user: @user, store: store1)
+        user_store2 = UserStore.create!(user: @user, store: store2)
+        user_store_item1 = UserStoreItem.create!(user: @user, store_item: store_item1, quantity: 2)
+        user_store_item2 = UserStoreItem.create!(user: @user, store_item: store_item2, quantity: 1)
+
         @query = <<~GQL
         mutation{
           destroyAllUserStores(input:{
@@ -37,6 +42,14 @@ module Mutations
           post '/graphql', params: { query: @query}
 
           expect(UserStore.count).to eq(0)
+        end
+
+        it 'destroys all user stores items associated with a user' do
+          expect(UserStoreItem.count).to eq(2)
+
+          post '/graphql', params: { query: @query}
+
+          expect(UserStoreItem.count).to eq(0)
         end
 
         it 'returns an empty array after deletion' do
