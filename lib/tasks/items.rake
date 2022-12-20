@@ -4,9 +4,10 @@ namespace :json_load do
   desc "Read JSON File of Items"
   task items: :environment do
 
-    target80206_bucket = "target80206"
-    target_80206_bucket_response = "response.json"
-    s3 = Aws::S3::Client.new
+    target80206_bucket = "target80206" #variable name on aws
+    target_80206_bucket_response = "response.json" #variable name on aws
+
+    s3 = Aws::S3::Client.new #this contains the credentials
     target_items_response_80206 = s3.get_object(bucket: target80206_bucket, key: target_80206_bucket_response)
 
     parsed_target_items_80206 = JSON.parse(target_items_response_80206.body.string, symbolize_names: true)
