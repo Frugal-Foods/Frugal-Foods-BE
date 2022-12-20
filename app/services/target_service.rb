@@ -8,7 +8,6 @@ class TargetService
   end
 
   private 
-  
   def self.conn
     Faraday.new('https://api.redcircleapi.com') do |faraday|
       faraday.params['type'] = 'search'
