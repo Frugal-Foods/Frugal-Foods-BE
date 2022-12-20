@@ -4,8 +4,8 @@ This is the back-end API for our Frugal Foods application. For for detailed info
 This app includes a PostgreSQL database that stores users, stores, items, store items, user store items, and user stores information for the app. Store and product information is provided by consumption of both the [Target](https://www.redcircleapi.com/docs/target-product-data-api/overview) and [Kroger] (https://developer.kroger.com/reference/) API's. This app consolidates the data provided by the external API's to be consumed by our front end and served to the end user. This prototype currently has two zipcodes available for demo: '80108' and '80206'.
 
 # Links
-[Frugal Foods Live](https://frugal-foods.herokuapp.com/)
-[Frugal Foods BE deployment](https://frugal-foods-be.fly.dev/)
+[Frugal Foods Live](https://frugal-foods.herokuapp.com/)<br>
+[Frugal Foods BE deployment for Postman](https://frugal-foods-be.fly.dev/)<br>
 [frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe)
 
 ## Technologies Used
