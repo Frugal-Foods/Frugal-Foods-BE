@@ -4,16 +4,20 @@ This is the back-end API for our Frugal Foods application. For for detailed info
 This app includes a PostgreSQL database that stores users, stores, items, store items, user store items, and user stores information for the app. Store and product information is provided by consumption of both the [Target](https://www.redcircleapi.com/docs/target-product-data-api/overview) and [Kroger] (https://developer.kroger.com/reference/) API's. This app consolidates the data provided by the external API's to be consumed by our front end and served to the end user. This prototype currently has two zipcodes available for demo: '80108' and '80206'.
 
 # Links
+[Frugal Foods Live](https://frugal-foods.herokuapp.com/)
 [Frugal Foods BE deployment](https://frugal-foods-be.fly.dev/)
 [frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe)
 
 ## Technologies Used
-Rails 5.2.8
-Ruby 2.7.4
-PostgreSQL Database
-CircleCI for CI/CD
+[Ruby 2.7.2](https://www.ruby-lang.org/en/documentation/installation/) <br>
+[Rails 5.2.6](https://guides.rubyonrails.org/v5.0/getting_started.html#installing-rails)<br>
+![Apollo GraphQL](https://img.shields.io/badge/Apollo%20GraphQL-311C87?&style=for-the-badge&logo=Apollo%20GraphQL&logoColor=white)
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)<br>
 Fly.io for deployment
-
 ## Schema: 
 
 <img src="./app/assets/images/schema.jpg" alt="The schema of this project includes users, stores, and items. And many joins tables between them."  width="600" height="350" />

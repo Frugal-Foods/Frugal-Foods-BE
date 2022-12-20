@@ -85,5 +85,5 @@ VCR.configure do |config|
   config.filter_sensitive_data('<target_api_key>') { ENV['target_api_key'] }
   config.filter_sensitive_data('<kroger_client_id>') { ENV['kroger_client_id'] }
   config.filter_sensitive_data('<kroger_client_secret>') { ENV['kroger_client_secret'] }
-  config.default_cassette_options = { re_record_interval: 5.days }
+  config.default_cassette_options = { re_record_interval: 15.days }
 end
