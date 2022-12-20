@@ -35,7 +35,7 @@ namespace :json_load do
     target_stores_80206[:businesses].each do |target_store|
       Store.create!(name: target_store[:name],
                     address: target_full_address(target_store[:location]),
-                    zipcode: '80108')
+                    zipcode: '80106')
     end
 
     ActiveRecord::Base.connection.reset_pk_sequence!('stores')
