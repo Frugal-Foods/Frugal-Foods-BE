@@ -16,7 +16,6 @@ class Mutations::CreateUserStoreItem < Mutations::BaseMutation
       }
     else
       {
-        user: nil,
         errors: user_store_item.errors.full_messages
       }
     end

@@ -1,6 +1,6 @@
 require 'simplecov'
 SimpleCov.start 'rails' 
-SimpleCov.add_filter ['config', 'channels', 'jobs', 'mailers', 'app/assets/endpoints.rb', 'app/graphql/types', 'app/controllers/graphql_controller.rb', 'app/graphql/frugal_foods_be_schema.rb']
+SimpleCov.add_filter ['config', 'channels', 'jobs', 'mailers', 'app/assets/endpoints.rb', 'app/graphql/types', 'app/controllers/graphql_controller.rb', 'app/graphql/frugal_foods_be_schema.rb', 'app/services/lambda_service.rb']
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'

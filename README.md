@@ -5,7 +5,7 @@ This app includes a PostgreSQL database that stores users, stores, items, store 
 
 # Links
 [Frugal Foods Live](https://frugal-foods.herokuapp.com/)<br>
-[Frugal Foods BE deployment for Postman](https://frugal-foods-be.fly.dev/)<br>
+[Frugal Foods BE deployment for Postman use](https://frugal-foods-be.fly.dev/)<br>
 [frugal foods front-end repository](https://github.com/Frugal-Foods/frugal-foods-fe)
 
 ## Technologies Used

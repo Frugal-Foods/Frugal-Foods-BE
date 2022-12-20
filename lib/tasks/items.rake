@@ -1,7 +1,17 @@
+require 'aws-sdk'
+
 namespace :json_load do
   desc "Read JSON File of Items"
-    task items: :environment do
-      target_items = JSON.parse(File.read('./db/data/items/target_items.json'), symbolize_names: true)
+  task items: :environment do
+
+    target80206_bucket = "target80206" #variable name on aws
+    target_80206_bucket_response = "response.json" #variable name on aws
+
+    s3 = Aws::S3::Client.new #this contains the credentials
+    target_items_response_80206 = s3.get_object(bucket: target80206_bucket, key: target_80206_bucket_response)
+
+    parsed_target_items_80206 = JSON.parse(target_items_response_80206.body.string, symbolize_names: true)
+      # target_items = JSON.parse(File.read('./db/data/items/target_items.json'), symbolize_names: true)
       # This file currently contains the 279 items (Pages 1 - 10)
       kroger_items1 = JSON.parse(File.read('./db/data/items/1-80108_king_soopers.json'), symbolize_names: true)
       kroger_items2 = JSON.parse(File.read('./db/data/items/2-80108_king_soopers.json'), symbolize_names: true)
@@ -36,7 +46,7 @@ namespace :json_load do
         end
       end
 
-      seed_target_items(item_data_file: target_items)
+      seed_target_items(item_data_file: parsed_target_items_80206)
       seed_kroger_items(item_data_file: kroger_items1, store_id: Store.all[0].id)
       seed_kroger_items(item_data_file: kroger_items2, store_id: Store.all[1].id)
       seed_kroger_items(item_data_file: kroger_items3, store_id: Store.all[2].id)
