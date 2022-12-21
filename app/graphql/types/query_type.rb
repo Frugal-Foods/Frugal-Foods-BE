@@ -2,6 +2,7 @@ module Types
   class QueryType < Types::BaseObject
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
+    field :user, [Types::UserType], null: false
     field :stores, [Types::StoreType], null: true do
       argument :zipcode, String, required: true
     end
@@ -11,6 +12,10 @@ module Types
     end
     field :user_store_items, [Types::UserStoreType], null: true do
       argument :user_id, ID, required: true
+    end
+
+    def user
+      [User.all.last]
     end
 
     def stores(zipcode:)
