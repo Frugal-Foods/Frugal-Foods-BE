@@ -71,17 +71,54 @@ All endpoints below can be accessed with POST request to `https://frugal-foods-b
 
 
 # Endpoints
-## Get Stores
-This endpoint requires a `zipcode` parameter.<br>
-<b>Note:</b> This prototype currently has two zipcodes available for demo: '80108' and '80206'.  It is returning all Kroger and Target stores within 10 miles of the zipcode.
+## Get User
+This endpoint requires no parameter.<br>
 ### Request
 ```
 {
-  stores(zipcode: "80206") {
+  user {
     id
-    name
-    address
   }
+}
+```
+
+
+## Get Stores
+This endpoint requires a `zipcode` parameter.<br>
+<b>Note:</b> This prototype currently has two zipcodes available for demo: '80108' and '80206'.  It is returning all Kroger and Target stores within 10 miles of the zipcode.
+
+### Request
+
+```
+{
+  user {
+    id
+  }
+}
+```
+### Expected Response
+
+```
+{
+    "data": {
+        "stores": [
+            {
+                "id": "84",
+                "name": "King Soopers - CAPITOL HILL",
+                "address": "1155 E 9Th Ave, Denver, CO, 80218"
+            },
+            {
+                "id": "85",
+                "name": "King Soopers - MAYFAIR",
+                "address": "1355 Krameria St, Denver, CO, 80220"
+            },
+            {
+                "id": "86",
+                "name": "King Soopers - Leetsdale Cherry",
+                "address": "4600 Leetsdale Dr, Glendale, CO, 80246"
+            }
+        ]
+    }
 }
 ```
 
